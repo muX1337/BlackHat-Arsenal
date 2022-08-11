@@ -585,9 +585,297 @@ https://github.com/BlackDiverX/cqtools
 </details>
 
 <details>
-  <summary></summary>
+  <summary>SubParse - Malware Artifact and Correlation Framework</summary>
   
+SubParse is a modular framework designed for the automation of malware analysis using static and dynamic analysis, external threat intelligence sources and historical data/event correlation. The novelty of this approach comes in the correlation of extracted data to not only assist in identification of current samples, but also in correlating any facet of information with other samples stored within the framework. Data will be accessible through an intuitive web-based user interface which offers a comprehensive filter syntax sub-system.
+
+Static file identification and parsing is the entry point into the framework. Currently, the scope of the framework is to support Windows-based portable executable (PE) files and Linux executables (ELF). However, the modularity of the framework allows for the easy integration of additional file parsers through plugins. Static file characteristics can be extracted using file format parsing, such as: file hashes, compile time, version information, code entry address, and section information. Across a larger sample set these attributes can offer unique views into threat actor operations and allow for the correlation of previously uncorrelated samples.
+
+Analysis can be further enriched using enricher plugins. After completion of the static file parsing, the framework looks for any enabled enrichers. Enrichers provide an open-ended opportunity to gather additional data about the sample and add it to the framework. For example, an enricher that utilizes services provided by Abuse.ch can provide additional insight into malware behavior.
+
+Another key enricher provides dynamic analysis. The framework will orchestrate dynamic analysis using a CAPEv2 sandbox. Dynamic analysis will provide behavioral insights into the malware, such as process activity, memory allocations and network activity. These results will be exported from CAPE and correlated with the sample within SubParse. For these artifacts, they will be submitted to the framework for full analysis and correlated to the original sample.
+
+https://github.com/jstrosch/subparse
+</details>
+
+<details>
+  <summary>Stop Wasting Time: Use Falco Plugins to Extend Detection with any Event Stream</summary>
+
+Data leaks can cost companies a fortune, storing millions of logs which "might" come in handy in the future. The majority of the time, only a small portion of those logs are actually useful in the event of a security investigation. Using newly developed Falco plugins, you can generate live events for the point in time you are interested in and forward those for further analysis, speeding and simplifying incident response.
+
+Falco is a CNCF open source container security tool designed to detect anomalous activity in your local machine, containers, and Kubernetes clusters. It taps into Linux kernel system calls and Kubernetes Audit logs to generate an event stream of all system activity. Thanks to its powerful and flexible rules language, Falco will generate security events when it finds malicious behaviors as defined by a customizable set of Falco rules.
+
+The recent major Falco update introduced support of Falco Plugins, opening Falco to a new world of data that Falco can handle and process. This new approach allows users to create and integrate different types of Falco plugins and extend the Falco detection engine with new event sources and generate security events using Falco rules. The event sources that can be integrated in Falco are infinited. AWS CloudTrail, Docker, and Video Stream are already available, and the Falco community is already working on new plugins to integrate new event sources.
+
+During this talk, we show the new Falco plugins approach and how you can use it in real breaches. The recent OKTA breach is a perfect example. By developing the related plugin and Falco rules for OKTA events, it was possible to detect and get an immediate alert if something anomalous happened in your environment.
   
+</details>
+
+<details>
+  <summary>SharpSCCM</summary>
+  
+SharpSCCM is an open-source C# utility for interacting with SCCM, inspired by the PowerSCCM project by @harmj0y, @jaredcatkinson, @enigma0x3, and @mattifestation. This tool can be used to demonstrate the impact of configuring SCCM without the recommended security settings, which can be found here: https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/plan/security-and-privacy-for-clients
+
+Currently, SharpSCCM supports the NTLMv2 coercion attack techniques noted in this post (https://posts.specterops.io/coercing-ntlm-authentication-from-sccm-e6e23ea8260a), as well as the attack techniques noted in this post (https://enigma0x3.net/2016/02/29/offensive-operations-with-powersccm/), which have been modified to coerce NTLMv2 authentication rather than running PowerShell on the target. SharpSCCM can also be used to dump information about the SCCM environment from a client, including the plaintext credentials for Network Access Accounts.
+
+Research is ongoing to add SharpSCCM features to:
+- pull and decrypt Network Access Account credentials from SCCM servers using a low-privileged account on any client machine
+- execute actions in SCCM environments that require PKI certificates to secure client/server communications
+- escalate privileges from local administrator on site servers to SCCM Full Administrator
+
+https://github.com/Mayyhem/SharpSCCM  
+</details>
+
+<details>
+  <summary>PyRDP: Remote Desktop Protocol MITM for Purple Teamers</summary>
+
+PyRDP is a Remote Desktop Protocol (RDP) monster-in-the-middle (MITM) tool and library useful in intrusion testing, and protocol and malware research. Its out-of-the-box offensive capabilities can be divided in three broad categories: client-side, MITM-side and server-side. On the client-side, PyRDP can actively steal any clipboard activity, crawl mapped drives and collect all keystrokes. On the MITM-side PyRDP records everything on the wire in several formats (logs, JSON events), captures the user's hashes on-the-fly to enable hash cracking, it also allows an attacker to take control of an active session and performs a pixel perfect recording of the RDP screen. On the server-side, on-logon PowerShell or command injection can be performed when a legitimate client connects.
+
+As a research tool, PyRDP can be used as part of a fully interactive honeypot. It can be placed in front of a Windows RDP server to intercept malicious sessions. It can replace the credentials provided in the connection sequence with working credentials to accelerate compromise and malicious behavior collection. It also saves a visual and textual recording of each RDP session, which is useful for investigation or to generate IOCs. Additionally, PyRDP saves a copy of the files that are transferred via the drive redirection feature, allowing it to collect malicious payloads.
+
+This year we have implemented NetNTLMv2 hash capturing for NLA sessions which enables pentesters and offensive researchers to crack hashes in order to retrieve passwords used during the user's connection. 
+
+https://github.com/GoSecure/pyrdp
+</details>
+
+
+<details>
+  <summary>Cotopaxi - M2M Protocols Assessment Toolkit</summary>
+  
+Cotopaxi is a set of tools for security testing of endpoints using state-of-the-art Machine-To-Machine network protocols (like AMQP, CoAP, gRPC, HTTP/2, HTCPCP, MQTT, DTLS, KNX, mDNS, QUIC, RTSP, SSDP).
+
+https://github.com/Samsung/cotopaxi 
+</details>
+
+<details>
+  <summary>MI-X (Am I Exploitable?).</summary>
+  
+‘Am I Exploitable?’, is an open source tool aimed at effectively determining whether a local host or a running container image is truly vulnerable to a specific vulnerability by accounting for all factors which affect *actual* exploitability. The tool prints the logical steps it takes in order to reach a decision and can generate a flow chart depicting the complete logical flow.
+
+The first critical step to address any security vulnerability is to verify whether or not your environment is affected. Even if a vulnerable package is installed on your system, this condition alone does not determine exploitability as several conditions must be in place in order for the vulnerability to be applicable (exploitable). For example, can the vulnerability only be exploited under a specific configuration or in a specific OS?.
+
+Most conventional vulnerability scanners rely on package manager metadata in order to determine the installed components (and in which versions) and then cross reference this data with vulnerability advisories in order to determine what vulnerabilities affect the system. The problem with that is that often software may be deployed without a package manager. For example, software might be built from source and then added to an image or unzipped from a tarball to a specific location on the file system. In these cases, no package manager data is associated with the application, which can result in false negatives (a scanner will “miss” these vulnerabilities) and offer a false sense of security.
+
+We aim to build a community of researchers that can improve the validation process of historically dangerous vulnerabilities, as well as newly discovered ones, so users and organizations will understand whether they are vulnerable or not, as well as which validation flow is used to reach that verdict, and what steps are necessary for remediation or mitigation.
+
+https://github.com/Rezilion/mi-x 
+</details>
+
+<details>
+  <summary>VulnLab Web Application Vulnerabilities Lab</summary>
+ 
+VulnLab is a lab environment to learn various Web vulnerabilities and test different exploitation techniques developed with PHP and runs on Docker container. The main reason we created Vulnlab is that there are already well-known applications with similar content but these applications are getting out of date day by day. In order to solve this problem,
+VulnLab will be updated by our community when a new vulnerability has been found such as spring4shell or log4j. Currently, Vulnlab only includes the OWASP TOP 10 vulnerabilities.
+
+https://github.com/Yavuzlar/VulnLab
+  
+</details>
+
+<details>
+  <summary>Sandbox Scryer</summary>
+  
+"Sandbox Scryer: An open source tool leveraging free sandbox technologies to enable threat hunting and intelligence"
+
+When defending against APTs or Advanced Persistent Threats, persistent is the most important aspect of that definition. Often a security solution will stop a threat actor on initial access, when they inject command and control beacons into processes, or when they move laterally. Which leads to important questions. What's next? Will the actor try again? What are they after? How do I improve my defenses when the threat actor inevitably tries again?
+
+A defender must be able to answer these questions. SoC analyst time is among the most valuable in any organization, and automated research tools such as sandboxes can be a valuable solution to accelerate this process. Unfortunately, making sense of all the data takes time. Indicators of Compromise (IOCs) are invaluable for communicating actionable intelligence about attacks, as is identifying relevant secondary payloads and top ATT&CK tactics and techniques among all the data a sandbox can generate. This critical information can be used to drive threat hunting, assessment of attack success and penetration, and pre-emptive identification of risk of future attack.
+
+In this demonstration, we will showcase an open source tool, the Sandbox Scryer, which performs sample submission to the free Hybrid Analysis Sandbox, retrieval of results of the Sandbox's automated analysis, and extraction from these sets of important IOCs and techniques matched against MITRE Att&ck. This open source tool will be made available, which enables an organization to adapt it to their favorite free or paid sandbox (of which there are many), along with expanding it to produce of types of IOCs.
+  
+https://github.com/payloadsecurity/Sandbox_Scryer 
+</details>
+
+<details>
+  <summary>Kubescape: Open-Source Kubernetes Security Single-Pane-of-Glass</summary>
+  
+Kubescape (https://github.com/armosec/kubescape) is a K8s open-source tool that provides a multi-cloud K8s single pane of glass, including risk analysis, security compliance, RBAC visualizer, and image vulnerabilities scanning.
+Kubescape scans K8s clusters, YAML files, and HELM charts, detecting misconfigurations according to multiple frameworks (such as the NSA-CISA, MITRE ATT&CK, and more), software vulnerabilities, and RBAC (role-based-access-control) violations at early stages of the CI/CD pipeline, calculates risk score instantly and shows risk trends over time.
+It became one of the fastest-growing Kubernetes tools among developers due to its easy-to-use CLI interface, flexible output formats, and automated scanning capabilities, saving Kubernetes users and admins precious time, effort, and resources.
+Kubescape integrates natively with other DevOps tools, including Jenkins, CircleCI, Github workflows, Prometheus, and Slack, and supports multi-cloud K8s deployments like EKS, GKE, and AKS.
+
+in this session, we will reveal new capabilities and features for the first time 
+</details>
+
+<details>
+  <summary>HazProne : Cloud Hacking</summary>
+
+HazProne is a Cloud Pentesting Framework that emulates close to Real-World Scenarios by deploying Vulnerable-By-Demand aws resources enabling you to pentest Vulnerabilities within, and hence, gain a better understanding of what could go wrong and why!! 
+
+https://github.com/stafordtituss/HazProne 
+</details>
+
+<details>
+  <summary>GoGoGadget - Post Exploitation Utilities for Embedded Systems</summary>
+  
+GoGoGadget is a toolkit that provides useful command line utilities for embedded systems using a broad variety of processor architectures and operating systems. GoGoGadget is written in Go and cross-compiles to a static binary that runs on any of thirteen operating systems and supports thirteen processor architectures with all required libraries included. 
+
+https://github.com/vigilantsys/gogogadget 
+</details>
+
+<details>
+  <summary>Ghostwriter</summary>
+  
+Ghostwriter is a part of your team. It enables collaborative management of penetration test and red team assessments. It helps you manage the critical pieces of every project, including client information, project plans, infrastructure, findings, and reports in one application.
+
+Since its debut at BHUSA Arsenal in 2019, Ghostwriter has grown and matured. Last year was a building year for the project. Now, the development team is excited to re-introduce Ghostwriter with new features to be rolled out in Q1 and Q2 2022 – such as a new GraphQL API! This new version gives teams the power to manage their projects via the API layer and custom scripts or integration with third-party projects.
+
+https://github.com/chrismaddalena/Ghostwriter
+</details>
+
+<details>
+  <summary>Amini Project</summary>
+
+The AirTag IoT device is a tracking tool developed by Apple and designed to help people find misplaced objects. However, even when Apple states that AirTag technology is solely used for tracking items, a growing number of malicious individuals are taking advantage for the simplicity to install it and set up to track unaware targets, in other words, people.
+
+Amini is a specialized open-source hardware project to scan, detect, spoof, and play a sound for AirTag devices. This project is part of "Spy-wear: Misuse of Apple AirTags" research where we analyzed a privacy concern about AirTag misuse for tracking capabilities. It was designed to be implemented with Arduino environment, for flexible designs, and to be used in any Arduino-supported devices with BLE capabilities.
+
+https://github.com/Ocelot-Offensive-Security/Arsenal/tree/main/Amini  
+</details>
+
+<details>
+  <summary>Suborner: A Windows Bribery for Invisible Persistence</summary>
+  
+Whenever an attacker is trying to persist the access on a compromised machine, the first offensive approach usually involves the creation of a new identity. Nevertheless, this may not work easily under hardened environments with diverse detection mechanisms against common attack vectors.
+
+What if we "suborn" Windows to create our own hidden account that will grant us total access to a victim, while stealthily impersonating any account we want?
+
+Now it is possible with the Suborner Attack.
+
+This technique will dynamically create an invisible machine account with custom credentials and custom properties without calling any user management Win32 APIs (e.g. netapi32.dll::netuseradd) and therefore evading detection mechanisms (e.g Event IDs 4720, 4721). By "suborning" Windows, we can also impersonate any desired account to keep our stealthiness even after a successful authentication/authorization.
+
+To show its effectiveness, the attack is going to be demonstrated against the latest Windows version available.
+
+https://github.com/r4wd3r/Suborner 
+  
+</details>
+
+<details>
+  <summary>Slips: Free Software Machine Learning Tool for Network Intrusion Prevention System</summary>
+  
+Slips is a behavioral-based intrusion prevention system, and the first free software to use machine learning to detect attacks in the network. It is a modular system that profiles the behavior of IP addresses and performs detections in time windows.
+Slips' modules detect a range of attacks both to and from the protected devices.
+Slips connects to other Slips using P2P, and exports alerts to other systems.
+
+Slips works in several directionality modes. The user can choose to detect attacks coming *to* or going *from* these profiles. This makes it easy to protect your network but also to focus on infected computers inside your network.
+
+Slips includes the download/management of external Threat Intelligence feeds (now working with 44 external feeds, including our own), whois/asn/geocountry/mac vendor enrichment, a LSTM neural net for malicious behavior detection, port scans, ICMP scans, long connection detection, data upload, malicious JA3/SSL certificate matching, leak detection and many more.
+Ensembling algorithms are used for blocking decisions.
+The P2P module connects to other Slips to share alerts.
+
+Slips can read packets from an interface, PCAPs, Suricata, Zeek, Argus and Nfdump, and can output alerts files. Having Zeek as a base tool, Slips can correctly build a sorted timeline of flows combining all Zeek logs. Slips can send alerts using the STIX/TAXII protocol, to CESNET servers using IDEA0 format or to Slack.
+
+The Kalipso Node.js interface allows the analysts to see the profiles' behaviors and detections performed by Slips modules directly in the console. Kalipso displays the flows of each profile and time window and compares those connections in charts/bars. It also summarizes the whois/asn/geocountry information for each IP in your traffic. Kalipso is being migrated to a web console.
+
+
+https://github.com/stratosphereips/StratosphereLinuxIPS
+  
+</details>
+
+<details>
+  <summary>DotDumper: Automatically Unpacking DotNet Based Malware</summary>
+  
+Analysts at corporations of any size face an ever-increasing amount of DotNet based malware. The malware comes in all shapes and forms, ranging from skiddish stealers all the way to nation state backed targeted malware. The underground market, along with public open-source tools, provide a plethora of ways to obfuscate and pack the malware. Unpacking malware is time consuming, difficult, and tedious, which poses a problem.
+
+To counter this, DotDumper automatically dumps interesting artifacts during the malware's execution, ranging from base64 decoded values to decrypted PE files. As such, the malware decrypts and executes the next stage, while DotDumper conveniently provides a copy of said decrypted stage. All this is done via a simple, compact, intuitive, and easy-to-use command-line interface.
+
+Aside from the dumped artifacts, DotDumper provides an extensive log of the traced execution, based on managed hooks. For each hook, the log contains the original function name, arguments and their values, and the return value. Since DotDumper ensures that the original function is called, the malware's execution continues as if it was executed normally, allowing the analyst to get as many stages from the sample as possible.
+
+DotDumper can execute DotNet Framework executables, as well as dynamic link libraries, due to the fully-fledged reflective loader which is embedded. Any given function can be selected within a library, along with any required variables and their values, all easily accessible from DotDumper's command-line interface.
+
+DotDumper has proven to be effective in dealing with the renowned AgentTesla stealer or the WhisperGate Wiper loader, allowing an analyst to easily fetch the decrypted and unpacked in-memory only stages, thus decreasing up the time spent on unpacking, allowing for faster response to the given threat.  
+
+https://github.com/advanced-threat-research/DotDumper
+</details>
+
+<details>
+  <summary>Detecting Typo-Squatting, Backdoored, Abandoned, and Other "Risky" Open-Source Packages Using Packj</summary>
+  
+Software supply chain attacks on open-source software ecosystems, particularly on popular package managers such as NPM, PyPI have increased tremendously in the last few years. Today, developers must thoroughly analyze packages, and avoid risky packages that may expose them to high levels of supply chain risks.
+
+But, there exists no tool to measure supply chain risks lurking in open-source packages. Current practices include sourcing only mature, stable, popular, and reputable packages, where such attributes are inferred from publicly available metrics, such as GitHub stars, package downloads, and software development activity. However, such vanity metrics do not reveal true information about the security posture of packages. More importantly, an attacker-controlled bot can easily manipulate such metrics. Manually vetting hundreds of dependencies is infeasible.
+
+In this talk, we will present our open-source command line vetting tool, called Packj that allows developers to easily analyze dependencies for "risky" code/attributes and provide actionable insights into their security posture. In this presentation, we will cover the technical details of our tool and discuss its usage. Packj tool powers also our large-scale security vetting infrastructure that continuously analyzes millions of published packages, and provides detailed risk assessment reports. We have already detected a number of abandoned, typo-squatting, and malicious packages. We will present our findings, highlight different types of attack techniques adopted by bad actors, and discuss measures that developers can take to thwart such attacks. With our work, we hope to enhance productivity of the developer community by exposing undesired behavior in untrusted third-party code, maintaining developer trust and reputation, and enforcing security of package managers.  
+
+https://github.com/ossillate-inc/packj
+</details>
+
+<details>
+  <summary>CWE_Checker: Architecture-Independent Binary Vulnerability Analysis</summary>
+  
+Assessing the security of programs running on embedded devices is a difficult task. Source code is generally unavailable and both static and dynamic binary analysis tools often do not offer support for the many different hardware configurations found in embedded devices.
+
+The cwe_checker is an open-source tool for finding bugs and vulnerabilities in binary executables without requiring source code access or any knowledge about the hardware. By using static analysis techniques built atop Ghidra P-Code it supports a wide range of CPU architectures including x86, ARM, MIPS and PowerPC. While its focus is the analysis of ELF binaries commonly found in Linux-based firmware, there exists experimental support for PE files and even bare-metal binaries.
+
+The cwe_checker offers detection of over 16 different bug classes including Buffer Overflows (CWE-119), Use-After-Frees (CWE-416) and Null Dereferences (CWE-476). The tool is built in a modular fashion where each analysis can use its own bug detection technique ranging from simple heuristics to complex data flow analysis. Furthermore, each analysis has a set of configuration parameters that can be modified to adjust the analysis to specific usage scenarios. For example, you can add your own functions to the "Use of potentially dangerous function" check (CWE-676).
+
+It is easy to integrate the cwe_checker into other tools and workflows using the alternative JSON output. For example, as a plugin into the Firmware Analysis and Comparison Tool (FACT) you can use it to hunt for vulnerabilities in large firmware data sets.
+
+ 
+https://github.com/fkie-cad/cwe_checker
+  
+</details>
+
+<details>
+  <summary>Badrats: Initial Access Made Easy</summary>
+
+Remote Access Trojans (RATs) are one of the defining tradecraft for identifying an Advanced Persistent Threat. The reason being is that APTs typically leverage custom toolkits for gaining initial access, so they do not risk burning full-featured implants. Badrats takes characteristics from APT Tactics, Techniques, and Procedures (TTPs) and implements them into a custom Command and Control (C2) tool with a focus on initial access and implant flexibility. The key goal is to emulate that modern threat actors avoid loading fully-featured implants unless required, instead opting to use a smaller staged implant.
+
+Badrats implants are written in various languages, each with a similar yet limited feature set. The implants are designed to be small for antivirus evasion and provides multiple methods of loading additional tools, such as shellcode, .NET assemblies, PowerShell, and shell commands on a compromised host. One of the most advanced TTPs that Badrats supports is peer-to-peer communications over SMB to allow implants to communicate through other compromised hosts.
+ 
+ https://gitlab.com/KevinJClark/badrats 
+</details>
+
+<details>
+  <summary>AttackForge ReportGen v2: Powerful Pentest Reporting Tool</summary>
+ 
+AttackForge ReportGen is a freely available and downloadable pentest reporting tool with powerful features such as:
+- Rich template library in DOCX format to cover different types of pentest reports
+- Support for over 200 tags - covering projects, vulnerabilities, assets, attack chains, test cases, retesting, and more
+- Support for DOCX reports
+- Support for tables, images, styled text, custom fields
+- Easy to apply styles & changes directly in Word – no need or hassle to write code
+- Logic engine for complex reporting requirements and templates 
+ 
+https://attackforge.com/ 
+</details>
+
+<details>
+  <summary>SquarePhish: Combining QR Codes and OAuth 2.0 Device Code Flow for Advanced Phishing Attacks</summary>
+  
+SquarePhish is an advanced phishing tool that uses a technique combining the OAuth Device code authentication flow and QR Codes.
+
+https://github.com/Secureworks/squarephish
+</details>
+
+<details>
+  <summary>Route Sixty-Sink: Connecting Application Inputs to Sinks Using Static Analysis</summary>
+  
+Route Sixty-Sink is an open source static analysis tool that traces the flow of user input through any .NET binary and determines whether it is passed as an argument to a dangerous function call (a "sink"). Route Sixty-Sink does this using two main modules:
+
+1. RouteFinder, which enumerates API routes in MVC-based and classic ASP page web applications.
+2. SinkFinder, which takes an entry point and creates a call graph of all classes and method calls. Then, it queries strings, method calls, and class names for "sinks".
+
+By tying these two pieces of functionality together, Route Sixty-Sink is able to quickly identify high fidelity vulnerabilities that would be difficult to discover using black box or manual static analysis approaches.
+
+We have used Route Sixty-Sink to reveal and successfully exploit vulnerabilities including unsafe object deserialization, SQL injection, command injection, arbitrary file uploads and access, authorization bypasses, and more in both open-source and proprietary .NET applications.
+  
+ https://github.com/mandiant/route-sixty-sink 
+</details>
+
+<details>
+  <summary>Recon.Cloud - Cloud Attack Surface Management and Cloud Reconaissance</summary>
+  
+ Recon.Cloud is a public and free AWS cloud security reconnaissance tool that will enable users to reveal publicly exposed cloud assets on any domain. There are many tools in the market that are open to users for reconnaissance efforts, but there are few that specifically scope recon efforts to look at the cloud alone. Typical recon tools provide an exhaustive list of all assets they detect – there is no scope to define the cloud assets themselves. This leaves users overwhelmed with too much information that can be difficult and time-consuming to comb through.
+
+ https://recon.cloud/
+</details>
+
+<details>
+  <summary>Octopii - AI-powered Personal Identifiable Information (PII) scanner</summary>
+  
+  Octopii is an open-source AI-powered Personal Identifiable Information (PII) scanner that can look for image assets such as Government IDs, passports, photos and signatures in a directory.
+  
+ https://github.com/redhuntlabs/Octopii 
 </details>
 
 <details>
@@ -597,37 +885,35 @@ https://github.com/BlackDiverX/cqtools
 </details>
 
 <details>
-  <summary></summary>
+  <summary>CrowdSec - The Network Effect of Cybersecurity</summary>
   
-  
+Discover CrowdSec, an open-source and collaborative intrusion prevention and detection system relying on IP behavior analysis and IP reputation. CrowdSec analyzes visitor behavior & provides an adapted response to all kinds of attacks. The solution also enables users to protect each other. Each time an IP is blocked, all community members are informed, so they can also block it. Already used in 160+ countries, the solution builds a crowd-sourced CTI database to secure individuals, companies, institutions etc.﻿
+
+https://github.com/crowdsecurity/crowdsec
 </details>
 
 <details>
-  <summary></summary>
+  <summary>bloodyAD</summary>
   
-  
+BloodyAD is an Active Directory Privilege Escalation Framework. It helps you interact with the Active Directory (AD) to read/modify its objects in order to perform privilege escalation.
+Two modes exist, the first one lets you perform atomic operations on the AD, it's the manual mode. The second one automates most of the privilege escalation operations.
+The tool can be installed on Linux and Windows and is designed to be used on your offensive machine even if you're not on the local network of the targeted AD, relying on encapsulation protocols like SOCKS.
+ 
+ https://github.com/CravateRouge/bloodyAD 
 </details>
 
 <details>
-  <summary></summary>
+  <summary>AADInternals: The Swiss Army Knife for Azure AD & M365</summary>
   
-  
-</details>
+AADInternals is a popular attacking and administration toolkit for Azure Active Directory and Microsoft 365, used by red and blue teamers worldwide. The toolkit is written in PowerShell, making it easy to install and use by anyone familiar with the Microsoft ecosystem.
 
-<details>
-  <summary></summary>
-  
-  
-</details>
+With AADInternals, one can create backdoors, perform elevation of privilege and denial-of-service attacks, extract information, and even bypass multi-factor authentication (MFA).
 
-<details>
-  <summary></summary>
+Join this session to see in action the research results conducted during the past three years, including a new technique to extract AD FS signing certificates remotely, exporting certificates of AAD joined devices, gathering OSINT, and more!
   
-  
-</details>
-
-<details>
-  <summary></summary>
-  
+https://github.com/Gerenios/AADInternals
+ 
+ Slides(2021):
+ https://o365blog.com/talks/BH%20Europe%20Arsenal%202021.pdf
   
 </details>
