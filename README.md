@@ -1,5 +1,5 @@
 # BlackHat-Arsenal
-Covers the Arsenal for the BlackHat
+Covers the Arsenal of the BlackHat-Events in ASIA/EU/USA
 
 # Info
 
