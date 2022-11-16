@@ -230,17 +230,6 @@ With this major update, the tool now supports Swagger/OpenAPI-based scanning and
 https://github.com/wallarm/gotestwaf 
 </details>
 
-<details>
-  <summary>FireTail - inline API security checking</summary>
-
-FireTail sits on top of popular open source frameworks for building web services and APIs, like OpenAPI/Swagger, Express and Rails, and then provides in-line security processing of the API calls. FireTail checks for (in sequential order):
-1. API call is hitting valid route using a valid method. This allows for a zero-trust, declarative API structure, with proper error handling at the HTTP layer.
-2. Inspection of authentication token. Does the API expect a JWT, application-issued API key or other? FireTail will check whether a valid token of the correct type is present.
-3. Payload inspection. FireTail will look for and fail invalid queries. 
-
-INFO:No links yet
-Twitter of presentator: https://twitter.com/halffinn
-</details>
 
 <details>
   <summary>Faceless - Deepfake detection</summary>
@@ -251,16 +240,6 @@ The proposed deepfake detection model is based on the EfficientNet structure wit
 The deepfake dataset were used in the final model is Celeb-DF
  
 https://github.com/ManhNho/Faceless  
-</details>
-
-<details>
-  <summary>CASPR - Code Trust Audit Framework</summary>
-
-With CASPR, we are addressing the Supply Chain Attacks by Left Shifting the code signing process.
-CASPR aims to provide simple scripts and services architecture to ensure all code changes in an organization are signed by trusted keys; trustability of these keys should be instantly verifiable every time the code changes are consumed. It also makes the auditing and accountability of code-changes easier and cryptographically verifiable, leaving no scope for malicious actors to sneak in untrusted code at any point in the Software Development Life Cycle.
-
-INFO: No links yet
-  
 </details>
 
 <details>
@@ -367,19 +346,6 @@ Makes is production ready and used currently in 11 different products that range
 https://github.com/fluidattacks/makes 
 </details>
 
-<details>
-  <summary>LATMA - lateral movement analyzer</summary>
-  
-LATMA is a tool for offline detection and investigation of lateral movement attack based on AD event logs. The tool assists security teams to overcome the main challenges:
-
-Data collection and preparation: in theory, event logs are an available data source to look for authentication anomalies. In practice, however, the source and destination machines are not represented in the same manner (hostname vs. IP), which prevents the ability to directly detect movement of a user account across different machines. LATMA conforms the representation of the source and destination machines, making the even log ready for analysis which is the tool's primary objectives.
-
-Data analysis: LATMA scans the even data, looking for authentication patterns we have learned to be associated with lateral movement. For example, a chain of authentications where a single account logs from machine A to machine B and consecutively from machine B to C. Another example is what we call White-Cane in which an account logs from a single source to multiple destinations one after the other. The patterns LATMA searches for are based on our analysis of attacks in the wild, as well as on novel detection algorithm we have developed.
-
-LATMA can be used in any environment where Kerberos and NTLM auditing is enabled, making it an easy and useful tool to any security professionals that handle an Active Directory environment. Offline analysis of authentications, while not real-time, is an efficient method to hunt for active lateral movement that goes under the radar and can provide the means to contain it before it reaches its objectives.
-
-INFO: No links yet  
-</details>
 
 <details>
   <summary>AzureGoat : A Damn Vulnerable Azure Infrastructure</summary>
@@ -515,25 +481,6 @@ https://defaultinator.com/
 Adhrit is an open-source Android application security analysis suite. The tool is an effort to find an efficient solution to all the needs of mobile security testing and automation. Adhrit has been built with a focus on flexibility and modularization. It currently uses the Ghera benchmarks to identify vulnerable code patterns in the bytecode. Apart from bytecode scanning, Adhrit can also identify hardcoded secrets within Android applications. The tool also comes with a built-in integration to popular software like Jira and Slack which can be configured to automate and streamline.
 
 https://github.com/abhi-r3v0/Adhrit 
-</details>
-
-<details>
-  <summary>smarX - Solidity Smart Contract Vulnerability Analyzer</summary>
-  
- Smart contracts are magical because they execute themselves once the predefined conditions are met. Unfortunately, it is easier than we would like to admit to lose funds or ownership of our contracts (either to a malicious actor or by accidentally locking everything inside). To avoid that, smarX scans your smart contracts, alerts for discovered vulnerabilities, and suggests remediations.
-
-By using static code analysis for Solidity smart contracts, smarX helps developers find and mitigate vulnerabilities before deploying their smart contracts to the blockchain. smarX scans the code with out-of-the-box rules created by us and rules contributed by the community. In addition, it will allow developers and security engineers to easily create customized rules, allowing them to inspect their code for specific issues of interest. The rules are aimed to be short and readable, so it'll be easy for newcomers to add their own.
-
-The Solidity parser and the sets of rules will both be released and open-sourced during Black Hat's Arsenal.
-
-Key Features:
-1. Vulnerability analysis with low FP/FN rates
-2. Identification of the vulnerable line
-3. Can be used as an IDE Plugin
-4. Integrates with continuous integration.
-5. Supported by Checkmarx, one of the leaders of the SAST industry
-
-INFO: No links yet
 </details>
 
 <details>
