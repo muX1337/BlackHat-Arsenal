@@ -397,35 +397,176 @@ https://appsec.study/
 
 
 <details>
-  <summary></summary>
+  <summary>Shoggoth: Asmjit Based Polymorphic Encryptor</summary>
+From past to present, signature-based detection has been one of the first and most basic methods used to detect malicious files. Even today, every file written to the file system is first scanned using the signatures found in the database of security products. Therefore, when creating variants of a tool or a technique, one of the most used methods to prevent them from being captured by a single signature is Polymorphism.
+
+While polymorphism was used for this purpose, it was embedded in the virus variant as an engine, especially in self-propagating viruses. Nowadays, polymorphism occurs in the obfuscation of a binary or a shellcode. New variants of these codes, which are produced with polymorphic encoders such as Shikata Ga Nai (SGN), make them difficult to detect with a general and single YARA rule. Shoggoth is yet another polymorphic encoder written using asmjit library.
+
+For each encoding period of a binary, Shoggoth generates different encryption routines with different garbage instructions. After obtaining the encrypted form of the payload, the tool merges it with its decryptor stub which again contains different garbage instructions. Shoggoth uses asmjit library for assembling the process of randomly generated encryption and garbage instructions.
+
+https://github.com/frkngksl/Shoggoth  
+</details>
+
+<details>
+  <summary>Node Security Shield - A Lightweight RASP for NodeJS Application</summary>
+  Node Security Shield (NSS) is an Open source Runtime Application Self-Protection (RASP) tool which aims at bridging the gap for comprehensive NodeJS security.
+
+NSS is designed to be Developer and Security Engineer friendly and enables them to declare what resources an application can access.
+
+Inspired by the Log4Shell vulnerability which can be exploited because an application can make arbitrary network calls, we felt there is a need for an application to have a mechanism so that it can declare what privileges it allows in order to make the exploitation of such vulnerabilities harder by implementing additional controls.
+
+In order to achieve this, NSS (Node Security Shield) has a Resource Access Policy and the concept is similar to CSP (Content Security Policy). Resource Access Policy lets developer/security engineers declare what resources an application should access and Node Security Shield will enforce it.
+
+If the Application is compromised and requests 'attacker.com' or executes a malicious command. Node Security Shield will block it automatically and thus protect the application from malicious attacks.
+
+Node Security Shield was first announced in Black Hat Asia 2022 Arsenal.
+
+Later at Black Hat USA 2022 arsenal (Virtual), the first major update was released which adds support for the 'module-level' Resource Access Policy. Allowing Developers or Security Engineers to declare what resources a module can access.
+
+This release is a major update and adds support for Command Execution. Allowing Developers or Security Engineers to declare if the application can execute system commands. If allowed, what type of system commands are allowed.
+
+ https://github.com/DomdogSec/NodeSecurityShield
   
 </details>
 
 <details>
-  <summary></summary>
-  
+  <summary>Exegol</summary>
+Exegol is a free and open-source pentesting environment made for professionals. It allows pentesters to conduct their engagements in a fast, effective, secure and flexible way. Exegol is a set of pre-configured and finely tuned docker images that can be used with a user-friendly Python wrapper to deploy dedicated and disposable environments in seconds.  
+
+https://github.com/ThePorgs/Exegol
 </details>
 
 
 <details>
-  <summary></summary>
-  
+  <summary>c{api}tal - Learn OWASP API Security Top 10 by playing with vulnerable by design application</summary>
+APIs are a critical part of modern mobile, SaaS, and web applications and can be found in customer-facing, partner-facing, and internal applications.
+
+By nature, APIs expose application logic and sensitive data, potentially leading to data breaches, account takeovers, and much more.
+
+Because of this, APIs have increasingly become a target for attackers. Without secure APIs, organizations would face many security risks and rapid innovation would be impossible.
+
+It is extremely important to be aware of the OWASP API top 10 risks and enforce proper API security mitigations for your APIs. Therefore, we developed c{api}tal - an Open Source API training and learning platform by Checkmarx.
+
+c{api}tal is a built-to-be-vulnerable API application based on the OWASP top 10 API vulnerabilities. Use c{api}tal to learn, train and exploit API Security vulnerabilities within your own API Security CTF.
+
+In DefCon30, 2022, we first introduced c{api}tal to the world by conducting an API security CTF event to allow users to learn about the API security top 10 risks and exploit them in an isolated, vulnerable platform. Now we're open sourcing it.
+
+In this session, you will learn about:
+- The OWASP API top 10 risks
+- c{api}tal overview
+- Demo of exploiting one of the OWASP API top 10 risks
+- How to mitigate API risks to keep your APIs safe  
+
+https://www.capital-ctf.com/
 </details>
 
 <details>
-  <summary></summary>
-  
+  <summary>shrewdeye - low hanging OSINT and reconnaissance</summary>
+ The vulnerability searching process requires a lot of time. If you want to cover all the perimeter in an appropriate amount of time and get valuables, automation of routines is one of the cornerstones, that will help you to focus on more complex things.
+shrewdeye - opensource web platform for continuous reconnaissance. It allows you to combine other tools in chain to automate your perimeter workflow reconnaissance. It comes with built-in modules for famous tools like amass, assetfinder, subfinder, gau, nmap and others.
+
+https://shrewdeye.app/
+
+https://github.com/zzzteph/sheye
 </details>
 
 
 <details>
-  <summary></summary>
-  
+  <summary>Mr.SIP: SIP-Based Audit and Attack Tool</summary>
+
+Mr.SIP Pro is a comprehensive attack-oriented VoIP product developed to simulate VoIP-based attacks and audit VoIP networks and applications from a security perspective. Originally it was developed to be used in academic work to support developing novel SIP-based attacks and then as an idea to convert it to a fully functional SIP-based penetration testing tool. So far Mr.SIP resulted in several academic research papers and journal articles and won first prizes in various cyber security competitions. Mr.SIP can also be used as a SIP client simulator and SIP traffic generator.
+
+Mr.SIP Pro detects SIP components and existing users on the network, intercepts, filters, and manages call information, reports known vulnerabilities and exploits, develops various TDoS attacks, and cracks user passwords. It has many innovative and competitive features such as high-performance multi-threading, IP spoofing, intelligent SIP message generation, self-hiding, and interception capabilities. Mr.SIP also has a customizable scenario development framework for stateful attacks.
+
+In the current state, the public version of Mr.SIP contains 3 modules; SIP-NES (network scanner), SIP-ENUM (enumerator), and SIP-DAS (DoS attack simulator). The Pro version includes 19 modules in 4 categories; Information Gathering, Vulnerability Scanning, Offensive, and Utility modules as listed below.
+
+Information Gathering Modules: SIP-NES (network scanner), SIP-ENUM (SIP enumerator), SIP-SNIFF (SIP traffic sniffer), SIP-EAVES (call eavesdropper)
+
+Vulnerability Scanning Modules: SIP-VSCAN (vulnerability & exploit scanner), Auto-Deep (automated scanner)
+
+Offensive Modules: SIP-DAS (DoS attack simulator), SIP-MITM (man in the middle attacker), SIP-ASP (attack scenario player), SIP-CRACK (digest authentication cracker), SIP-SIM (signaling manipulator), SIP-FUZZ (protocol fuzzer), RTP-EAVES (media sniffer), RTP-MIM (media manipulator), RTP-Robo (robocall/SPIT attacker), RTP-DTMF (DTMF stealer)
+Utility Modules: IP Spoofing Engine, Message Generator, GUI
+
+https://github.com/meliht/Mr.SIP 
 </details>
 
 <details>
-  <summary></summary>
-  
+  <summary>ThunderCloud: Attack Cloud Without Keys!</summary>
+ 
+"You can't audit a cloud environment without access keys!!".
+
+Well. That's not completely true.
+
+There is a good number of tools that help security teams find cloud misconfiguration issues. They work inside-out way where you give read-only access tokens to the tool and the tool gives you misconfigurations.
+
+There's no single tool that helps Red Teamers and Bug Hunters find cloud misconfiguration issues the outside-in way.
+
+This outside-in approach can find issues like:
+
+1. S3 directory listing due to misconfigured Cloudfront settings
+2. Amazon Cognito misconfiguration to generate AWS temporary credentials
+3. Public snapshots
+4. Generate Account takeover Phishing links for AWS SSO
+5. Leaked Keys permission enumeration
+6. IAM role privilege escalation
+a) From leaked keys
+b) Lambda Function
+
+This exploitation framework also helps teams within organizations to do red teaming activities or run it across the accounts to learn more about misconfigurations from AWS and how badly they can be exploited.
+
+ThunderCloud version 2 will now support GCP and Azure exploitation. Additionally will be releasing an open source "CLOUD OFFENSIVE" gitbook along with the same
+
+https://github.com/Rnalter/ThunderCloud 
 </details>
 
+<details>
+  <summary>DNS Reaper</summary>
+DNS Reaper is yet another sub-domain takeover tool, but with an emphasis on accuracy, speed, and the number of signatures in our arsenal!
+
+We can scan around 50 subdomains per second, testing each one with over 50 takeover signatures. This means most organizations can scan their entire DNS estate in less than 10 seconds.
+
+You can use DNS Reaper as an attacker or bug hunter!
+You can run it by providing a list of domains in a file, or a single domain on the command line. DNS Reaper will then scan the domains with all of its signatures, producing a CSV file.
+
+You can use DNS Reaper as a defender!
+You can run it by letting it fetch your DNS records for you! Yes, that's right, you can run it with credentials and test all your domain configurations quickly and easily. DNS Reaper will connect to the DNS provider and fetch all your records, and then test them.
+
+We currently support AWS Route53, Cloudflare, and Azure.
+
+https://github.com/punk-security/dnsReaper  
+</details>
+
+<details>
+  <summary>Codecepticon - One Obfuscator to Rule Them All</summary>
+Codecepticon is an obfuscator that works with C#, PowerShell, and VBA (macros), and has been battle-tested for the last 1.5yr against modern ERD and AV technologies with great success. It supports a variety of obfuscation techniques such as renaming classes, and functions, rewriting strings and the tool's command line arguments, and even generating "English sounding" variable names using Markov chains. Instead of targeting compiled executables/assemblies, it focuses on the source code and utilizes Roslyn for C#, PS Automation for PowerShell, and ANTLR for VBA, in order to achieve the best possible result.
+
+https://github.com/Accenture/Codecepticon
+
+</details>
+
+<details>
+  <summary>FireTail - inline API security checking</summary>
+
+FireTail sits on top of popular open source frameworks for building web services and APIs, like OpenAPI/Swagger, Express and Rails, and then provides in-line security processing of the API calls. FireTail checks for (in sequential order):
+1. API call is hitting valid route using a valid method. This allows for a zero-trust, declarative API structure, with proper error handling at the HTTP layer.
+2. Inspection of authentication token. Does the API expect a JWT, application-issued API key or other? FireTail will check whether a valid token of the correct type is present.
+3. Payload inspection. FireTail will look for and fail invalid queries.
+
+https://firetail.io/
+
+https://github.com/firetail-io  
+</details>
+
+
+<details>
+  <summary>Dragnmove: Infect Shared Files In Memory for Lateral Movement</summary>
+
+People share files with each other every day using different applications like email clients, chat applications, browsers, etc. These channels are commonly used for lateral movement usually in the context of internal phishing. Dragnmove tool provides a different approach to abuse file sharing in order to move laterally in the target environment. Dragnmove can be used to inject payloads into the files that are being sent without touching the files in the file system.
+
+The tool works on Windows targets and can be executed as Beacon Object File (BOF) or Reflective DLL in order to work with various C2 servers. Dragnmove injects itself into the target processes that the attacker chooses and waits for the user to drag a file into this process or attach a file to it.
+
+When a compromised user starts the sharing process, Dragnmove can modify files in memory to inject the attacker's payload into the shared files by hooking the Windows mechanisms used by actions like "drag and drop" or "attach file". This method provides a better opportunity for the attackers to get their payloads executed in the lateral targets because the files sent will be relevant to the targets' contexts. Since the context and sender are relevant, it is more possible that the target sees this file as trustable and opens it. Dragnmove can also be used in environments where the targets are working in different locations or in isolated networks (like working from home) so the usual lateral movement methods cannot be utilized. 
+
+Hint: Found nothing via google search but contacted Baris for some resources.
+</details>
 
