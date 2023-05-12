@@ -118,7 +118,6 @@ The Kalipso Node.js and a Web interface allows the analysts to see the profiles'
 
  https://github.com/stratosphereips/StratosphereLinuxIPS
 </details>
-StegoWiper  
 
 <details>
   <summary>StegoWiper+: A Powerful and Flexible Active Attack for Disrupting Stegomalware and Advanced Stegography</summary>
