@@ -396,7 +396,7 @@ https://github.com/vectra-ai-research/derf
 </details>
 
 <details>
-  <summary>https://github.com/FalconForceTeam/FalconHound</summary>
+  <summary>FalconHound</summary>
 For a long time, BloodHound has been the go-to tool for many red teams to uncover possible lateral movement paths in an environment. Fortunately, there are blue teams that also use it to great value. However, there are a lot of teams that struggle to use it due to lack of time or knowledge. On top of that, keeping the information in the BloodHound database up-to-date and using it for automatic detection and enrichment is often not implemented.
 
 Introducing FalconHound, a toolkit that integrates with Microsoft Sentinel, Defender for Endpoint, the Azure Graph API, Neo4j and the BloodHound API to get the most out of your data. Some of its features allow it to track sessions, changes to the environment, alerts, and incidents on your entities and much, much more. All in near-real time!
@@ -493,4 +493,11 @@ https://github.com/quarkslab/peetch
 Too many secrets (2ms) is a command line tool written in Go language and built over gitleaks. 2ms is capable of finding secrets such as login credentials, API keys, SSH keys and more hidden in code, content systems, chat applications and more.
 
 https://github.com/checkmarx/2ms
+</details>
+
+<details>
+  <summary>BlueHound</summary>
+BlueHound helps blue teams pinpoint the security issues that actually matter. By combining information about user permissions, network access and unpatched vulnerabilities, BlueHound reveals the paths attackers would take if they were inside your network
+  
+https://github.com/zeronetworks/BlueHound
 </details>
