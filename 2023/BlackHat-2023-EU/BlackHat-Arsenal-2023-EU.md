@@ -1,6 +1,6 @@
 # BlackHat Arsenal 2023 EU
 
-Links to the repositories or other stuff of the BlackHat USA EU . Sadly there was no virtual event or I've missed it so all links collected by OSINT.
+Links to the repositories or other stuff of the BlackHat EU . Sadly there was no virtual event or I've missed it so all links collected by OSINT.
 
 <details>
   <summary>AtlasReaper: Sowing Chaos and Reaping Rewards in Confluence and Jira</summary>
