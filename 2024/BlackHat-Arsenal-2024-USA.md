@@ -15,6 +15,8 @@ To this end, we propose AegiScan, a static dataflow analysis framework for iOS a
 AegiScan is featured with a combination of static analysis and graph database, which makes tasks like vulnerability scanning efficient since the binary analysis only needs to be conducted once, with the results stored in the database for multiple queries. In our experiment, the analysis on a 130MB iOS App binary can be completed in less than 20 minutes. In addition, we develop query APIs based on graph database query language to facilitate vulnerability scanning.
 
 To demonstrate the capability of AegiScan, we applied it to popular iOS Apps and critical macOS system services. It discovered various vulnerabilities, including 0-days in Apple native system services leading to local privilege escalation. This talk will also shed light on some interesting and thought-provoking vulnerabilities.
+
+Repo: https://github.com/alibaba/AegiScan
 </details>
 
 <details>
@@ -32,16 +34,22 @@ BucketLoot is an automated S3 Bucket Inspector that can simultaneously scan all 
 The end user can even search for string based keywords or provide custom regular expression patterns that can be matched with the contents of these exposed textual files. All of this makes BucketLoot a great recon tool for bug hunters as well as professional pentesters.
 
 The tool allows users to save the output in a JSON format which makes it easier to pass the results as an input to some third-party product or platform.
+
+Repo: https://github.com/redhuntlabs/BucketLoot
 </details>
 
 <details>
   <summary>DarkWidow: Customizable Dropper Tool Targeting Windows</summary>
   This is a Dropper/Post-Exploitation Tool targeting Windows machine.
+  
+ Repo: https://github.com/reveng007/DarkWidow
 </details>
 
 <details>
   <summary>Stowaway: Multi-hop Proxy Tool for pentesters</summary>
   Stowaway is a multi-level proxy tool written in the go language and designed for penetration testers and security researchers. Attackers can use Stowaway to construct their own tree network in a highly restricted intranet environment so that the attacker's external traffic can reach the core network through the layers of proxies of multiple Stowaway nodes. While breaking through network access restrictions, Stowaway can also help attackers hide their own traffic and better lurk in the intranet. In addition, attackers can also use the terminal interface and various auxiliary functions provided by Stowaway to more easily manage the entire tree network and improve the efficiency of penetration testing.
+  
+ Repo: https://github.com/ph4ntonn/Stowaway/blob/master/README_EN.md
 </details>
 
 <details>
@@ -79,6 +87,8 @@ Highlights of Blackdagger
 * Suitable for DevOps and DevSecOps
 
 * Suitable for MLOps and MLSecOps
+
+Repo: https://github.com/ErdemOzgen/blackdagger
 </details>
 
 <details>
@@ -152,6 +162,8 @@ Micro-Patching (AMP) evaluations to drastically reduce the time, cost,
 and risk of binary patching, providing intuitive and provable
 
 assurance results of a binary patch.
+
+Repo: https://github.com/static-analysis-engineering/CodeHawk-Binary
 </details>
 
 <details>
@@ -175,6 +187,8 @@ The tool offers a significant benefit to users, each check that the tool perform
 
 
 We hope to contribute to the cybersecurity community and benefit from their ideas and perceptions to make HardeningMeter a better tool that supports all Operating Systems.
+
+Repo: https://github.com/OfriOuzan/HardeningMeter
 </details>
 
 <details>
@@ -184,6 +198,8 @@ We hope to contribute to the cybersecurity community and benefit from their idea
 
 
 During this arsenal talk I will introduce and demonstrate the Serberus on devices from a simple wifi router as well as multi-serial avionics and electric vehicle systems. I will demonstrate my methodology for rapidly locating, timing and connecting to UARTs beyond just probing likely connection points on a target board.
+
+Repo: https://github.com/google/serberus
 </details>
 
 <details>
@@ -193,6 +209,8 @@ During this arsenal talk I will introduce and demonstrate the Serberus on device
 
 
 We have improved the context Sensitive strategies and PT Analysis algorithms are adapted to the Servlet and spring frameworks, which effectively improves the accuracy of analysis compared to other tools.
+
+Repo(kinda old?!?): https://github.com/psycopaths/jdoop
 </details>
 
 <details>
@@ -224,6 +242,8 @@ The key features of Wallarm's API Firewall are:
 
 
 This product is open-source and can be found on DockerHub, where it has impressively reached 1 billion downloads.
+
+Repo: https://github.com/wallarm/api-firewall
 </details>
 
 <details>
@@ -233,6 +253,8 @@ This product is open-source and can be found on DockerHub, where it has impressi
 Praeda-II leverages various implementation weaknesses and vulnerabilities found on multifunction printers (MFP) and extracts passwords such as Active directory credentials from MFP configurations including SMTP, LDAP, POP3 and SMB settings. The tool is designed to evaluate the MFP device configurations looking for certain setting that adversely impact the devices security posture. Also, the tools output logs are structured to be able to import into other tools such as Metasploit and to be easily parsable for quick identification of critical findings and reporting purposes.
 
 During the demonstration, we will introduce everyone to the tool's framework structure, and show how new test modules and device fingerprinting can be easily added. We will walk all attendees through the various features and functions of this tool and explain how to effectively leverage it during internal penetrations testing, red team operations and blue team internal environment audits. This walkthrough of the tool will include examples, such as testing to gather credentials that can be used to gain access to critical internal systems, address book recovery containing account names and email address, and MFP device misconfigurations that impact an organization security posture.
+
+Repo(only first version): https://github.com/percx/Praeda
 </details>
 
 <details>
@@ -262,24 +284,16 @@ Enterprises are moving / have moved to Cloud Model or Hybrid Model and since sec
 
 
 Inside each CSP, there are three sub-categories i.e, Enumeration, Exploitation, and Post Exploitation. OS categorises tools &amp; our custom scripts as per the above mentioned sub-categories.
+
+Repo: https://github.com/RedTeamOperations/RedCloud-OS
 </details>
 
-<details>
-  <summary>RF Hacking on the Road: Logging Tire Sensors</summary>
-  Build an SDR-based scanner to log transmissions from tire sensors!
-
-
-
-Nearly every tire on every vehicle produced the last few decades contains a digital radio with a unique signature. By scanning, receiving, and logging these Tire Pressure Monitor (TPM) sensor transmissions, you can essentially fingerprint individual tires. Such a TPM logger allows you to determine information about when and how often unique vehicles pass through a given location. You can also extract some information on the make of each vehicle and a rough estimate of its year of manufacture.
-
-
-
-In this lab, you'll learn how and when TPM sensors transmit their data and how you can capture and log their communications. You'll then put together some Python code blocks to build a simple, SDR-based logger and test it on real TPM sensors.
-</details>
 
 <details>
   <summary>Splunk Attack Range</summary>
   The Splunk Attack range is a open-source framework that provides different tools to allow security analysts to test networks, hosts, and applications against several known adversarial TTPs based on Mitre ATT&amp;CK framework. The Splunk Attack Range framework allows the security analyst to quickly and repeatedly replicate and generate data as close to "ground truth" as possible, in a format that allows the creation of detections, investigations, knowledge objects, and SOAR playbooks. The Splunk Attack Ranges contain adversarial simulation engines (Operator, Atomic Red Team), target machines, and a Splunk server receiving attack data which can be downloaded and used for free and provides operators with tools to simulate attacks and create detections and defense artifacts.
+  
+  Repo: https://github.com/splunk/attack_range
 </details>
 
 <details>
@@ -293,11 +307,15 @@ The tool has been developed to assist Red Teams during adversary simulations and
 
 
 In our demo we will present an integration for Fortra's Cobalt Strike threat emulation tool.
+
+Repo: https://github.com/y-security/stealthguardian
 </details>
 
 <details>
   <summary>BadZure: Simulating and Exploring Entra ID Attack Paths</summary>
   BadZure is an open-source PowerShell tool designed for Entra ID (previously known as Azure AD) security analysis. It automates the creation of vulnerable Entra ID tenant environments by utilizing the Microsoft Graph SDK. The tool configures users, groups, and application registrations, then introduces security misconfigurations to simulate attack paths. Aimed at security researchers and practitioners, BadZure facilitates conducting attack simulations, testing defenses, and enhancing the cybersecurity community's understanding of Entra ID attack vectors
+  
+  Repo: https://github.com/mvelazc0/BadZure
 </details>
 
 <details>
@@ -311,6 +329,8 @@ Each experiment is performed within a dedicated Docker container, ensuring the i
 
 
 BugHog has already been proven to be a valuable asset in pinpointing the lifecycle of security bugs, such as Content Security Policy bugs.
+
+Repo: https://github.com/DistriNet/BugHog
 </details>
 
 <details>
@@ -332,70 +352,22 @@ There is no need to wait for logs to be ingested, indexed, and made available fo
 It searches files in parallel for speed.
 
 This may be of use when debugging applications, or investigating a security incident.
-</details>
 
-<details>
-  <summary>HardeningMeter</summary>
-  HardeningMeter is an open-source Python tool carefully designed to comprehensively assess the security protections of binaries and systems. Its robust capabilities include thorough checks of various binary exploitation protection mechanisms, including Stack Canary, RELRO, Lazy Binding, PIE/PIC, None Exec Stack, Shadow Stack, IBT, Fortify and ASAN in binary files and ASLR, NX bit, SMEP, SMAP, PTI, IBT in the system.
-
-Many of these mitigations cannot be detected by any existing open-source solutions. For the mitigations that can - HardeningMeter provides a much higher detection precision compared to existing tools.
-
-
-
-The genesis of HardeningMeter stems from extensive research into the dynamic cat-and-mouse game between attackers and defenders when exploiting memory vulnerabilities. While certain protections are designed to thwart memory exploitation, resourceful attackers continue to find ways to circumvent these protections. HardeningMeter is a wake-up call that raises awareness of the critical need to protect against memory exploitation, monitors vulnerable binaries and systems that lack critical hardening, and promotes a broader understanding of the offensive research landscape.
-
-
-
-HardeningMeter's uniqueness lies in its precision, which is based on a deep understanding of binary and system structures, exploitation techniques, and hardening mechanisms and was built to support all Linux systems and binary file types.
-
-
-
-The tool offers a significant benefit to users, each check that the tool performs is documented in detail to allow users to dive into the inner workings of binary hardening. Users can gain a deeper understanding of the underlying concepts, explore the intricacies of binary exploitation protection mechanisms, and expand their knowledge in this important area. Moreover, users can set the output to receive tailored recommendations on which binary files require heightened attention and monitoring.
-
-
-
-We hope to contribute to the cybersecurity community and benefit from their ideas and perceptions to make HardeningMeter a better tool that supports all Operating Systems.
+Repo: https://github.com/cado-security/cloudgrep
 </details>
 
 <details>
   <summary>Nemesis</summary>
   Nemesis is an offensive data enrichment pipeline and operator support system. It ingests data from a variety of different offensive C2 frameworks and performs a number of automations and analytics on both downloaded files and different types of collected data. It aims to automate a number of repetitive tasks operators encounter on engagements, empower operators' analytic capabilities and collective knowledge, and create structured and unstructured data stores of as much operational data as possible to help guide future research and facilitate offensive data analysis.
-</details>
-
-<details>
-  <summary>SimpleRisk: Governance, Risk Management and Compliance</summary>
-  As security professionals, almost every action we take comes down to making a risk-based decision. Web application vulnerabilities, malware infections, physical vulnerabilities, and much more all boils down to some combination of the likelihood of an event happening and the impact it will have. Risk management is a relatively simple concept to grasp, but the place where many practitioners fall down is in the tool set. The lucky security professionals work for companies who can afford expensive GRC tools to aide in managing risk. The unlucky majority out there usually end up spending countless hours managing risk via spreadsheets. It's cumbersome, time consuming, and just plain sucks. After starting a Risk Management program from scratch at a $1B/year company, Josh Sokol ran into these same barriers and where budget wouldn't let him go down the GRC route, he finally decided to do something about it. SimpleRisk is a simple and free tool to perform organizational Governance, Risk Management, and Compliance activities. Based entirely on open source technologies and sporting a Mozilla Public License 2.0, a SimpleRisk instance can be stood up in minutes and instantly provides the security professional with the ability to manage control frameworks, policies, and exceptions, facilitate audits, and perform risk prioritization and mitigation activities. It is highly configurable and includes dynamic reporting and the ability to tweak risk formulas on the fly. It is under active development with new features being added all the time. SimpleRisk is Enterprise Risk Management simplified.
+  
+  Repo: https://github.com/SpecterOps/Nemesis
 </details>
 
 <details>
   <summary>Some Call Me TIM: A Novel, Lightweight Triage and Investigation Platform</summary>
   SOC anaylsts, threat hunters, and detection engineers have the same core challenge: how can I triage and/or investigate suspicious activity, at scale, while ensuring that all of the work I do goes back into the system to improve future outcomes? TIM is a novel, lightweight triage and investigation platform that enables analysts of all types - SOC, TI, etc. - to quickly pivot and curate relevant events across any kind of data source in comfortable, unintrusive interface. Powered by AGGrid, TIM gives analysts the ability to own their workflows and open up avenues to collaboration that don't exist in the market today.
-</details>
-
-<details>
-  <summary>VishLine</summary>
-  Our telephonic phishing simulation tool is a cutting-edge, web-based platform designed to empower cybersecurity teams to create, manage, and execute complex telephonic phishing campaigns without requiring coding skills. This tool uniquely combines customizable Interactive Voice Response (IVR) systems with a collaborative, real-time operational environment, enabling the rapid deployment of simulated phishing attacks to test and enhance organizational defenses. By providing a realistic simulation of various telephonic phishing techniques, our tool assists in identifying vulnerabilities, refining response strategies, and ultimately strengthening the cybersecurity posture against one of the most challenging vectors for security breaches.
-</details>
-
-<details>
-  <summary>Winbindiff: Automated Windows Patch Diffing</summary>
-  Winbindiff: Automated Windows Patch Diffing
-
-
-
-Windows is one of the most widely used operating systems in the world, and also one of the most frequently updated. Every month on Patch Tuesday, Microsoft releases feature and security updates that fix bugs and vulnerabilities in Windows binaries. However, these updates often lack detailed information about the nature and severity of the vulnerabilities, leaving security researchers and system administrators in the dark about the risks and implications of the patches. 
-
-
-
-Enter Winbindiff, a unique command-line tool designed to shine light on the obscured changes in Windows binaries post-update via automated patch diffing. Patch diffing is a technique that compares the patched and unpatched versions of binaries to reveal what was really fixed for a security update. Winbindiff harnesses the power of Winbindex, a web service that provides an index of Windows binaries, and Ghidriff, a Ghidra fueled Python Diffing Engine to automate the patch diffing process.
-
-
-
-Winbindiff can automatically find, download, and compare the binaries for a Windows release build. By automating this process, Winbindiff empowers security professionals to swiftly identify, download, and dissect any Windows update. The result? A comprehensive markdown report detailing the diffing outcomes that we like to call a binary biography or "binography". These "binographies" tell the story of a binary over time and reveal critical security changes for an update. 
-
-
-
-Our presentation will introduce Winbindiff and its pivotal role in demystifying Windows updates. Attendees will witness firsthand how this tool can streamline their security analysis, providing a deeper understanding of each update's impact. Join us to explore how Winbindiff is revolutionizing patch diffing and transforming the way we perceive and react to Windows security updates.
+  
+  Repo: https://github.com/microsoft/tim-data-investigate-platform
 </details>
 
 <details>
@@ -413,21 +385,29 @@ In this workshop, we will harness Falco's capabilities for runtime detection wit
 
 
 We invite you to join us on this journey, where we will generate security events, detect them with Falco and automatically remediate them in real time with Event-Driven Ansible.
+
+Repo: https://github.com/falcosecurity/falco/blob/master/README.md
 </details>
 
 <details>
   <summary>Apeman: The AWS Policy Evaluation Manager</summary>
   Apeman is a tool designed to simplify the understanding of permissions and potential attack paths within an AWS (Amazon Web Services) environment for both attackers and defenders. AWS's permission model is inherently complex, featuring a detailed policy evaluation system, fine-grained policies, potentially conflicting statements, and various conditions. This complexity can make it challenging to manually determine which principals (users, roles, etc.) have permissions to perform certain actions, leading to a process that is not only tedious but also prone to errors. Apeman addresses this issue by modeling the AWS permission structure within a graph database. This approach enables it to provide an intuitive interface for users to navigate and obtain clear, precise answers about which principals can execute specific actions within the AWS environment. Essentially, it translates the intricate web of AWS permissions into a more understandable and visually navigable format. Furthermore, Apeman offers the capability to dynamically categorize principals into different tiers based on their permissions. Specifically, it can identify which principals or groups of principals are considered "Tier 0." This categorization is crucial because it highlights the principals with the most significant level of access or potential impact, thereby giving users a clearer understanding of the security posture of their AWS environment. By identifying these high-risk entities, Apeman can help identify which access points are the most crucial for securing or attacking an AWS environment.
+  
+  Repo: https://github.com/hotnops/apeman
 </details>
 
 <details>
   <summary>APIDetector: Advanced Swagger Endpoint Detection and Vulnerability Analysis</summary>
   APIDetector is a specialized tool crafted to identify and analyze exposed Swagger documentation endpoints across a multitude of web domains and subdomains efficiently. It stands out for its capability to scan over both HTTP and HTTPS protocols while leveraging multi-threading to enhance the speed of security assessments. Designed with a user-friendly interface, it supports various input and output configurations, making it versatile for different security testing scenarios. APIDetector is particularly adept at minimizing false positives, a common challenge in automated scanning tools, thanks to its intelligent detection algorithms. This tool is indispensable for security professionals and developers focused on API security and vulnerability management. It simplifies the process of identifying potentially risky Swagger endpoints that could expose sensitive API details to unauthorized users, thereby bolstering an organization's cybersecurity posture. The tool's effectiveness in real-world scenarios has been validated by its growing user base and positive feedback within the cybersecurity community.
+  
+  Repo: https://github.com/brinhosa/apidetector
 </details>
 
 <details>
   <summary>Enhance Your Linux DFIR with MasterParser</summary>
   MasterParser stands as a robust Digital Forensics and Incident Response tool meticulously crafted for the analysis of Linux logs within the var/log directory. Specifically designed to expedite the investigative process for security incidents on Linux systems, MasterParser adeptly scans supported logs, such as auth.log for example, extract critical details including SSH logins, user creations, event names, IP addresses and much more. The tool's generated summary presents this information in a clear and concise format, enhancing efficiency and accessibility for Incident Responders. Beyond its immediate utility for DFIR teams, MasterParser proves invaluable to the broader InfoSec and IT community, contributing significantly to the swift and comprehensive assessment of security events on Linux platforms.
+  
+  Repo: https://github.com/securityjoes/MasterParser
 </details>
 
 <details>
@@ -449,6 +429,8 @@ Key Features of PyRIT include:
 4.	Prompt Converters: Probe the GenAI endpoint with a variety of converted prompts (Ex., Base64, ASCII).
 
 5.	Memory: Utilizes DuckDB for efficient and scalable storage of conversational data, facilitating the storage and retrieval of chat histories, as well as supporting analytics and reporting.
+
+Repo: https://github.com/Azure/PyRIT
 </details>
 
 <details>
@@ -474,15 +456,8 @@ Equally important, powerpwn V2 leverages the growing adoption of AI in business 
 
 
 All features are fully operational with the default Office 365 and Azure AD configuration.
-</details>
 
-<details>
-  <summary>Opening the Door: API Key Permission Enumeration</summary>
-  You're a bug bounty hunter and find a live API key - how do you demonstrate the impact of that key leaking? You're an IT administrator and find a hardcoded secret in a PowerShell script - how do you identify the permissions that key holds? Most SaaS providers make it difficult to enumerate the access granted to a particular credential.
-
-
-
-In this talk, we're open-sourcing a new tool to enumerate the permissions and access associated with a leaked credential, without requiring access to the provider's UI. We'll walk through the meticulous steps we took to accurately assess each SaaS providers' scopes, as well as share the logic behind how we enumerate permissions, including string analysis, brute forcing and more.
+Repo: https://github.com/mbrg/power-pwn
 </details>
 
 <details>
@@ -492,11 +467,15 @@ In this talk, we're open-sourcing a new tool to enumerate the permissions and ac
 
 
 Several recently added features will be demonstrated, including functionality for helping visualize the contents of a file system and the relationships between files. The initial results from integrating new methods to identify the package that files (compiled binaries or scripts) belong to will also be discussed.
+
+Repo: https://github.com/LLNL/Surfactant
 </details>
 
 <details>
   <summary>ThePhish: an automated phishing email analysis tool</summary>
   ThePhish is an automated phishing email analysis tool based on TheHive, Cortex and MISP. It is a web application written in Python 3 and based on Flask that automates the entire analysis process starting from the extraction of the observables from the header and the body of an email to the elaboration of a verdict which is final in most cases. In addition, it allows the analyst to intervene in the analysis process and obtain further details on the email being analyzed if necessary. In order to interact with TheHive and Cortex, it uses TheHive4py and Cortex4py, which are the Python API clients that allow using the REST APIs made available by TheHive and Cortex respectively.
+  
+  Repo: https://github.com/emalderson/ThePhish
 </details>
 
 <details>
@@ -522,6 +501,8 @@ Reconstitute Structures and C++ Classes?  let's not get crazy!
 
 
 Come and see....
+
+Repo: https://github.com/atlas0fd00m/VivisectION
 </details>
 
 <details>
@@ -531,6 +512,8 @@ Come and see....
 
 
 This presentation will show ADOKit, a toolkit that can be used to attack Azure DevOps Services. ADOKit allows the user to specify an attack module, along with specifying valid credentials (API key or stolen authentication cookie) for the respective Azure DevOps Services instance. The attack modules supported include reconnaissance, privilege escalation and persistence. ADOKit was built in a modular approach, so that new modules can be added in the future by the information security community. As part of this presentation, new modules will be publicly released.
+
+Repo: https://github.com/xforcered/ADOKit
 </details>
 
 <details>
@@ -556,11 +539,15 @@ Key Features:
 * Practical Value: Empowers red and blue teams to identify and fix critical vulnerabilities before attackers can exploit them.
 
 * Attack Vector Focus: Zeroes in on GitHub Actions as a key infiltration point, often serving as an initial access point for wider breaches.
+
+Repo: https://github.com/praetorian-inc/gato
 </details>
 
 <details>
   <summary>Moriarty</summary>
   Moriarty is a.NET tool designed to identify vulnerabilities for privilege escalation in Windows environments. Building upon Watson and Sherlock, Moriarty extends their capabilities by incorporating advanced scanning techniques for newer vulnerabilities and integrating additional checks. This tool supports a wide range of Windows versions, from Windows 10 to Windows 11, and Server versions 2016, 2019, and 2022. Moriarty differentiates itself by its ability to enumerate missing KBs and detect various vulnerabilities linked to privilege escalation, offering suggestions for potential exploits. The tool's extensive database includes well-known vulnerabilities such as PrintNightmare (CVE-2021-1675), Log4Shell (CVE-2021-44228), and SMBGhost (CVE-2020-0796), among others.
+  
+  Repo: https://github.com/BC-SECURITY/Moriarty
 </details>
 
 <details>
@@ -570,6 +557,8 @@ Key Features:
 
 
 On the 10th anniversary of its introduction (April 30, 2024) Stamus Networks announced SELKS 10 - which introduced powerful new threat hunting capabilities which will be demonstrated during this session.
+
+Repo: https://github.com/StamusNetworks/SELKS
 </details>
 
 <details>
@@ -583,6 +572,8 @@ New for Black Hat 2024 is the addition of a Rust implant. This new implant match
 
 
 At Black Hat Arsenal 2024, the design and architecture of NimPlant and the new Rust implant will be discussed. Offensive specialists will be provided with guidance and "pro tips" from the author on how to use the tool in offensive operations, while defensive specialists will be provided with guidance on how to identify and block this tool (and similar) in their network.
+
+Repo: https://github.com/chvancooten/NimPlant
 </details>
 
 <details>
@@ -608,16 +599,22 @@ ROP ROCKET is built for performance, as it utilizes multiprocessing, allowing a 
 
 
 For Black Hat Arsenal, we will be releasing new patterns for automatic ROP chain generation. While ROP can be a complex topic, ROP ROCKET provides powerful capabilities to users.
+
+Repo: https://github.com/Bw3ll/ROP_ROCKET
 </details>
 
 <details>
   <summary>SCCMHunter</summary>
   SCCMHunter is a post exploitation framework written in Python designed to streamline identifying, profiling, and attacking SCCM infrastructure and assets in an Active Directory environment. The tool supports attack path identification and abuse for all currently known tradecraft published in Misconfiguration Manager.
+  
+  Repo: https://github.com/garrettfoster13/sccmhunter
 </details>
 
 <details>
   <summary>Snapback: Wicked Fast HTTP(S) Screenshots with Automated Password Guessing</summary>
   Web applications with weak or default passwords are a common easy win for penetration testers. Frequently, network appliances expose a web application for device management that IT staff are not aware of, and therefore never lock down. The only problem for penetration testers is the time it takes to sift through hundreds or even thousands of web interfaces to find ones with weak credentials. This process is usually performed by first taking screenshots of each web service, and then manually searching for the default credentials for each one and manually attempting each credential pair. To greatly speed up the process, Snapback was designed to automatically fingerprint and brute force passwords while taking each screenshot. All of the fingerprinting and brute forcing code is modular, allowing easy extension for newly identified services.
+  
+  Repo: https://github.com/fkasler/snapback
 </details>
 
 <details>
@@ -635,16 +632,8 @@ vArmor supports the combination of multiple enforcers for Linux container protec
 
 
 With vArmor, securing your cloud-native applications is as straightforward as it gets. Say goodbye to complex security setups and hello to enhanced protection without compromising performance.
-</details>
 
-<details>
-  <summary>Reversing Wipers: digital damage for battlefield advantage</summary>
-  Starting in 2022, the world saw an uptick in the popularity of wipers, especially related to the Russo-Ukranian conflict, as well as some new wipers with the rising tension in the Middle East. In this lab, you get to try your hand at picking them apart in detail. If you are curious as to what the headline-making malware looks like internally, if you're interested in reverse engineering or malware analysis, or if you simply want to have a look into the life of a malware analyst's work, then this is a lab for you! With the help of Ghidra (NSA's software reverse engineering suite of tools), you will dive head first into real samples, to find and unravel the secrets the wipers contain. Novice and aspiring analysts, as well as experienced analysts, are welcome to join this lab.
-</details>
-
-<details>
-  <summary>Advancing Drone Radiofrequency Warfare: Innovations and Countermeasures</summary>
-  The proliferation of consumer drones presents a new frontier in security threats, with radiofrequency (RF) warfare emerging as a potent vector. This paper explores the risks posed by RF manipulation in consumer drones and unveils innovative countermeasures. Leveraging the MT7628 chipset, a cost-effective solution is devised to manipulate RF signals for drone control. This presentation demonstrates the feasibility of generating carriers through I2S pins, enabling Amplitude Shift Keying (ASK) modulation. By integrating frequency hopping techniques, the system achieves enhanced evasion against anti-drone measures. Receiver capabilities are bolstered using USB SDR dongles, ensuring robust communication in dynamic environments. Amplification and PCB enhancements optimize transmission efficiency while complying with regulatory standards. Limitations regarding processing speed and regulatory compliance are acknowledged, emphasizing the need for responsible deployment. Live demonstrations underscore the efficacy of the proposed system, showcasing its adaptability and resilience. Furthermore, avenues for future enhancements, including phase modulation for spread spectrum, are discussed, promising further evolution in drone RF warfare defense.
+Repo: https://github.com/bytedance/vArmor
 </details>
 
 <details>
@@ -654,6 +643,9 @@ With vArmor, securing your cloud-native applications is as straightforward as it
 While there are many tools available to assist or automate penetration testing, mastering them requires knowledge of numerous commands and techniques, making it challenging for beginners to learn and carry out penetration testing. Furthermore, when conducting penetration tests in a team, each member tends to work independently, which can lead to duplication of work and lack of visibility of progress for managers and beginners.
 
 Therefore, we developed Echidna, which visualizes and shares the terminal console of penetration testers, and recommends the next command based on each situation. Echidna allows us to attack machines with just clicks, making it possible even for students and beginners to learn attack methods.
+
+Repo: https://echidna-pentest.github.io/Echidna/
+https://github.com/Echidna-Pentest/Echidna/
 </details>
 
 <details>
@@ -669,6 +661,9 @@ We've developed a tool to detect phishing using these generative AI technologies
 
 
 Introducing LooksPhishy, currently deployed in production. This tool offers complete customization, enabling the choice of target brands for detection, the option to focus on either logos or the full webpage, and the selection of the most suitable embedding model and LLM. It also gives a description of phishing type (E.g Fake finance website, Mimic login page of Microsoft, Fake shopping website..).  It comes equipped with numerous examples for educational purposes and integrates seamlessly into any stack!
+
+Repo(GenAI DEPRECATED): https://github.com/aiplanethub/genai-stack?tab=readme-ov-file
+Repo : https://github.com/aiplanethub/beyondllm
 </details>
 
 <details>
@@ -690,6 +685,8 @@ At last, is this workshop we will also demonstrate two way of using KubeHound:
 
 
 The main goal of this workshop is to show how defenders can find and eliminate the most dangerous attack paths and how attackers can have a treasure map to fully compromise a Kubernetes cluster by using the free and open source version of KubeHound.
+
+Repo: https://github.com/DataDog/KubeHound
 </details>
 
 <details>
@@ -711,87 +708,10 @@ To combat fileless attacks, Falco has also added memfd-based fileless execution 
 
 
 We will walk you through real-world scenarios based on recent threats and malware, demoing how Falco can help detect and respond to these malicious behaviors and comparing both drift and fileless attack paths.
+
+Repo: https://github.com/falcosecurity/falco/blob/master/README.md
 </details>
 
-<details>
-  <summary>Network Monitoring Tools for macOS</summary>
-  As the majority of malware contains networking capabilities, it is well understood that detecting unauthorized network access is a powerful detection heuristic. However, while the concepts of network traffic analysis and monitoring to detect malicious code are well established and widely implemented on platforms such as Windows, there remains a dearth of such capabilities on macOS.
-
-
-
-Here, we will present various tools capable of enumerating network state, statistics, and traffic, directly on a macOS host. We will showcase open-source tools that leverage low-level APIs, private frameworks, and user-mode extensions that provide insight into all networking activity on macOS:
-
-
-
-Specifically we'll demonstrate:
-
-
-
-* A network monitor that allows one to explore all network sockets and connections, either via an interactive UI, or from the commandline.
-
-
-
-* A DNS monitor that uses Apple's Network Extension Framework to monitors DNS requests and responses directly from the Terminal.
-
-
-
-* A firewall that monitors and filters all network traffic, giving users with the ability to block unknown/unauthorized outgoing connections.
-</details>
-
-<details>
-  <summary>TrafficWardenX: OpenWRT Security & Monitoring</summary>
-  TrafficWardenX is a comprehensive open-source tool tailored for enhancing the security and monitoring capabilities of OpenWRT-enabled networks. With a focus on intuitive analytics and user engagement, TrafficWardenX delivers essential insights and control for maintaining robust network health.
-</details>
-
-<details>
-  <summary>Active Directory Cyber Deception using Huginn</summary>
-  Huginn helps realise strategic adversary deception concepts from the MITRE Engage framework and the European Central Bank's cyber resilience report using novel techniques and an open-source program.
-
-
-
-We demonstrate creation and monitoring of the following decoy assets during this presentation:
-
--	Certificate Templates (ESC4 &amp; ESC1)
-
--	Computer Object Take-over via RBCD
-
--	Decoy Users
-
--	Decoy Object ACLs
-
--	Retrieve GMSA Passwords
-
-
-
-Our objectives are to:
-
-- Reduce the security posture requirements for engaging in cyber deception.
-
-- Balance the intrinsic asymmetry of cyber-attacks by raising high-fidelity alerts around advanced attacker activity.
-
-- Impose cost by embedding high-value deception artefacts within critical attack paths.
-</details>
-
-<details>
-  <summary>AI.PassYou - Password dictionary generator using social network information and chatGPT to generate personal keywords.</summary>
-  The tool allows you to generate a dictionary of passwords based on data extracted from your social networks, including personalized information about hobbies, geographic location or language.
-
-
-
-The process is divided into three points:
-
-
-
-* Extraction of information from social networks
-
-* Use of AI to find keywords inferred from this public information.
-
-* Rule-based dictionary generation process
-
-
-
-This process allows the generation of customized dictionaries that greatly increase the effectiveness over traditional password dictionaries.
-</details>
 
 <details>
   <summary>DOLOS-T (Deceptive Operations: Lure, Observe, and Secure Tool)</summary>
@@ -849,6 +769,8 @@ Our security tool enables the collection of personal information through Open So
 
 
 We believe that by making this tool openly available, we can help organizations proactively identify and mitigate the risk associated with leaked employee credentials, ultimately contributing to a more secure digital ecosystem for everyone.
+
+Repo: https://github.com/Base4Security/DOLOS-T
 </details>
 
 <details>
@@ -882,19 +804,8 @@ With GUAC, users can establish connections and compliance in their software cata
 
 
 GUAC provides seamless visibility across an organization's software ecosystem, easily integrating with existing tools.
-</details>
 
-<details>
-  <summary>Information-based Heavy Hitters for Real-time DNS Exfiltration Detection</summary>
-  DNS exfiltration is a method used by attackers to covertly steal sensitive data from a target network, such as credit card details from point-of-sale machines or passwords and credentials from compromised hosts, by abusing the DNS protocol. In a typical DNS exfiltration attack, a host within the target network is first compromised by a threat actor's malware. Once inside, the malware manipulates the system to send DNS queries containing the stolen data to a DNS authoritative nameserver controlled by the attacker. This is done by encoding the data within the DNS queries. Moreover, bidirectional communication channels can be established by utilizing the DNS response to send instructions to the infected host, which can be used for command-and-control (C&amp;C) purposes.
-
-
-
-The Information-based Heavy Hitter (ibHH) method is a novel approach developed to facilitate real-time detection of DNS exfiltration attacks, enabling swift mitigation before substantial data exfiltration occurs. ibHH has been designed to run directly on recursive DNS resolvers, performing inline detection of DNS exfiltration domains without impacting the resolver's DNS resolution performance. To achieve this, ibHH leverages sketching algorithms such as HyperLogLog and weighted sampling techniques commonly utilized in the realm of big data analysis. ibHH estimates the amount of information potentially transmitted to registered domains and raise alerts for domains suspected of being used for data exfiltration, allowing for prompt blocking of malicious domains. A comprehensive evaluation of the method on large-scale real-world data, consisting of over 250 billion DNS queries from real enterprise networks, shows that it can successfully detect DNS exfiltration domains while experiencing a small number of false positive alerts. 
-
-
-
-This tool demonstrates the ibHH algorithm's capabilities to detect realistic DNS exfiltration attacks in real-time
+Repo: https://github.com/guacsec/guac
 </details>
 
 <details>
@@ -918,11 +829,15 @@ Currently covers:
 
 
 Ever since I pushed the last update, the tool has changed drastically. Now you will get a teamserver based tool, with a client and server split, authentication to access the tool, user management and a MongoDB database to save the results into.
+
+Repo: https://github.com/gl4ssesbo1/Nebula
 </details>
 
 <details>
   <summary>OSINT-Collector</summary>
   This project proposes an advanced framework for integrating and unifying the management of OSINT data. Our primary objective is to develop an intuitive user interface that streamlines the collection, organization, and analysis of these data. Moreover, our tool will leverage cutting-edge algorithms and methodologies to enhance the filtering, analysis, and correlation of collected data. Specifically, our focus lies in the development of sophisticated techniques for extracting valuable insights, making informed inferences, and uncovering hidden relationships. Central to our approach is the integration of Knowledge Graphs (KGs), Ontologies, and Natural Language Processing (NLP) techniques. Knowledge Graphs offer a structured representation of information, encapsulating entities, relationships, and their interconnectedness in a semantic graph format. Complementing this, NLP techniques empower the extraction of meaningful insights from unstructured textual data, including social media posts, news articles, and forum discussions. Additionally, ontologies play a pivotal role in imbuing unstructured data with semantic meaning, thereby contextualizing them within the pertinent domain. Through the seamless integration of these cutting-edge methodologies, our framework aims to empower users of all technical proficiencies to extract invaluable information from the vast expanse of OSINT data. Specifically, our tool facilitates OSINT investigations and aids in the identification of individuals potentially linked to criminal or terrorist activities. Through its robust capabilities, our framework stands as a powerful ally in the quest for actionable intelligence and informed decision-making.
+  
+  Repo: https://github.com/JanoutV/osint-collector
 </details>
 
 <details>
@@ -944,6 +859,8 @@ Now, events generated by Tracee can be analyzed interactively using Wireshark's 
 
 
 The combination of Tracee's wide use in the security industry and its advanced system tracing and forensic capabilities, together with Wireshark's universal popularity in the entire IT industry, its maturity and ease of use, opens up a whole new world of capabilities for dynamic malware analysis, forensics, kernel hacking and more.
+
+Repo: https://github.com/aquasecurity/traceeshark
 </details>
 
 <details>
@@ -957,6 +874,8 @@ Since the beginning of 2023, we scanned almost 500 thousand domains and subdomai
 
 
 During the presentation, I'll describe the way Artemis works, what we are looking for, and most significantly - lessons we've learned during our large-scale scanning project. Since the tool is open-source, I'll touch upon how to set up your own scanning pipeline and implement new modules.
+
+Repo: https://github.com/CERT-Polska/Artemis
 </details>
 
 <details>
@@ -975,57 +894,14 @@ During the presentation, I'll describe the way Artemis works, what we are lookin
 
 5. Continuous Threat Simulation: COBRA offers a modular and templatized approach for users to easily integrate additional modules, allowing for continuous threat simulation and adaptability, by providing a flexible framework for adding modules, COBRA ensures that users can tailor their threat simulation capabilities according to evolving security needs.
 
-</details>
-
-<details>
-  <summary>CyberChef-like Automation within BurpSuite - Let's get cooking with CSTC</summary>
-  Imagine GCHQ's CyberChef integrated in BurpSuite with live modification of requests at your fingertips. That's exactly what we had in mind when we built the Cyber Security Transformation Chef (CSTC) a few years ago. The CSTC is an extension to the popular BurpSuite Proxy built for experts working with web applications. It enables users to define recipes that are applied to outgoing or incoming HTTP requests/ responses automatically. Whatever quirks and specialties an application might challenge you with during an assessment, the CSTC has you covered. Furthermore, it allows to quickly apply custom formatting to a chosen message, if a more detailed analysis is needed.
-
-
-
-As an example, imagine an API that requires an HMAC appended to all messages derived from datapoints inside the message body. With the CSTC you can extract the necessary datapoints with ease and calculate the HMAC on the fly. Together with the CSTCs integration into all major BurpSuite components you can now perform automatic intrusion tests with the Scanner, or manual fuzzing using Intruder and Repeater, without worrying about the HMAC any longer. Another use case is to extract JWTs from incoming HTTP responses and use them in outgoing requests of the Scanner. This eliminates the need to worry about expiring JWTs while scanning.
-
-
-
-After a few years of silence since the initial release at BlackHat 2020, the CSTC is finally back! It contains new features and improvements  such as many new operations to be used in recipes, inclusion of community requested features and a refactoring of the codebase. Alongside the CTSC we will launch a new public repository with recipes we found useful in our experience as penetration testers and of course open for contribution by the community. This helps the community to solve common challenges  and getting started working with the CSTC.
+Repo: https://github.com/PaloAltoNetworks/cobra-tool
 </details>
 
 <details>
   <summary>Damn Vulnerable UEFI (DVUEFI): An Exploitation Toolkit and Learning Platform for Unveiling and Fixing UEFI Firmware Vulnerabilities</summary>
   Inspired by projects such as Damn Vulnerable Web Application and OWASP's Damn Vulnerable Web Sockets, Damn Vulnerable UEFI (DVUEFI) is designed to help guide ethical hackers, security researchers, and firmware enthusiasts in getting started with UEFI firmware security, by facilitating the exploration of vulnerabilities by example. The DVUEFI project is engineered to simulate real-world firmware attacks, offering an environment for practicing and refining exploitation techniques. DVUEFI is accompanied by a robust, continuously evolving catalog of documented UEFI vulnerabilities. Each entry is detailed with exploitation methods, potential impacts, and strategic mitigation recommendations, serving as both a learning tool and a reference for security practitioners.
-</details>
-
-<details>
-  <summary>Graph for Understanding Artifact Composition (GUAC)</summary>
-  Graph for Understanding Artifact Composition (GUAC) is an open-source dependency management and security tool that looks across all first-party, third-party, and open-source software, aggregating the software security metadata into a high-fidelity graph database to locate, store, analyze, and correlate software artifact data.
-
-
-
-The frequency of software attacks and increased use of open-source tooling have created a significant lack of confidence in the integrity and security of the software supply chain. Securing it can be a real headache when dealing with hundreds of pieces of software each with its own hundreds of dependencies and new vulnerabilities being discovered each day. GUAC responds by being the source of truth. GUAC can provide developers and security teams with a shared understanding of software knowledge gaps, compliance, and threat detection. It also is an effective tool for managing third-party risk and incident response.
-
-
-
-With GUAC, users can establish connections and compliance in their software catalog, unveil gaps in software supply chain data, and enable threat detection and response. The tool ingests and analyzes software supply chain metadata from a myriad of internal and external sources and multiple common metadata document types, including: 
-
-
-
-     -  Software Bill of Materials (SBOMs) in both SPDX and CycloneDX formats and transforming them into data nodes and relationships, 
-
-        providing insights into software and dependencies
-
-     -  Ingesting and transforming SLSA and in-toto attestations into their constituent facts, offering crucial information about the provenance 
-
-        and integrity of software components
-
-     -  Being flexible and extensible to ingest data from local file systems, AWS S3, Google Cloud, OCI registries, and external package 
-
-        repositories
-
-     -  Embracing additional metadata and threat information from sources like the deps.dev and OSV APIs
-
-
-
-GUAC provides seamless visibility across an organization's software ecosystem, easily integrating with existing tools.
+  
+  Repo: https://github.com/hacking-support/DVUEFI
 </details>
 
 <details>
@@ -1042,6 +918,8 @@ During this presentation, I will provide an in-depth exploration of GraphRunner'
   <p>Many organizations today leverage data lakes for organizing security data, from alerts to raw logs and telemetry. While a lot of open-source data lake technology is available like Delta Lake, OpenSearch, and Apache Iceberg, little has been explored in the open source community on how to ease threat discovery using the data. With the establishment of open schema standards like OCSF and OpenTelemetry, we are one step closer to the answer. And this summer, the Kestrel team will release Kestrel 2, which enables security professionals to hunt and investigate on top of one or multiple data lakes with native OCSF, OpenTelemetry, and STIX descriptions in huntflows.
 
 In this session, we will debut Kestrel 2 with an example huntbook and its compiled queries side by side to give the audience an impression of what Kestrel is and what its compiler does. Next we will kick off the fun part---a blue team hunting lab. We will walk through and execute a few simple-to-advanced Kestrel hunts against multi-stage attack campaigns, which the audience can try in their copy of the lab. We will start from hunting simple MITRE techniques using logs from one source, e.g., EDR, move to hunting advanced MITRE techniques by connecting logs from multiple sources. Then, we will dive into a multi-tactic hunt using on-premise logs of an enterprise stored at one data lake and cloud application logs stored at another. We will follow attacker's lateral movement from one data lake to the other in a Kestrel hunt to reveal the entire threat and give insights on response development.</p><p><span>The lab is available in a cloud sandbox (free service by MyBinder) or running on your laptop: https://github.com/opencybersecurityalliance/black-hat-us-2024</span></p>
+
+Repo: https://github.com/dafthack/GraphRunner
 </details>
 
 <details>
@@ -1051,6 +929,8 @@ In this session, we will debut Kestrel 2 with an example huntbook and its compil
 
 
 PinguCrew runs the tests on the user's own machines, giving them full control over the fuzzing process. This allows for more customization and flexibility, as users can set up their own testing environments with their desired configurations and testing parameters.
+
+Repo: https://github.com/IOActive/PinguCrew
 </details>
 
 <details>
@@ -1076,52 +956,8 @@ The ease and simplicity of SHAREM is breathtaking, especially comparison to how 
 
 
 For reverse engineers of all kinds, SHAREM is a must-see presentation.
-</details>
 
-<details>
-  <summary>The Metasploit Framework</summary>
-  The Metasploit Framework released version 6.4 earlier this year, including multiple improvements to Kerberos-related attack workflows. The latest changes added support forging diamond and sapphire tickets, as well as dumping tickets from compromised hosts. Metasploit users can now exploit unconstrained delegation in Active Directory environments for privilege escalation as well as use pass-the-ticket authentication for the Windows secrets dump module. These new Kerberos improvements increase the ways in which tickets can be forged, gathered as well as used.
-
-
-
-Additionally, Metasploit has added support for new protocol based sessions, allowing users to interact with targets without uploading payloads, thus increasing their evasive capabilities. These new sessions can be established to database, SMB and LDAP servers. Once opened, they enable users to interact and run post modules with them, all without running a payload on the remote host.
-
-
-
-Finally, version 6.4 includes a complete overhaul of how Metasploit handles its own DNS queries. These improvements ensure that users pivoting their traffic over compromised hosts are not leaking their queries and offer a high degree of control over how queries should be resolved.
-
-
-
-This Arsenal demonstration will cover these latest improvements and show how the changes can be combined for new, streamlined attack workflows using the latest Metasploit release.
-</details>
-
-<details>
-  <summary>Active Directory Cyber Deception using Huginn</summary>
-  Huginn helps realise strategic adversary deception concepts from the MITRE Engage framework and the European Central Bank's cyber resilience report using novel techniques and an open-source program.
-
-
-
-We demonstrate creation and monitoring of the following decoy assets during this presentation:
-
--	Certificate Templates (ESC4 &amp; ESC1)
-
--	Computer Object Take-over via RBCD
-
--	Decoy Users
-
--	Decoy Object ACLs
-
--	Retrieve GMSA Passwords
-
-
-
-Our objectives are to:
-
-- Reduce the security posture requirements for engaging in cyber deception.
-
-- Balance the intrinsic asymmetry of cyber-attacks by raising high-fidelity alerts around advanced attacker activity.
-
-- Impose cost by embedding high-value deception artefacts within critical attack paths.
+Repo: https://github.com/Bw3ll/sharem
 </details>
 
 <details>
@@ -1133,6 +969,8 @@ Our objectives are to:
 We're excited to introduce you to FalconHound, a toolkit designed to augment BloodHound's capabilities. Discover how FalconHound integrates with a host of security tools, offering features like tracking sessions, environment changes, alerts, and incidents - all in near-real time!
 
 Embrace the power of bi-directional contextual information to prioritize critical alerts better and stop attackers in their tracks before they reach their goal. Learn how tools like BloodHound and FalconHound can serve as extensions of your live monitoring capabilities, helping you catch attackers in real-time and limit the impact of breaches. One of the coolest features is the ability to track active lateral movement, which allows the possibility to stop an attacker in their tracks.
+
+Repo: https://github.com/FalconForceTeam/FalconHound
 </details>
 
 <details>
@@ -1143,89 +981,21 @@ Antivirus (AV) solutions, serving as the last line of defense on users' endpoint
 
 Our study aims to bridge the gap in empirical research on the performance of up-to-date antivirus solutions against evasion frameworks and methods in the latest Windows environment with all defense features enabled. As a by-product of this study, I developed a custom evasion framework named BOAZ, which served as an additional and flexible AV evaluation tool. This framework is complemented by a comprehensive suite of 17 evasion tools, evaluated against 71 online AV engines and 14 carefully selected desktop AV solutions. The experiment results revealed significant insights: the successful compromise of contemporary AVs can be achieved by understanding the building blocks of evasion detections and strategically combining existing evasion methods, without requiring advanced programming skills or zero-day exploits. Moreover, the study revealed the iterative relationship between signature and behavioral detections across detection phases.
 
-</details>
-
-<details>
-  <summary>CodeHawk Binary Patcher: High Assurance Binary Patching Without a Reverse Engineer</summary>
-  The CodeHawk Binary Patcher (CBP) project is a partnership between MIT
-
-CSAIL and Aarno Labs with the goal of democratizing binary
-
-patching. The project focuses on 1) drastically reducing the time to
-
-understand and patch stripped binaries, and 2) providing provable
-
-assurance results that demonstrate whether a patch has been correctly
-
-applied to fix a vulnerability or bug while maintaining correct
-
-behaviors.
-
-
-
-The process begins with an abstract interpretation based analysis on
-
-the binary that extracts facts about the binary at each
-
-instruction. The analysis is scalable, having been demonstrated to
-
-successfully analyze huge binaries (e.g., the Linux Kernel). CBP
-
-produces an editable lifting of the binary represented in the C
-
-programming language. An operator without reverse engineering
-
-experience will then directly edit the C code representation, and CBP
-
-can enact those changes on the binary using the provenance information
-
-produced along with the lifting, without recompiling the binary.
-
-
-
-After a patch has been produced, CBP runs a suite of checkable
-
-relational analyses that provide information about how the patched
-
-binary differs from the original, enabling an operator to quickly
-
-decide if the patch is correct. Furthermore, CBP provides checkable
-
-proofs as evidence that its transformations are correct, and for
-
-certain important types of memory vulnerabilities, can prove that a
-
-patch fixes the vulnerability. This entire workflow is available as in
-
-a GUI plugin to the Binary Ninja platform.
-
-
-
-CBP is built on top of CodeHawk's open-source binary analysis,
-
-developed over the past 10 years through DARPA and IARPA funding
-
-(STONESOUP, MUSE, HACCS, STAC, and AMP).
-
-
-
-CBP has been independently demonstrated in the DARPA's Assured
-
-Micro-Patching (AMP) evaluations to drastically reduce the time, cost,
-
-and risk of binary patching, providing intuitive and provable
-
-assurance results of a binary patch.
+Repo: https://github.com/thomasxm/BOAZ
 </details>
 
 <details>
   <summary>CVE Half-Day Watcher: Hunting Down Vulnerabilities Before the Patch Drops</summary>
   Defenders and attackers often simplify vulnerabilities into '0-day' or '1-day' categories, neglecting the nuanced gray areas where attackers thrive. In this session, we'll explore critical flaws we've uncovered in the open-source vulnerability disclosure process and introduce our tool to detect open-source projects that are at risk from these flaws. We'll reveal how vulnerabilities can be exploited prior to receiving patches and official announcements, posing significant risks for users. Our comprehensive analysis of GitHub (including issues, pull requests, and commit messages) and NVD metadata will illuminate vulnerabilities that don't neatly fit into the conventional '0-day' or '1-day' classifications but instead fall into 'Half-Day' or '0.75-Day' periods – moments when vulnerabilities are known but not yet fully disclosed or patched. Furthermore, we'll spotlight the techniques employed to identify these vulnerabilities, showcasing various scenarios and vulnerabilities discovered through this method. During this session, we'll introduce an open-source tool designed to detect such vulnerabilities and emphasize the window of opportunity for attackers to exploit this information and develop exploits. Our objective is to aid practitioners in identifying and mitigating issues throughout their vulnerability disclosure lifecycle.
+  
+  Repo: https://github.com/Aqua-Nautilus/CVE-Half-Day-Watcher
 </details>
 
 <details>
   <summary>Octopii v2</summary>
   Octopii is a Personally Identifiable Information (PII) scanner that uses Optical Character Recognition (OCR), regular expression lists and Natural Language Processing (NLP) to search public-facing locations for Government ID, addresses, emails etc in images, PDFs and documents.
+  
+  Repo: https://github.com/redhuntlabs/Octopii
 </details>
 
 <details>
@@ -1285,6 +1055,8 @@ This tool will be very interesting for:
 - **Application Security teams** - it's a one stop shop of LLM Security testing. Tests like prompt injection, overreliance will be especially interesting for them.
 
 - **Blue teamers/infra security** - Getting an automated LLM API inventory and getting alerts for any new sensitive APIs. They can also get a view of all sensitive PII data being shared across all their services and across all their LLM APIs.
+
+Repo: https://github.com/akto-api-security/akto
 </details>
 
 <details>
@@ -1293,28 +1065,16 @@ This tool will be very interesting for:
 
 
 
-https://github.com/checkmarx/2ms
+Repo: https://github.com/checkmarx/2ms
 </details>
 
 <details>
   <summary>ROADtools - A collection of Azure AD/Entra tools for offensive and defensive security purposes</summary>
   ROADtools is a collection of tools for assessing and defending the security of Microsoft Entra (formerly Azure AD) security. The most notable tools in the framework are ROADrecon and roadtx (ROADtools Token eXchange). ROADrecon is a versatile reconnaissance tool that gives both attackers and defenders deep insights into Azure AD internals. Utilizing undocumented internal API's, it provides insights that are hard to find using official tooling, can bypass security restrictions set by admins, and provides offline access to tenant information through its offline database. Defenders can use ROADrecon to create easy overviews of risky permissions in the tenant, identify hidden permissions on applications and other objects. Roadtx is a new tool in the ROADtools family. Its goal is to support all official and non-official authentication flows and methods of the Microsoft Identity platform, ranging from standard OAuth flows to undocumented and legacy token flows for user and device authentication. The strength of roadtx is its versatility in customizing and modifying the authentication flow, to obtain a variety of authentication tokens that can bypass weakly protected security measures, or to create identity based persistence in the form of devices, Primary Refresh Tokens and Windows Hello keys. Roadtx also supports many different ways of authenticating for automation purposes, making it a tool that cannot be missed for identity security researchers. In the demonstration, we will also demonstrate its lesser-known extension, ROADtools hybrid, which provides protocol implementations for hybrid AD and Entra environments. With ROADtools hybrid, we can perform lateral movement from on-premises AD to Entra, using Sync accounts and Kerberos with Seamless SSO.
+  
+  Repo: https://github.com/dirkjanm/ROADtools
 </details>
 
-<details>
-  <summary>Breaking Barriers: PyFrida's Simplified Pythonic Approach to Frida Scripting</summary>
-  Frida is a widely-used binary instrumentation framework. When using Frida, the typical workflow involves writing Frida scripts in JS and injecting them into the target process using frida-tools or Frida's python bindings. This workflow presents several inconveniences, such as:
-
-* Inability to debug Frida scripts in real-time.
-
-* Integration of Frida scripts into projects requires mechanisms like RPC or Socket.
-
-* In the binary security field, Python is more popular than JS, which many users must familiarize themselves with before starting to write Frida scripts.
-
-
-
-To address these issues, we developed the PyFrida framework, enabling Frida scripts to be written in Python. It works by implementing a virtual machine in JS and dynamically converting Python code into a sequence of instructions to execute on the virtual machine. With PyFrida, users can write and debug Frida scripts in Python and easily integrate them into Python projects.
-</details>
 
 <details>
   <summary>Faraday: an Open Source Vulnerability Management Platform</summary>
@@ -1323,23 +1083,8 @@ To address these issues, we developed the PyFrida framework, enabling Frida scri
 
 
 Faraday aggregates and normalizes the data you load, allowing exploring it into different visualizations that are useful to managers and analysts alike.
-</details>
 
-<details>
-  <summary>Hooke 2.0: Addressing Privacy and Security Concerns in Mobile Applications</summary>
-  Hooke 2.0 is an upgraded mobile application privacy and security tool that was initially unveiled at BlackHat USA Arsenal in 2022. It has since undergone significant updates, introducing several key enhancements.
-
-
-
-One major enhancement is the advanced dynamic monitoring module. This module builds upon the existing Frida-based monitoring capabilities and introduces two additional monitoring abilities: repackaging monitoring and custom app monitoring. Repackaging monitoring allows for monitoring app behavior on non-rooted devices. AOSP monitoring enables the monitoring of highly protected apps.
-
-
-
-Another significant improvement is the groundbreaking network packet capture feature that enables the extraction and analysis of QUIC/HTTP3 protocol packets. This is a notable advancement as there have been no publicly available solutions for capturing QUIC/HTTP3 packets on mobile devices to date. Leveraging memory scanning techniques and network library characteristics, Hooke 2.0 captures packets for various HTTP protocols on both Android and iOS devices. This expanded functionality provides valuable insights into protocol behavior and security.
-
-
-
-Furthermore, Hooke 2.0 presents a real-time analysis system with a unified interface that combines dynamic run-time behaviour monitoring and network packet analysis with contextual app information. This integration empowers users to gain a comprehensive understanding of an app's runtime behavior and operations.
+Repo: https://github.com/infobyte/faraday
 </details>
 
 <details>
@@ -1349,6 +1094,8 @@ Furthermore, Hooke 2.0 presents a real-time analysis system with a unified inter
 
 
 Featuring multiple insecure protocols, SCADA applications, and PLC attacks, ICSGoat serves as a dynamic platform for comprehending and mitigating potential disruptions to mission-critical systems. Through hands-on exploration within a safe, controlled environment, engineers can fortify their understanding of ICS security, enabling proactive defense measures against evolving threats.
+
+Repo: https://github.com/ine-labs/ICSGoat
 </details>
 
 <details>
@@ -1362,6 +1109,8 @@ LDAP Firewall is an open-source tool for Windows servers that lets you audit and
 
 
 We will present the LDAP Firewall, demonstrating how it defends against previously un-detectable attacks by hardening and monitoring the DC servers. We will also discuss the reverse-engineering process of the Windows LDAP library, how the protocol works, and the technical details of the LDAP Firewall.
+
+Repo: https://github.com/zeronetworks/ldapfw
 </details>
 
 <details>
@@ -1401,6 +1150,8 @@ In our talk, we will demonstrate LIBIHT's abilities through live demos. Attendee
 
 
 We believe LIBIHT can significantly aid reversing through its ability to efficiently recover precise control flow and execution context at scale. Its capabilities inspire further research extending hardware-assisted program analysis and instrumentation.
+
+Repo: https://github.com/libiht/libiht
 </details>
 
 <details>
@@ -1416,6 +1167,8 @@ The Managed Kubernetes Auditing Toolkit (MKAT) brings several features that help
 - Produce a visual map of which pods have access to the cloud environment
 
 - Test if pod access to the instance metadata service is properly blocked
+
+Repo: https://github.com/DataDog/managed-kubernetes-auditing-toolkit
 </details>
 
 <details>
@@ -1425,21 +1178,17 @@ The Managed Kubernetes Auditing Toolkit (MKAT) brings several features that help
 
 
 TheAllCommander has also been expanded with additional interoperability with modern tradecraft. For example, the tool has been augmented to provide threat emulation of Powershell reverse shells.
+
+Repo: https://github.com/matt-handy/TheAllCommander
 </details>
 
 <details>
   <summary>Ōkami: Advanced Binary Fingerprinting for Malware Attribution and Code Sharing Detection</summary>
   Okami is a cutting-edge tool designed to enhance malware research and cybersecurity analysis. The core functionality of Okami lies in its ability to export and individually hash all subroutines within a binary. These hashes serve as a unique fingerprint, enabling a comprehensive comparison against a database of known binaries.  It empowers researchers to meticulously use disassembled code to build a database of malicious files and then use the tool to compare new samples against that database for attribution. Okami works with renowned frameworks like Capstone and Ghidra. The tool will be released at BlackHat 2024, USA and will be fully open-sourced with the entire codebase available on GitHub.
+  
+  Repo?: https://github.com/wolfgangj/okami
 </details>
 
-<details>
-  <summary>Adversary emulation for the cloud with Stratus Red Team</summary>
-  What attacks are used by threat actors in cloud environments? How to reproduce them easily to ensure that our threat detection mechanisms are working as expected?
-
-
-
-Stratus Red Team provides a solution to these two questions. With support for AWS, Azure, Google Cloud and Kubernetes, it allows threat detection and cloud security engineering team to reproduce common cloud attacks in a self-contained manner, along with actionable detection insights.
-</details>
 
 <details>
   <summary>AntiDebugSeeker: Automatically Detect Anti-Debug to Simplify Debugging (IDA/Ghidra)</summary>
@@ -1466,11 +1215,15 @@ This enhances the analyst's ability to understand and counteract the malware's e
 
 
 We will demonstrate malware analysis and explain how to use the tool's features, providing a practical understanding of how these features can be applied in actual threat scenarios.
+
+Repo: https://github.com/LAC-Japan/IDA_Plugin_AntiDebugSeeker
 </details>
 
 <details>
   <summary>Horusec: Elevating Vulnerability Detection in your code.</summary>
   Horusec is an open source tool that performs static code analysis to identify security flaws during the development process. Currently, the languages for analysis are: C#, Java, Kotlin, Python, Ruby, Golang, Terraform, Javascript, Typescript, Kubernetes, PHP, C, HTML, JSON, Dart, Elixir, Shell, Nginx, Swift. The tool has options to search for key leaks and security flaws in all files of your project, as well as in Git history. Horusec can be used by the developer through the CLI and by the DevSecOps team on CI /CD mats.
+  
+  Repo: https://github.com/ZupIT/horusec
 </details>
 
 <details>
@@ -1480,6 +1233,8 @@ We will demonstrate malware analysis and explain how to use the tool's features,
 This tool, inspectorGadget, assesses the attack surface of binaries compiled to RISC-V architecture. Searching through pre-compiled binaries, particularly of standard operating systems services, it can find useful ROP/JOP functional gadgets for those needing to craft a manual payload or deeply analyze the available gadgets. It delivers a gadget's availability analysis based on some classification groups, depending on the gadget's type of computation (arithmetic operations, register-to-register data movement, load/store operation, control flow, etc.). We also try to find the initializer and dispatcher special gadgets for JOP attacks that follow the dispatcher gadget paradigm. We also strive to link the gadgets utilizing a novel technique.
 
 In any stage of a development pipeline, inspectorGadget can be used to assess the likelihood that a hacker could use the available gadgets to craft a CRA attack. This tool doesn't cover the first step of the exploit, which is related to some memory corruption vulnerabilities like buffer-overflows, format strings, use-after-free, etc. It can also be valuable to test the defense mechanism, assuming that the attacker is able to perform the first step and subsequently needs to rely on CRA, possibly due to using some code injection countermeasures like NX/XD/DEP.
+
+Repo: https://github.com/inspektor-gadget/inspektor-gadget
 </details>
 
 <details>
@@ -1493,6 +1248,8 @@ Lightgrep has been an open source library and embedded in bulk_extractor for ove
 
 
 Come to this lab to see lightgrep in action and learn to find what you're looking for, quickly and easily.
+
+Repo: https://github.com/strozfriedberg/lightgrep
 </details>
 
 <details>
@@ -1514,6 +1271,8 @@ The recently added features to the GoTestWAF are:
   - Email Report Sending: GoTestWAF interactively prompts for an email address to send the report. 
 
   - New Placeholders: Numerous new placeholders have been added, listed in the readme's "How It Works" section.
+  
+  Repo: https://github.com/wallarm/gotestwaf
 </details>
 
 <details>
@@ -1525,6 +1284,9 @@ BRUSCHETTA-board is the latest device of the so-called WHID's CyberBakery family
 PIZZAbite is a cheaper and open-hardware version of a commercial PCB holder, perfect for probing &amp; holding your PCB while soldering or inspection. The PIZZAbite PCB probes are mounted on flexible metal arm and a powerful magnet in the base for easy positioning. The one of the kind "lift and drop" function takes away the need for annoying and complicated set screws. Thanks to the extreme flexibility of the arms connected to the PIZZAbite PCBs, the compressible needle (a.k.a. PogoPin) maintain constant pressure at the probing point so even if the board is bumped into the probe tip will always stay in position. 
 
 In this presentation, we will review with practical examples how PIZZAbite &amp; BRUSCHETTA-board work against real IoT devices.
+
+Repo(BRUSCHETTA-board): https://github.com/whid-injector/BRUSCHETTA-board
+Repo(PIZZAbite): https://github.com/whid-injector/PIZZAbite
 </details>
 
 <details>
@@ -1538,23 +1300,7 @@ While Entra ID protects the private key if generated internally, as it cannot be
 
 
 The tool requires the signing certificate to use, the username that is target for impersonation, and some basic federation information about the target application that can be derived from a few different methods.
-</details>
 
-<details>
-  <summary>StealthGuardian - Automatic TTP Analysis</summary>
-  StealthGuardian is a middleware layer that can be combined with adversary simulation tools to verify the resistance, detection level and behaviour detection of executed actions against defined defence mechanisms. Based upon the results the tool decides if it would be safe to execute the action or let the Red Team know that the action has been detected.
-
-
-
-The tool has been developed to assist Red Teams during adversary simulations and automatically executes actions against a sandbox, e.g. integrating the same defence mechanisms as the target, and analyse the detection level of the executed action by observing logfiles and alarm messages of defence tools.
-
-
-
-In our demo we will present an integration for Fortra's Cobalt Strike threat emulation tool.
-</details>
-
-<details>
-  <summary>AI Wargame</summary>
-  Come join a fun and educational attack and defence AI wargame. You will be given an AI chatbot. Your chatbot has a secret that should always remain a secret! Your objective is to secure your chatbot to protect its secret while attacking other players' chatbots and discovering theirs. The winner is the player whose chatbot survives the longest (king of the hill). All skill levels are welcomed, even if this is your first time seeing code, securing a chatbot, or playing in a wargame.
+Repo: https://github.com/Semperis/SilverSamlForger
 </details>
 

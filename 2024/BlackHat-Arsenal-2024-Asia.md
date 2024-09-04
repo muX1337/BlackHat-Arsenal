@@ -9,11 +9,15 @@ Developed to assist journalists, activists, and NGOs in combating targeted digit
 
 
 The AI VPN is designed as a modular collection of micro-services using Docker technology. Ten modules currently handle diverse functionalities such as management, database operations, communication, multiple VPNs, PiHole integration, Slips, and comprehensive reporting.
+
+Repo: https://github.com/stratosphereips/AIVPN
 </details>
 
 <details>
   <summary>Catching adversaries on Azure - Deception on Cloud</summary>
   Cloud is a widely adopted technology for organizations across the globe. It's very often a breeding ground for adversaries as the targets are now reachable to adversaries from anywhere in the world. More often than not, foothold into cloud is just a simple "password-spray" away. How to catch adversaries who are eyeing your crown jewels on cloud? Often adversaries are after your keys, secrets, data, emails, etc. A great way to protect is to put traps everywhere and wait for adversaries to fall into them. But deception on cloud is Hard to create, maintain, monitor, remove and most of all it's pricy. Cloud-Deception is a tool that intends to make it easier for individuals and organizations to deploy, monitor, maintain and remove deception with the most minimal price tag to it. This is done with the help of a CLI suite that creates real-like users (with known weak passwords), real-like resources (such as key vaults, storage accounts, etc.) and real-like identities (Managed identities). All these resources and identities have role assignments randomly assigned and the output is a glorious attack path that's very lucrative for an adversary to pursue. Cloud-deception enables logging automatically and creates alert rules so all you have to do relax and wait for adversaries. Cloud-deception currently supports Microsoft Azure. The talk will consist of a breath-taking tale of how to creation &amp; monitoring of deception on cloud.
+  
+ Repo: https://github.com/pbssubhash/Deceptizure
 </details>
 
 <details>
@@ -23,6 +27,8 @@ The AI VPN is designed as a modular collection of micro-services using Docker te
 Penetration testing of these systems is quite complex as we have to deal with different architectures, optimized operating systems and special protocols. EMBA is an open-source firmware analyzer with the goal to simplify and optimize the complex task of firmware security analysis. EMBA supports the penetration tester with the automated detection of 1-day vulnerabilities on binary level. This goes far beyond the plain CVE detection: With EMBA you always know which public exploits are available for the target firmware. Besides the detection of already known vulnerabilities, EMBA also supports the tester on the next 0-day. For this, EMBA identifies critical binary functions, protection mechanisms and services with network behavior on a binary level. There are many other features built into EMBA, such as fully automated firmware extraction, finding file system vulnerabilities, hard-coded credentials, and more.
 
 EMBA is the open-source firmware scanner, created by penetration testers for penetration testers.
+
+Repo: https://github.com/e-m-b-a/emba
 </details>
 
 <details>
@@ -32,6 +38,8 @@ EMBA is the open-source firmware scanner, created by penetration testers for pen
 
 
 But using a Large Language Model, Knowledge Graph, Temporal Graph Embedding, Density Clustering, and a Markov Model, its now possible to do it automatically in real time.
+
+Repo: https://github.com/center-for-threat-informed-defense/attack-flow
 </details>
 
 <details>
@@ -55,11 +63,13 @@ The key features of API Firewall are:
   - Validate other OAuth 2.0 tokens using introspection endpoints
 
   - Denylist compromised API tokens, keys, and Cookies
+  
+Repo: https://github.com/wallarm/api-firewall
 </details>
 
 <details>
   <summary>PentestMuse: The Iron Man Suit of Offensive Security Automation</summary>
-  entestMuse is not just a tool; it is the embodiment of the Iron Man philosophy in cybersecurity. Like Tony Stark's exoskeleton, which enhances his abilities while allowing him to retain control and focus on higher-level strategies, PentestMuse augments the capabilities of offensive cybersecurity professionals. It automates the repetitive, precision-dependent tasks of penetration testing - much like the meticulous data collection and alerting in a monitoring system - allowing experts to concentrate on tasks requiring human ingenuity and judgment.
+ PentestMuse is not just a tool; it is the embodiment of the Iron Man philosophy in cybersecurity. Like Tony Stark's exoskeleton, which enhances his abilities while allowing him to retain control and focus on higher-level strategies, PentestMuse augments the capabilities of offensive cybersecurity professionals. It automates the repetitive, precision-dependent tasks of penetration testing - much like the meticulous data collection and alerting in a monitoring system - allowing experts to concentrate on tasks requiring human ingenuity and judgment.
 
 
 
@@ -72,6 +82,8 @@ The design of PentestMuse ensures that the creativity and learning opportunities
 
 
 In conclusion, PentestMuse is a testament to the power of AI in enhancing human capabilities in offensive security, rather than replacing them. It's a system more Iron Man, less Ultron - a perfect blend of human intelligence and machine efficiency, designed to tackle the ever-evolving challenges of the digital world.
+
+Repo: https://github.com/AbstractEngine/pentest-muse-cli
 </details>
 
 <details>
@@ -99,6 +111,8 @@ Slips can read packets from the network, pcap, Suricata, Zeek, Argus and Nfdump,
 
 
 Slips web interface allows to clearly see the detections and behaviors, including threat inteligence enhancements. The interface can show multiple Slips runs, summarize whois/asn/geocountry information and much more.
+
+Repo: https://github.com/stratosphereips/StratosphereLinuxIPS
 </details>
 
 <details>
@@ -108,6 +122,8 @@ Slips web interface allows to clearly see the detections and behaviors, includin
 
 
 In addition to scrutinizing network connections for VPN and Tor usage, the tool searches for critical event IDs and investigates Outlook profiles for personal user accounts configured on official laptops/desktops. The flexibility to customize assessments allows users to adapt the tool to evolving security threats.
+
+Repo: https://github.com/Ubaidjaffery/theauditorv2
 </details>
 
 <details>
@@ -117,6 +133,8 @@ In addition to scrutinizing network connections for VPN and Tor usage, the tool 
 
 
 In this talk, we will introduce DetectiveSQ Version 2, an enhanced tool revolutionizing the analysis of Chrome extensions. Building on its proven foundation, it now features integrated AI and GPT models for dynamic analysis, sentiment analysis, and sophisticated static analysis capabilities for permissions, local JavaScript, and HTML files. This dual approach offers a comprehensive evaluation, pinpointing potential security and privacy risks within extensions. DetectiveSQ Version 2 will be open source and made available after the talk.
+
+Repo: Not found yet
 </details>
 
 <details>
@@ -134,6 +152,8 @@ Tool features:
 - Use pre-defined templates/payloads to look for vulnerabilities
 
 - Users can specify scan policies for scanning vendor-specific or all entries
+
+Repo: https://github.com/umair9747/Genzai
 </details>
 
 <details>
@@ -155,6 +175,8 @@ To combat fileless attacks, Falco has also added memfd-based fileless execution 
 
 
 We will walk you through real-world scenarios based on recent threats and malware, demoing how Falco can help detect and respond to these malicious behaviors and comparing drift and fileless attack paths.
+
+Repo: https://github.com/falcosecurity/falco
 </details>
 
 <details>
@@ -164,6 +186,8 @@ We will walk you through real-world scenarios based on recent threats and malwar
 Instructions are received using GitHub Gist, and results are sent over a Discord Webhook.
 
 Tracing the C2 server back to the operator is the most common way in which botnet operators are compromised. This technology effectively eradicates such a possibility. When combined with robust operational security (OPSEC), this makes it extremely difficult to trace the operator. This is extremely advantageous for groups engaged in penetration testing. PasteBomb possesses the capacity to carry out Commands, launch DDoS attacks on servers, acquire and execute supplementary payloads, extract personal information from targets, and eliminate its presence without leaving any evidence (Self-Destruct).
+
+Repo: https://github.com/marco-liberale/PasteBomb
 </details>
 
 <details>
@@ -177,6 +201,8 @@ Our engaging demonstrations are merely the tip of the iceberg of what you can ac
 
 
 We invite you to join us on this journey of discovery, where we will harness the boundless capabilities of CatSniffer, fine-tuning your skills and transforming you into a maestro of IoT security auditing.
+
+Repo: https://github.com/ElectronicCats/CatSniffer
 </details>
 
 <details>
@@ -190,6 +216,8 @@ One of its improvements compared to previously listed tools is its ability to al
 In addition, this tool employs several strategies to be more covert in its operations compared to existing solutions. It achieves this by focusing on intercepting lower-level functions, less likely to set off anti-unpacking mechanisms typically employed by packers. This stealthy approach is further enhanced by disassembling the Common Language Runtime (CLR) - strategically placing hooks just before or after likely monitoring points, tactically reducing the chances of triggering packers' anti-unpacking mechanisms.
 
 These enhancements aim to assist analysts and researchers in the evolving 'cat and mouse' game of malware code protection. Hopefully, the tool will prove to be a valuable addition to the researchers' arsenal.
+
+Repo: https://github.com/imperva/frida-jit-unpacker
 </details>
 
 <details>
@@ -199,6 +227,8 @@ These enhancements aim to assist analysts and researchers in the evolving 'cat a
 
 
 The tool leaves minimum traffic in the network logs to help during red team engagements from on-prem to the cloud. Developed in Python and implemented all Azure integrations from scratch with zero dependencies on Powershell stuff. The idea behind the tool is to let security researchers and red team members have the ability to focus on more Opsec rather than DevOps stuff.
+
+Repo: https://github.com/SikretaLabs/BlueMap
 </details>
 
 <details>
@@ -208,6 +238,8 @@ The tool leaves minimum traffic in the network logs to help during red team enga
 
 
 Damn Vulnerable Browser Extension (DVBE) is an open-source vulnerable browser extension, designed to shed light on the importance of writing secure browser extensions and to educate the developers and security professionals about the vulnerabilities that are found in the browser extensions, how they are found &amp; how they impact business. This built-to-be vulnerable extension can be used to learn, train &amp; exploit browser extension related vulnerabilities.
+
+Repo: https://github.com/infosecak/DVBE
 </details>
 
 <details>
@@ -225,6 +257,8 @@ We present Moonshot – a testing tookit designed specifically for security eval
 
 
 Moonshot is designed with a simple, intuitive, and interactive interface that would be familiar to AI developers and security experts. Additionally, Moonshot is engineered for easy integration into any model development workflow, enabling seamless and repeatable testing for model developers.
+
+Repo: https://github.com/aiverify-foundation/moonshot
 </details>
 
 <details>
@@ -248,6 +282,8 @@ In Quark script, we integrate not only static analysis tools (e.g. Quark itself)
 *Re-Usable &amp; Sharable*
 
 Once the user creates a Quark script for a specific analysis scenario. The script can be used for other targets. Also, the script can be shared with other security researchers. This enables the exchange of knowledge.
+
+Repo: https://github.com/quark-engine/quark-script
 </details>
 
 <details>
@@ -257,6 +293,8 @@ Once the user creates a Quark script for a specific analysis scenario. The scrip
 
 
 The tool effectively detects vulnerabilities listed in the OWASP Top 10 mobile, emphasizing the most critical security risks to Android applications. Demonstrations of these features will be included. APKDeepLens is equipped to generate comprehensive reports in various formats like HTML, PDF, and JSON, aiding in the transition from detection to remediation.
+
+Repo: https://github.com/d78ui98/APKDeepLens
 </details>
 
 <details>
@@ -266,21 +304,29 @@ The tool effectively detects vulnerabilities listed in the OWASP Top 10 mobile, 
 
 
 Apart from the rework station, it should have a suitable reader or device to retrieve the data/firmware from the chip.  It is an new developed device which can recognize the chip detailed information.  During the lab, the audiences would have opportunity to analyze the common eMMC / UFS chips and discover the secret from it.
+
+Repo? : https://github.com/project-chip/connectedhomeip/blob/master/docs/guides/chip_tool_guide.md
 </details>
 
 <details>
   <summary>CLay - Reverse Proxy for Concealing and Deceiving Website Informations</summary>
   The beginning of a devastating cybersecurity incident often occurs when an attacker recognize a technology they capable to exploit used in an application. None of our users care about the technology behind an application more than the mal-intent adversaries. CLay offers a unique and powerful features that goes beyond traditional security measures. CLay takes deception to a new level by mimicking the clockwork of a website with false information, as if the website is made with different technology stack. With a quick 3-minutes installation, the primary objective is to mislead and deceive potential attackers, leading them to gather false information about the web application.
+  
+Repo: https://github.com/kisanakkkkk/CLay
 </details>
 
 <details>
   <summary>Deceptively Adaptive Honey Net (dahn)</summary>
   Traditional honey nets offer static infrastructure and static responses. In DAHN, the infrastructure is abstracted, with lambda/gpt API (prompts stipulated) returning seemingly native responses to the threat actor, depending on the complexity index defined by the administrator. In other words, responses are dynamically crafted to entrap and retain threat actors, internal and external, in this environment for as long as possible, giving them a balance of false hope and realistic obstacles as they pass through our simulated layers of defense. Our AI-powered honey net mimics a given corporate environment to create a fictitious digital twin and embeds a controlled-level of simulated vulnerabilities/weaknesses to attract, distract, learn from, and attribute threat actors. The outputs are decoys, diversion, fingerprints, IoCs and IoAs, attributes, TTPs and behaviors, and used to augment threat detection and cyber defense strategies.
+  
+ Repo: https://github.com/geo-chen/dahn
 </details>
 
 <details>
   <summary>Mantis - Asset Discovery at Scale</summary>
   Mantis is an asset inventory framework that has the capability to distribute a single scan across multiple machines, provides easy customization, dashboard support, and advanced alerting capabilities. We have not reinvented the wheel. Rather, we have tried to design an architecture that provides the essential features for a framework that involves the complexity of integrating multiple tools that are outside our control.
+  
+Repo:  https://github.com/PhonePe/mantis
 </details>
 
 <details>
@@ -290,11 +336,15 @@ Apart from the rework station, it should have a suitable reader or device to ret
 
 
 This talk will focus on real-world exploitation and, as such, we will release go-exploit exploits for CVE-2023-46604 (ActiveMQ), CVE-2023-25194 (Druid), and CVE-2022-47966 (Various Manage Engine).
+
+Repo: https://github.com/vulncheck-oss/go-exploit
 </details>
 
 <details>
   <summary>AceTheGame</summary>
   Ace The Game is an open-source hacking tool designed for manipulating the memory of Android applications enabling users to change and freeze memory values. This tool also has an interesting feature which enables users to bypass payment methods seamlessly. Notably, this tool boasts compatibility with both rooted and non-rooted Android devices.
+  
+Repo: https://github.com/KuhakuPixel/AceTheGame
 </details>
 
 <details>
@@ -308,6 +358,8 @@ Each experiment is performed within a dedicated Docker container, ensuring the i
 
 
 BugHog has already been proven to be a valuable asset in pinpointing the lifecycles of security bugs, such as Content Security Policy bugs.
+
+Repo: https://github.com/DistriNet/BugHog
 </details>
 
 <details>
@@ -333,6 +385,8 @@ eBPFShield Forensics helps address Linux security issues by analyzing system cal
 
 
 During the session, we'll delve deeper into these features and demonstrate how eBPFShield can help you protect your  systems against even the most advanced threats.
+
+Repo: https://github.com/sagarbhure/eBPFShield
 </details>
 
 <details>
@@ -348,6 +402,8 @@ Here we proposes PMdet, a new fuzzing-based detection tool for Parcel Mismatch b
 PMdet is capable of handling different vendors' firmware without actual devices. It loads Parcelable classes from Android firmware, emulates the Android runtime environment for Parcel to work, and fuzz &amp; monitors the serialization and deserialization procedures for mismatches.
 
 We evaluate PMdet with several firmware from different Android vendors, and the results show that PMdet can detect Parcel Mismatch bugs of different causes, including 11 unique undisclosed mismatches, 6 of which are exploitable, and other 5 bugs that have been already confirmed and fixed.
+
+
 </details>
 
 <details>
@@ -368,6 +424,8 @@ Key features include detection of various vulnerabilities such as broken object-
 Scanning methodology involves detailed scrutiny of individual API endpoints, employing techniques like fuzzing and header analysis to uncover security flaws. 
 User customization is facilitated through options such as specifying scan types and adjusting scanning parameters. Security and privacy considerations ensure that the tool does not handle sensitive information or transmit data to external sources.
 Overall, BASS-Scanner offers a promising solution for efficient and comprehensive API security assessments, with ongoing improvements slated for the future.
+
+Repo: https://github.com/binderlabs/BASS
 </details>
 
 <details>
@@ -377,11 +435,15 @@ Overall, BASS-Scanner offers a promising solution for efficient and comprehensiv
 
 
 This is made possible with Atsign's open source No Ports Product suite which is build on the patented Networking 2.0 technology.
+
+Repo: https://github.com/atsign-foundation/noports
 </details>
 
 <details>
   <summary>DarkWidow: Dropper/PostExploitation Tool (or can be used in both situations) targeting Windows.</summary>
   This is a Dropper/Post-Exploitation Tool targeting Windows machine.
+  
+Repo: https://github.com/reveng007/DarkWidow
 </details>
 
 <details>
@@ -395,6 +457,8 @@ However, integrating bug bounty program into security strategies remains challen
 
 
 Gerobug is the first open-source bug bounty platform that allows organizations to establish their own bug bounty platform easily and securely, free of charge.
+
+Repo: https://github.com/gerosecurity/gerobug
 </details>
 
 <details>
@@ -404,25 +468,15 @@ Gerobug is the first open-source bug bounty platform that allows organizations t
 
 
 Nightingale is an open-source tool that aims to address this problem by providing a ready-to-use environment for pentesters. By building on top of Docker, Nightingale eliminates the need to install multiple programming languages and modules, allowing for faster booting and more efficient resource usage on the host machine. Additionally, Nightingale includes a variety of pre-installed penetration testing tools and frameworks, making it easy for organizations to perform vulnerability assessments and penetration testing of any scope.
-</details>
 
-<details>
-  <summary>BlueMap - An Interactive Tool for Azure Exploitation</summary>
-  As demonstrated in BlackHat UK &amp; USA 2022 - BlueMap helps cloud red teamers and security researchers identify IAM misconfigurations, information gathering, and abuse of managed identities in interactive mode without ANY third-party dependencies. No more painful installations on the customer's environment, and No more need to custom the script to avoid SIEM detection!
-
-
-
-The tool leaves minimum traffic in the network logs to help during red team engagements from on-prem to the cloud. Developed in Python and implemented all Azure integrations from scratch with zero dependencies on Powershell stuff. The idea behind the tool is to let security researchers and red team members have the ability to focus on more Opsec rather than DevOps stuff.
+Repo: https://github.com/RAJANAGORI/Nightingale
 </details>
 
 <details>
   <summary>findmytakeover - find dangling domains in a multi cloud environment</summary>
   findmytakeover detects dangling DNS record in a multi cloud environment. It does this by scanning all the DNS zones and the infrastructure present within the configured cloud service provider either in a single account or multiple accounts and finding the DNS record for which the infrastructure behind it does not exist anymore rather than using wordlist or bruteforcing DNS servers.
-</details>
-
-<details>
-  <summary>Mantis - Asset Discovery at Scale</summary>
-  Mantis is an asset inventory framework that has the capability to distribute a single scan across multiple machines, provides easy customization, dashboard support, and advanced alerting capabilities. We have not reinvented the wheel. Rather, we have tried to design an architecture that provides the essential features for a framework that involves the complexity of integrating multiple tools that are outside our control.
+  
+ Repo: https://github.com/anirudhbiyani/findmytakeover
 </details>
 
 <details>
@@ -440,6 +494,8 @@ The tool boasts a user-friendly interface and an easy-to-use reporting system th
 
 
 Overall, MORF is a Swiss army knife for offensive mobile application security, as it saves a lot of time, increases efficiency, enables a data-driven approach, allows for transparency in the security posture of the application by looking into all previous versions, and minimizes the risk of data breaches related to sensitive information, all this by using heuristics-based techniques.
+
+Repo: https://github.com/amrudesh1/MORF
 </details>
 
 <details>
@@ -447,11 +503,15 @@ Overall, MORF is a Swiss army knife for offensive mobile application security, a
   <div><span>Powered by the secure and robust Move language, emerging blockchains like Aptos and Sui are gaining rapid popularity. However, their increasingly complex smart contracts, which are often entrusted with valuable assets, need to provide users with the ability to verify the code safety. Unfortunately, it has become common for Move-based protocols to be deployed solely in low-level bytecode form, without accompanying source code. Therefore, reconstructing the original source of the on-chain contracts is essential for users and security researchers to thoroughly examine, evaluate and enhance security.</span></div><div><span>
 </span></div><div><span>This talk introduces Revela, the first-ever open-source tool designed to decompile Move bytecode back to its original source code, empowering users and researchers with newfound transparency. We will explain how our tool leverages advanced static analysis techniques to recover the original source code structure, including modules, functions, and data types.</span></div><div><span>
 </span></div><div><span>The presentation will include some live demonstrations of using Revela to decompile Move bytecode from online transactions. Additionally, we will showcase how our decompiler can be utilized to uncover vulnerabilities in closed-source protocols running on Aptos and Sui blockchains.</span></div>
+
+Repo: https://github.com/verichains/revela
 </details>
 
 <details>
   <summary>R0fuzz</summary>
   Industrial control systems (ICS) are critical to national infrastructure, demanding robust security measures. "R0fuzz" is a collaborative fuzzing tool tailored for ICS environments, integrating diverse strategies to uncover vulnerabilities within key industrial protocols such as Modbus, Profinet, DNP3, OPC, BACnet, etc. This innovative approach enhances ICS resilience against emerging threats, providing a comprehensive testing framework beyond traditional fuzzing methods.
+  
+Repo: https://github.com/AshwAthi8/R0fuzz
 </details>
 
 <details>
@@ -481,6 +541,8 @@ Enterprises are moving / have moved to Cloud Model or Hybrid Model and since sec
 
 
 Inside each CSP, there are three sub-categories i.e, Enumeration, Exploitation, and Post Exploitation. OS categorises tools &amp; our custom scripts as per the above mentioned sub-categories.
+
+Repo: https://github.com/RedTeamOperations/RedCloud-OS
 </details>
 
 <details>
@@ -512,6 +574,8 @@ This implementation follows two important principles
 -A developer can be allowed to add or modify secrets, however should not be allowed to view them
 
 -An environment should have a single identity that gives access to all necessary credentials irrespective of the number of projects that are deployed.
+
+Repo: https://github.com/hashicorp/vault
 </details>
 
 <details>
@@ -526,16 +590,17 @@ The Tool's GitHub: https://github.com/cyberark/White-Phoenix
 <details>
   <summary>ZANSIN</summary>
   ZANSIN is envisioned as a GROUNDBREAKING cybersecurity training tool designed to equip users against the ever-escalating complexity of cyber threats. It achieves this by providing learners with a platform to engage in simulated cyberattack scenarios, supervised and designed by experienced pentesters. This comprehensive approach allows learners to actively apply security measures, perform system modifications, and handle incident responses to counteract the attacks. Engaging in this hands-on practice within realistic environments enhances their server security skills and provides practical experience in identifying and mitigating cybersecurity risks. ZANSIN's flexible design accommodates diverse skill levels and learning styles, making it a comprehensive and evolving platform for cybersecurity education.
+  
+Repo: https://github.com/ZANSIN-sec/ZANSIN
 </details>
 
 <details>
   <summary>AutoFix: Automated Vulnerability Remediation Using Static Analysis and LLMs</summary>
   AutoFix is an innovative open-source tool that marries static analysis with advanced Large Language Models (LLMs) to automate the detection and remediation of software vulnerabilities. Utilizing cutting-edge models like StarCoder and Salesforce CodeGen2, AutoFix excels in generating precise patches for a wide range of vulnerabilities, identified through robust static analysis methods including Semgrep. Designed for developers, security professionals, and DevSecOps teams, AutoFix streamlines security integration in software development, balancing speed and accuracy in patch deployment. As a community-driven tool, it evolves continuously, embodying the future of automated, secure coding practices.
-</details>
-
-<details>
-  <summary>DarkWidow: Dropper/PostExploitation Tool (or can be used in both situations) targeting Windows.</summary>
-  This is a Dropper/Post-Exploitation Tool targeting Windows machine.
+  
+ Repo: https://github.com/lambdasec/autofix
+ Moved to: https://github.com/patched-codes/patchwork
+ Blog : https://lambdasec.github.io/AutoFix-Automated-Vulnerability-Remediation-using-Static-Analysis-and-LLMs/
 </details>
 
 <details>
@@ -549,6 +614,8 @@ The tool aims to promptly provide alert if a website content is manipulated, whi
 
 
 The system utilizes two primary detection methods: a) analyzing drastic changes in webpage size and b) scanning for keywords and phrases associated with hacktivism, including those within images, using generative AI such as GPT that has been trained on large data including OSINT.
+
+Repo: https://github.com/SICKAG/sick_visionary_samples
 </details>
 
 <details>
@@ -562,6 +629,9 @@ Yet, contentment with the status quo proves untenable. Many latent UEFI vulnerab
 Efidrill - The First Open-Source IDA Plugin for Data Flow Analysis of UEFI Firmware.
 
 Efidrill is a tool that enables data flow tracing, taint tracking, automated structure analysis, variable numerical prediction, and automated vulnerability detection for UEFI firmware. It has discovered multiple hitherto unreported vulnerabilities on hardware platforms from eminent vendors such as Asus, Intel, Dell, etc.
+
+Repo-Owner : https://github.com/another1024
+Repo(Empty 09/2024): https://github.com/another1024/efiDrill
 </details>
 
 <details>
@@ -581,25 +651,10 @@ It provides following functionalities :
 4) Providing visual clustering
 
 It can easily be extended to use data from any sandbox.
+
+Repo: https://github.com/unknownhad/CalMal
 </details>
 
-<details>
-  <summary>Catsniffer</summary>
-  Delve into the fascinating world of IoT (Internet of Things) with the CatSniffer - a powerful, multi-protocol, multi-band, and open-source board crafted for exploring, interacting, and potentially compromising IoT devices. This workshop offers an immersive, hands-on experience, teaching you how to create chaos among IoT devices and challenge real-world devices like property trackers.
-
-
-
-Our engaging demonstrations are merely the tip of the iceberg of what you can achieve with the CatSniffer. The tool's exceptional flexibility allows the use of different tools for your security auditing needs, and our unique firmware broadens your learning horizon and amplifies the fun factor, irrespective of whether you're a novice or a seasoned expert in the field.
-
-
-
-We invite you to join us on this journey of discovery, where we will harness the boundless capabilities of CatSniffer, fine-tuning your skills and transforming you into a maestro of IoT security auditing.
-</details>
-
-<details>
-  <summary>AceTheGame</summary>
-  Ace The Game is an open-source hacking tool designed for manipulating the memory of Android applications enabling users to change and freeze memory values. This tool also has an interesting feature which enables users to bypass payment methods seamlessly. Notably, this tool boasts compatibility with both rooted and non-rooted Android devices.
-</details>
 
 <details>
   <summary>CF-Hero</summary>
@@ -608,6 +663,7 @@ We invite you to join us on this journey of discovery, where we will harness the
 
 
 This tool(CF-Hero) highlights the security risks associated with domains that are not properly configured behind Cloudflare, a content delivery network (CDN) and distributed DNS service provider. The absence of Cloudflare protection exposes these domains to various attacks, increasing the vulnerability of a company's assets.
+
 </details>
 
 <details>
@@ -633,6 +689,8 @@ ELFieScanner uses 43 custom built and configurable memory heuristics that are co
 
 
 The scanner uses a low impact technique of memory collection that doesn't require interrupts to be sent to remote processes, thereby remaining passive and overcoming ptrace() anti-debug techniques used by malware. The configurability of the binary heuristics provides Blue teams a way to tailor the sensitivity of the detections for their particular environment if used as a persistent monitoring solution; or for incident responders to amass as many suspicious events as possible in one-time collection scenarios. In addition, a portable build is also provided overcoming the unwanted and intrusive default Linux behaviour of building tools on host.
+
+Repo: https://github.com/JanielDary/ELFieScanner
 </details>
 
 <details>
@@ -646,21 +704,10 @@ DevOps platforms like GitHub can easily grow in repos, actions, tokens, users, o
 
 
 GitArmor is a policy as code tool, that helps companies,teams and open-source creators, evaluate and enforce their GitHub (only for now) security posture at repository or organization level. Using policies defined using yml, GitArmor can run as CLI, GitHub action or GitHub App, to unify visibility into DevOps security posture and strengthen resource configurations as part of the development cycle.
+
+Repo: https://github.com/dcodx/gitarmor
 </details>
 
-<details>
-  <summary>Nightingale: Docker for Pentesters</summary>
-  Penetration testing is a critical aspect of ensuring the security of any organization's IT infrastructure. However, setting up a testing environment can be time-consuming and complex, requiring the installation of multiple tools, frameworks, and programming languages. Additionally, maintaining consistency across different testing environments can be challenging. As a result, organizations often struggle to effectively perform penetration testing and identify vulnerabilities in their systems.
-
-
-
-Nightingale is an open-source tool that aims to address this problem by providing a ready-to-use environment for pentesters. By building on top of Docker, Nightingale eliminates the need to install multiple programming languages and modules, allowing for faster booting and more efficient resource usage on the host machine. Additionally, Nightingale includes a variety of pre-installed penetration testing tools and frameworks, making it easy for organizations to perform vulnerability assessments and penetration testing of any scope.
-</details>
-
-<details>
-  <summary>AI Wargame (Arsenal Lab)</summary>
-  Come join a fun and educational attack and defence AI wargame. You will be given an AI chatbot. Your chatbot has a secret that should always remain a secret! Your objective is to secure your chatbot to protect its secret while attacking other players' chatbots and discovering theirs. The winner is the player whose chatbot survives the longest (king of the hill). All skill levels are welcomed, even if this is your first time seeing code, securing a chatbot, or playing in a wargame.
-</details>
 
 <details>
   <summary>BucketLoot - An Automated S3 Bucket Inspector</summary>
@@ -691,11 +738,15 @@ All of this makes BucketLoot a great recon tool for bug hunters as well as profe
 
 
 The tool allows users to save the output in a JSON format which makes it easier to pass the results as an input to some third-party product or platform.
+
+Repo: https://github.com/redhuntlabs/BucketLoot
 </details>
 
 <details>
   <summary>GearGoat : Car Vulnerabilities Simulator</summary>
   GearGoat is a python based implementation Car simulator, inspired from the ICSim tool (written in C), to help learners get started with car hacking. The idea is to provide an easy to use simulator with a virtual can interface, webUI interface and most dependencies handled inside a Docker container. This allows users to run this tool on a non-GUI/Qt machine with just a few clicks. Also, as it is written in Python, communities can easily extend it with their own code. The version with ICSim level functionality with webUI and Dockerised environment is already released on GitHub and currently we are working to add common/known vulnerabilities to it to act as a vulnerable target practice car.
+  
+Repo: https://github.com/ine-labs/GearGoat
 </details>
 
 <details>
@@ -713,29 +764,22 @@ Recent studies on data breaches reveal a startling trend. The leakage of secrets
 
 
 This talk aims to shed light on such cases related to GitHub. We will delve into real-world examples, discuss the common pitfalls, and suggest effective strategies to guard against these potential security risks.
+
+Repo: https://github.com/boringtools/git-alerts
 </details>
 
 <details>
   <summary>Surfactant - Modular Framework for File Information Extraction and SBOM Generation</summary>
   Surfactant is a modular framework for extracting information from filesystems, primarily for generating an SBOM (Software Bill of Materials). The information extracted can then be used to identify the various vendors or libraries associated with a file, and establish relationships between files. The resulting SBOM can be used for system level impact analysis (such as for IoT, Smart Grid, or ICS devices) of vulnerabilities, and the information gathered can be used to help inform what files to focus on for manual analysis.
+  
+Repo: https://github.com/LLNL/Surfactant
 </details>
 
 <details>
   <summary>vet: Policy Driven vetting of Open Source Software Components</summary>
   vet is a tool for identifying risks in open source software supply chain. It helps engineering and security teams to identify potential issues in their open source dependencies and evaluate them against codified organisational policies.
-</details>
-
-<details>
-  <summary>.NET Unpacking: When Frida Gets the JIT out of It</summary>
-  .NET-based malware families (like AgentTesla, CrimsonRat, and MassLogger, to list a few) can include obfuscation or packing that would harden analysts' work to understand and mitigate these threats effectively. Several options exist for researchers to tackle this challenge such as (but not limited to ) De4Dot, JITM (Mandiant 2020), DotDumper (Black Hat 2022), or JitHook (JSAC 2023) ... However, those solutions either don't cover the case where CLR APIs are intercepted by the packer, or do it in a very limited way. Our new tool has been developed to address this issue, adding some notable advancements that hopefully will prove its utility in the field of malware analysis.
-
-Our Frida-Jit-unPacker (FJP) tool uses a passive, less intrusive approach than previous tools, making it less likely to be detected by anti-unpacking-features. It is developed using Python3 and Frida and doesn't impose restrictions on the .NET framework version associated with the sample. The tool is not focused on specific packers, making it generic and flexible. 
-
-One of its improvements compared to previously listed tools is its ability to also recover and fix original tokens from encrypted ones.
-
-In addition, this tool employs several strategies to be more covert in its operations compared to existing solutions. It achieves this by focusing on intercepting lower-level functions, less likely to set off anti-unpacking mechanisms typically employed by packers. This stealthy approach is further enhanced by disassembling the Common Language Runtime (CLR) - strategically placing hooks just before or after likely monitoring points, tactically reducing the chances of triggering packers' anti-unpacking mechanisms.
-
-These enhancements aim to assist analysts and researchers in the evolving 'cat and mouse' game of malware code protection. Hopefully, the tool will prove to be a valuable addition to the researchers' arsenal.
+  
+Repo: https://github.com/safedep/vet
 </details>
 
 <details>
@@ -745,61 +789,22 @@ These enhancements aim to assist analysts and researchers in the evolving 'cat a
 
 
 This tool merges the capabilities of automated deployment and configuration modification using AI, along with cloud SDK tools. As a result, it transforms into an AI-powered cloud manager that helps you ensure the security of the cloud environment by preventing misconfigurations. By centralizing the process, users can effortlessly address misconfigurations and excessively permissive policies in a single stage, simplifying handling of potential future threats.
+
+Repo: https://github.com/ine-labs/AWSDefenderGPT
 </details>
 
 <details>
   <summary>CloudSec Navigator</summary>
   Security incidents on cloud platforms such as AWS are occurring frequently, and many of them are caused by misconfigurations or inappropriate use of features. For the purpose of incident prevention, developers need to read a large amount of documentation, including important security guidelines and best practices. The tool uses Retrieval-Augmented Generation (RAG) and Large Language Models (LLM) vector searches to provide highly accurate, customized security advice and referenced guidelines based on the information retrieved. and best practices information. This allows developers to focus on more efficient and secure software development instead of reading large amounts of documentation.
+  
+ Repo: https://github.com/Cybr-Inc/CloudSec
 </details>
 
 <details>
   <summary>exploitdb-images</summary>
   ExploitDBImages aims to automate the exploiting phase of penetration testing through Docker containers. With this tool, testers can easily execute required scripts for the successful exploitation of vulnerable applications, eliminating the need for manual installation of dependencies.
-</details>
-
-<details>
-  <summary>The Go-Exploit Framework</summary>
-  The Go-Exploit framework helps exploit developers rapidly develop advanced exploits in the Go programming language. In this talk, we will demonstrate advanced features of the framework such as integration with Shodan, scanning and exploiting through a proxy (including Tor), using Meterpreter and Sliver payloads, using the built-in encrypted reverse shell, adding custom C2, spinning up LDAP JNDI infrastructure, and easily cross compiling to different OS and architectures.
-
-
-
-This talk will focus on real-world exploitation and, as such, we will release go-exploit exploits for CVE-2023-46604 (ActiveMQ), CVE-2023-25194 (Druid), and CVE-2022-47966 (Various Manage Engine).
-</details>
-
-<details>
-  <summary>AutoFix: Automated Vulnerability Remediation Using Static Analysis and LLMs</summary>
-  AutoFix is an innovative open-source tool that marries static analysis with advanced Large Language Models (LLMs) to automate the detection and remediation of software vulnerabilities. Utilizing cutting-edge models like StarCoder and Salesforce CodeGen2, AutoFix excels in generating precise patches for a wide range of vulnerabilities, identified through robust static analysis methods including Semgrep. Designed for developers, security professionals, and DevSecOps teams, AutoFix streamlines security integration in software development, balancing speed and accuracy in patch deployment. As a community-driven tool, it evolves continuously, embodying the future of automated, secure coding practices.
-</details>
-
-<details>
-  <summary>Chip In-depth Analysis - Where is the Key?</summary>
-  Chip-off forensics is an advanced digital data extraction and analysis technique which involves physically removing flash memory chips (IC) from a subject device and then acquiring the raw data using specialized equipment.
-
-
-
-Apart from the rework station, it should have a suitable reader or device to retrieve the data/firmware from the chip.  It is an new developed device which can recognize the chip detailed information.  During the lab, the audiences would have opportunity to analyze the common eMMC / UFS chips and discover the secret from it.
-</details>
-
-<details>
-  <summary>GitArmor: policy as code for your GitHub environment</summary>
-  DevOps security does not only mean protecting the code, but also safeguarding the entire DevOps platform against supply chain attacks, integrity failures, pipelines injections, outsider permissions, worst practices, missing policies and more. 
-
-
-
-DevOps platforms like GitHub can easily grow in repos, actions, tokens, users, organizations, issues, PRs, branches, runners, teams, wiki, making admins' life impossible. This means also lowering the security of such environment. 
-
-
-
-GitArmor is a policy as code tool, that helps companies,teams and open-source creators, evaluate and enforce their GitHub (only for now) security posture at repository or organization level. Using policies defined using yml, GitArmor can run as CLI, GitHub action or GitHub App, to unify visibility into DevOps security posture and strengthen resource configurations as part of the development cycle.
-</details>
-
-<details>
-  <summary>PASTEBOMB</summary>
-  The PasteBomb (PB) botnet does not have any C2 (command and control) server.
-
-Instructions are received using GitHub Gist, and results are sent over a Discord Webhook.
-
-Tracing the C2 server back to the operator is the most common way in which botnet operators are compromised. This technology effectively eradicates such a possibility. When combined with robust operational security (OPSEC), this makes it extremely difficult to trace the operator. This is extremely advantageous for groups engaged in penetration testing. PasteBomb possesses the capacity to carry out Commands, launch DDoS attacks on servers, acquire and execute supplementary payloads, extract personal information from targets, and eliminate its presence without leaving any evidence (Self-Destruct).
+ 
+Repo: https://github.com/NS-unina/exploitdb-images
 </details>
 
 <details>
@@ -807,23 +812,6 @@ Tracing the C2 server back to the operator is the most common way in which botne
   In a typical CTF challenge, the objective is to identify and exploit security vulnerabilities. On the other hand, the aim of a defensive or AppSec challenge is to rectify security vulnerabilities. Historically, building defensive challenges has been challenging due to the requirement for complex tools and infrastructure to manage and review player submissions.
 
 In this presentation, we will introduce SecDim Play SDK: an open-source SDK designed for building defensive, AppSec, and AISec challenges. We will demonstrate how we model security attacks into software tests that can be used to assess players' security patches. In a live demo, we will explore the process of selecting real-world-inspired security vulnerabilities and transforming them into cloud-native apps with integrated security tests. Using Play SDK, we can create new challenges that focus on finding and fixing security vulnerabilities.
+
+Repo: https://github.com/secdim/play-sdk
 </details>
-
-<details>
-  <summary>White Phoenix: recovering files from ransomware attacks</summary>
-  White Phoenix tool's goal is to help victims of ransomware attacks recover some of their precious lost data. The tool can successfully recover data from encrypted files by ransomware that uses the Intermittent Encryption method (aka Partial Encryption) in the attack. The tool is free and can be used automatically as a service or manually by taking the code from the tool's GitHub repository.
-
-The Tool's Website: https://getmyfileback.com/
-The Tool's GitHub: https://github.com/cyberark/White-Phoenix
-
-</details>
-
-<details>
-  <summary>MITRE ATTACK FLOW Detector</summary>
-  Converting all kinds of SOC alerts to mitre attack techniques and then finding those few alerts that form a mitre attack flow, seems like a lot of manual work. 
-
-
-
-But using a Large Language Model, Knowledge Graph, Temporal Graph Embedding, Density Clustering, and a Markov Model, its now possible to do it automatically in real time.
-</details>
-
