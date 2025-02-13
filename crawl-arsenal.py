@@ -4,12 +4,14 @@
 
 import argparse
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from pathlib import Path
 
 # Set up argument parser
 parser = argparse.ArgumentParser(description="Crawl Black Hat Arsenal page and extract content.")
@@ -23,8 +25,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run in headless mode
 
 # Initialize the WebDriver
-service = Service('/usr/bin/chromedriver')
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 # Define the base URL pattern with placeholders for region and year
 base_url_pattern = "https://www.blackhat.com/{region}-{year}/arsenal/schedule/"

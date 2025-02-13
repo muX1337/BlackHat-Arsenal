@@ -8,6 +8,6 @@ Here is already a good list https://github.com/toolswatch/blackhat-arsenal-tools
 
 # Crawler
 
-Quickly written crawler to fetch discreption and summaries.
+Quickly written crawler to fetch description and summaries.
 
-INFO: Path for chromedriver is still hardcoded and must be changed for the system.
+INFO: chromedriver must be in the path to work
