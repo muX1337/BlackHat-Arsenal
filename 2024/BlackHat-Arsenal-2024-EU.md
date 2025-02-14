@@ -1,6 +1,8 @@
 <details>
   <summary>TrailShark: Unraveling AWS API and Service Interactions</summary>
   TrailShark Capture Utility is a tool designed to integrate AWS CloudTrail logs directly into Wireshark. This integration allows for near-real-time analysis of AWS API calls, providing invaluable insights for debugging, security and research. With TrailShark, you can capture and examine the internal API calls triggered by AWS services, better understand what is "running under the hood", consequently shedding light on potential vulnerabilities and security flaws.
+
+  Github: https://github.com/Aqua-Nautilus/TrailShark
 </details>
 
 <details>
@@ -30,6 +32,8 @@ Our objectives are to:
 - Balance the intrinsic asymmetry of cyber-attacks by raising high-fidelity alerts around advanced attacker activity.
 
 - Impose cost by embedding high-value deception artefacts within critical attack paths.
+
+Github: https://github.com/huginn/huginn
 </details>
 
 <details>
@@ -51,11 +55,16 @@ Key Features:
 2. Intelligent Correlation Engine.
 
 3. POC and Report Creation.
+
+
+Github: https://github.com/JA3G3R/agneyastra
 </details>
 
 <details>
   <summary>findmytakeover - find dangling domains in a multi cloud environment</summary>
   findmytakeover detects dangling DNS record in a multi cloud environment. It does this by scanning all the DNS zones and the infrastructure present within the configured cloud service provider either in a single account or multiple accounts and finding the DNS record for which the infrastructure behind it does not exist anymore rather than using wordlist or bruteforcing DNS servers.
+
+  Github: https://github.com/anirudhbiyani/findmytakeover
 </details>
 
 <details>
@@ -69,11 +78,15 @@ Imagine a hacker finding a log file with a juicy password or access token. It co
 That's where MaskerLogger comes in as your security shield. It's an open-source logging library that seamlessly integrates with popular frameworks. MaskerLogger acts as a guardian for your sensitive information. It automatically detects and masks any sensitive data a developer might unintentionally log, keeping your logs clean and security-tight.
 
 MaskerLogger isn't just about security. It saves developers valuable time by automating data masking, reducing the risk of human error. No more sifting through logs and redacting sensitive information manually.
+
+Github: https://github.com/oxsecurity/MaskerLogger
 </details>
 
 <details>
   <summary>SCAGoat - Exploiting Damn Vulnerable SCA Application</summary>
   SCAGoat is a deliberately insecure web application designed for learning and testing Software Composition Analysis (SCA) tools. It offers a hands-on environment to explore vulnerabilities in Node.js and Java Springboot applications, including actively exploitable CVEs like CVE-2023-42282 and CVE-2021-44228 (log4j). This application can be utilized to evaluate various SCA and container security tools, assessing their capability to identify vulnerable packages and code reachability. As part of our independent research, the README includes reports from SCA tools like semgrep, snyk, and endor labs. Future research plans include incorporating compromised or malicious packages to test SCA tool detection and exploring supply chain attack scenarios.
+
+  Github: https://github.com/harekrishnarai/Damn-vulnerable-sca
 </details>
 
 <details>
@@ -91,6 +104,8 @@ In this Arsenal session we will showcase obfuscation, deobfuscation, and detecti
  
 
 Come see how SkyScalpel enables surgical precision in cloud offense and defense.
+
+Github: https://github.com/Permiso-io-tools/SkyScalpel
 </details>
 
 <details>
@@ -102,6 +117,8 @@ To bring some order to this chaos, MACOBOX was developed.
 MACOBOX has been designed to simplify and enhance hardware penetration testing by providing a comprehensive toolset for analyzing and extracting firmware from various hardware interfaces. With a custom 3D printed case, dedicated boards, and a user-friendly interface, MACOBOX ensures a seamless and efficient testing experience.
 
 In this presentation we will review all its critical features and present some use cases and demos.
+
+Github: https://github.com/mindstormsecurity/MACOBOX
 </details>
 
 <details>
@@ -139,6 +156,8 @@ Highlights of Blackdagger
 * Suitable for DevOps and DevSecOps
 
 * Suitable for MLOps and MLSecOps
+
+Github: https://github.com/ErdemOzgen/blackdagger
 </details>
 
 <details>
@@ -162,6 +181,8 @@ Using Ollama, users can host the LLM both locally and remotely. By calling the O
 and generated into complete, accurate, and well-formatted source files.
 
 ByteCodeLLM currently targets Python EXEs but can potentially be extended as a future framework for decompiling other byte code / virtual machine based programming languages and provides an easy-to-use command-line interface.
+
+Github: https://github.com/cyberark/ByteCodeLLM
 </details>
 
 <details>
@@ -171,6 +192,8 @@ ByteCodeLLM currently targets Python EXEs but can potentially be extended as a f
 
 
 In this arsenal presentation, we demonstrate DICOMHawk, an open-source python-based honeypot that is tailored for the DICOM protocol. With DICOMHawk we offer security practitioners and research a tool to be able to understand the attack landscape, lure attackers in, as well as understand Internet-level scanners such as Shodan. Among other properties, DICOMHawk offers various operations for a realistic DICOM server environment, the ability to comprehensively log DICOM associations, messages and events to understand incoming attacks, and a user-friendly web interface. Lastly, the honeypot is easily extendable via custom handlers.
+
+Github: https://github.com/honeynet/DICOMHawk
 </details>
 
 <details>
@@ -192,6 +215,8 @@ After working on different tools that aim to unify the chaotic world of shells a
 
 
 If you have ever had too many terminals open, forgotten where a remote shell was or missed a graphical interface for your favourite tool, this talk is for you.
+
+Github: https://github.com/JoelGMSec/Kitsune
 </details>
 
 <details>
@@ -231,6 +256,8 @@ Penelope can work in conjunction with metasploit exploits by disabling the defau
 
 
 Currently only Unix shells are fully supported. There is only basic support for Windows shells (netcat-like interaction + logging) and the rest of the features are under way.
+
+Github: https://github.com/brightio/penelope
 </details>
 
 <details>
@@ -244,6 +271,8 @@ While Entra ID protects the private key if generated internally, as it cannot be
 
 
 The tool requires the signing certificate to use, the username that is target for impersonation, and some basic federation information about the target application that can be derived from a few different methods.
+
+Github: https://github.com/Semperis/SilverSamlForger
 </details>
 
 <details>
@@ -255,6 +284,10 @@ BRUSCHETTA-board is the latest device of the so-called WHID's CyberBakery family
 PIZZAbite is a cheaper and open-hardware version of a commercial PCB holder, perfect for probing &amp; holding your PCB while soldering or inspection. The PIZZAbite PCB probes are mounted on flexible metal arm and a powerful magnet in the base for easy positioning. The one of the kind "lift and drop" function takes away the need for annoying and complicated set screws. Thanks to the extreme flexibility of the arms connected to the PIZZAbite PCBs, the compressible needle (a.k.a. PogoPin) maintain constant pressure at the probing point so even if the board is bumped into the probe tip will always stay in position. 
 
 In this presentation, we will review with practical examples how PIZZAbite &amp; BRUSCHETTA-board work against real IoT devices.
+
+Github-PIZZAbite: https://github.com/whid-injector/PIZZAbite
+Github-BRUSCHETTA-board : https://github.com/whid-injector/BRUSCHETTA-board
+
 </details>
 
 <details>
@@ -277,6 +310,8 @@ In this presentation, we will review with practical examples how PIZZAbite &amp;
 <span>Learn how to leverage its powerful features for enhanced threat detection and response</span>
 <span>Understand the benefits of open source in the network security landscape</span>
 <span>Gain insights into how you can contribute to and benefit from the Clear NDR - Community edition</span></p>
+
+Website: https://www.stamus-networks.com
 </details>
 
 <details>
@@ -290,6 +325,8 @@ But not with FaceGSM. As the name implies, FaceGSM utilizes the FGSM approach to
 
 
 What the name does not imply, however, is that you don't even need to know what an FGSM is to exploit a facial recognition model using FaceGSM framework. With just access to a facial recognition model and the target's face of your choice, FaceGSM will attempt to understand the construction of the model, apply image pre-processing accordingly, and then generate layers of perturbation pixels that could make a facial recognition model to misclassify your face into your target's face.
+
+Github: https://github.com/facegsmproject/FaceGSM/
 </details>
 
 <details>
@@ -303,6 +340,8 @@ DevOps platforms like GitHub can easily grow in repos, actions, tokens, users, o
 
 
 GitArmor is a policy as code tool, that helps companies,teams and open-source creators, evaluate and enforce their GitHub (only for now) security posture at repository or organization level. Using policies defined using yml, GitArmor can run as CLI, GitHub action or GitHub App, to unify visibility into DevOps security posture and strengthen resource configurations as part of the development cycle.
+
+Github: https://github.com/dcodx/gitarmor
 </details>
 
 <details>
@@ -324,11 +363,15 @@ Cookie Handling: GoTestWAF can consider cookies during scanning and update the s
 Email Report Sending: GoTestWAF interactively prompts for an email address to send the report. 
 
 New Placeholders: Numerous new placeholders have been added, listed in the readme's "How It Works" section.
+
+Github: https://github.com/wallarm/gotestwaf
 </details>
 
 <details>
   <summary>Packing-Box: Improving Detection of Executable Packing</summary>
   This Docker image is an experimental toolkit gathering analyzers, detectors, packers, tools and machine learning machinery for making datasets of packed executables and training machine learning models for the static detection of executable packing applied to multiple formats (including PE, ELF and Mach-O) and for studying the best features that can be used in learning-based static detectors. Furthermore, it currently holds various functionalities to focus on supervised, unsupervised or even adversarial learning and is constantly being improved for extending its capabilities.
+
+  Github: https://github.com/packing-box/docker-packing-box
 </details>
 
 <details>
@@ -344,6 +387,8 @@ As DFIR professionals we have faced these problems many times and so we decided 
 And the answer is the Tsurugi Linux project that, of course, can be used also for educational purposes.
 
 A special Tsurugi Linux BLACKHAT EDITION will be shared only with the participants.
+
+https://tsurugi-linux.org/
 </details>
 
 <details>
@@ -375,6 +420,8 @@ The ease and simplicity of SHAREM is breathtaking, especially comparison to how 
 
 
 For reverse engineers of all kinds, SHAREM is a must-see presentation.
+
+Github: https://github.com/Bw3ll/sharem
 </details>
 
 <details>
@@ -388,11 +435,15 @@ Each experiment is performed within a dedicated Docker container, ensuring the i
 
 
 BugHog has already been proven to be a valuable asset in pinpointing the lifecycle of security bugs, such as Content Security Policy bugs.
+
+Github: https://github.com/DistriNet/BugHog
 </details>
 
 <details>
   <summary>Fabric: automating cybersecurity reporting</summary>
   Fabric is an open-source CLI tool and a configuration language for automating cybersecurity reporting. Taking inspiration from Terraform, we built a reporting-as-code DevSecOps tool that automates data collation and content rendering. By automating operational reporting, Fabric saves security teams time, formalizes communications, and improves stakeholder management.
+
+  Github: https://github.com/blackstork-io/fabric
 </details>
 
 <details>
@@ -406,16 +457,22 @@ From exploitable smart contract code to sophisticated re-entrancy attacks, Web3'
 
 
 The level_up! project is an open-source initiative aimed at teaching about security in Web3. It provides a platform featuring a system of challenges, categorized by difficulty level, where various Web3 concepts are presented, and points are earned upon successfully overcoming these challenges. The goal is learning. Users register on the platform and can deploy multiple SmartContracts. Each challenge might comprise one or more SmartContracts.
+
+Github: https://github.com/Telefonica/level_up
 </details>
 
 <details>
   <summary>Matildapp: Multi Analysis Toolkit (by IdeasLocas) on DAPPs</summary>
   Web3 is a paradigm that has burst into the digital world with force. Millions of transactions are performed on different types of blockchain. The importance of smart contracts on blockchain, such as Ethereum, is gaining greater relevance due to the finances being managed. A single error or security breach can cost millions of dollars, making cybersecurity a vital factor. This paper introduces the tool Madildapp, which enables conducting DAST and SAST tests to evaluate the security of smart contracts and other elements within the Web3 value chain (such as DAPPs themselves). It is an innovative tool that aggregates different types of tests oriented towards different types of elements, including bytecode, pure source code, and the contract in its own execution through dynamic tests. Madildapp is an all-in-one modular implementation that will help the community to improve the tool.
+
+  Github: https://github.com/Telefonica/Matildapp
 </details>
 
 <details>
   <summary>NotPacked++: Evading Static Packing Detection</summary>
   NotPacked++ is an adversarial weaponized tool to alter a packed executable to evade static packing detection. It is designed to be used by malware analysts to test the effectiveness of their detection mechanisms and to improve their detection capabilities. It is also useful for red teamers to test the effectiveness of their evasion techniques, and highlight potential weaknesses of a target's security mechanisms.
+
+  Github: https://github.com/packing-box/packer-masking-tool
 </details>
 
 <details>
@@ -432,50 +489,20 @@ Right at the start, there will be a briefing to show how to play in the wargame.
   GoatPen is a diverse collection of vulnerable applications and infrastructure, affectionately referred to as "goats," designed for learners to practice their skills. Currently, GoatPen includes AWSGoat (AWS Security), GCPGoat (GCP Security), AzureGoat (Azure Security), GearGoat (Automobile Security), and ICSGoat (ICS Security), with more in the development and concept stages. Together, these tools have garnered over 2,700 stars and 1,200 forks on GitHub, reflecting their popularity and utility in the security community. Each member of GoatPen is actively maintained and updated.
 
 Deploying these tools is made simple with GoatPen, requiring only Docker on your local system. GoatPen's built-in deployment helpers ensure a smooth setup of individual components, offering flexibility and ease of use for security professionals and developers. This platform also makes it easy for enthusiasts and learners to discover and keep up with the latest updates and additions to these security tools.
-</details>
 
-<details>
-  <summary>Penelope shell handler</summary>
-  Penelope is a shell handler designed to be easy to use and intended to replace netcat when exploiting RCE vulnerabilities. It is compatible with Linux and macOS and requires Python 3.6 or higher. It is a standalone script that does not require any installation or external dependencies, and it is intended to remain this way.
-
-
-
-Among the main features are:
-
-
-
- *   Auto-upgrade shells to PTY (realtime resize included)
-
- *   Logging interaction with the targets
-
- *   Download files/folders from targets
-
- *   Upload local/remote files/folders to targets
-
- *   Run scripts on targets and get output on a local file in real time.
-
- *   Spawn shells on multiple tabs and/or hosts
-
- *   Maintain X amount of active shells per host no matter what
-
- *   Multiple sessions
-
- *   Multiple listeners
-
- *   Can be imported by python3 exploits and get shell on the same terminal
-
-
-
-Penelope can work in conjunction with metasploit exploits by disabling the default handler with `set DisablePayloadHandler True`
-
-
-
-Currently only Unix shells are fully supported. There is only basic support for Windows shells (netcat-like interaction + logging) and the rest of the features are under way.
+GoatPen
+https://github.com/ine-labs/AWSGoat
+https://github.com/ine-labs/GCPGoat
+https://github.com/ine-labs/AzureGoat
+https://github.com/ine-labs/GearGoat
+https://github.com/ine-labs/ICSGoat
 </details>
 
 <details>
   <summary>Secret Magpie</summary>
   Secret Magpie is a secret scanning tool that leverages Gitleaks and TruffleHog as a backend for bulk scanning git repositories within organizations such as GitHub, Bitbucket, Azure DevOps, etc in order to produce machine readable and human friendly output. Secret Magpie is able to provide a web based UI for quickly filtering through the results from the backend tools to help with quickly eliminating false positives and identifying the most likely place secrets will be found.
+
+  Github: https://github.com/punk-security/secret-magpie
 </details>
 
 <details>
@@ -489,6 +516,8 @@ The open-source Suricata Language Server (SLS) has been developed to solve these
 
 
 In this talk, you will see how SLS can be used and how to make sense of the error messages. You will also discover what Suricata features are used behind the scene to make this possible.
+
+Presentation: https://www.youtube.com/watch?v=nzkGmr4p5dE
 </details>
 
 <details>
@@ -508,6 +537,8 @@ In this talk, you will see how SLS can be used and how to make sense of the erro
 
 
 With Tabby, you can uncover a wide range of Java-related vulnerabilities, including classic web vulnerabilities (such as those involving various frameworks and servlets), Netty-style RPC vulnerabilities, and diverse deserialization exploitation chains. The art of Java vulnerability hunting is simplified into cypherized database queries. To date, Tabby has helped discover over 100 zero-day vulnerabilities, with CVEs filed for several open-source projects, including XStream and Dubbo.
+
+Github: https://github.com/wh1t3p1g/tabby
 </details>
 
 <details>
@@ -547,11 +578,16 @@ VelLMes was evaluated and tested in its generative capabilities and deception ca
 
 
 VelLMes can bring a new perspective to your deception technology in your company.
+
+Github: https://github.com/stratosphereips/VelLMes-AI-Deception-Framework
 </details>
 
 <details>
   <summary>ACVTool 2024 MultiDex</summary>
   ACVTool is a sophisticated bytecode instrumentation tool designed for highlighting instruction coverage in Android apps. In 2024, ACVTool received a major update unlocking smali coverage analysis for modern Android apps. Now, ACVTool supports complex Multidex and Multi-APK applications that you can pull right from your Android device. With ACVTool we highlight exact bytecode instruction (in smali representation) executed when running a particular feature, e.g. to see the actually running code behind a tap of a button. To further depict selected app behavior, ACVTool may partially shrink not executed code. ACVTool works on 3rd-party Android apps without source code, and it does not require a rooted device.
+
+  Github: https://github.com/pilgun/acvtool
+  Demo: https://www.youtube.com/watch?v=0GLyqFdxboQ
 </details>
 
 <details>
@@ -561,34 +597,15 @@ VelLMes can bring a new perspective to your deception technology in your company
 Whether you're a security enthusiast, a developer looking to understand vulnerabilities, a beginner entering the mobile app security arena, or a professional seeking skill refinement, BugBazaar has something for everyone. With a diverse range of vulnerabilities, from "Remote Code Execution through insecure Dynamic Code Loading" to "One Click Account Takeover via deeplink," BugBazaar covers an array of scenarios and vulnerabilities commonly found in mobile applications.
 
 Cherry on the top is BugBazaar gets frequent updates with latest vulnerabilities to keep up with current mobile applications security landscape.
-</details>
 
-<details>
-  <summary>ByteCodeLLM - Framework for Converting Executable to Source using Open-source Tools and a Fine-tuned LLM Model</summary>
-  In this talk, we will present a proof of concept for ByteCodeLLM, a tool designed to convert obfuscated or closed-source Python EXEs back into their original source files.
-
-Leveraging a fine-tuned Large Language Model (LLM), ByteCodeLLM offers accurate decompilation of newer Python versions such as 3.8 through 3.12.
-
-Step 1: Extraction and Decompilation
-
-Python EXEs are first extracted into .pyc and .pyd files using open-source tools like PyInstXtractor.
-
-PyCDC and PyCDAS are utilized to decompile .pyc files into partially decompiled .py format and extract the byte code representation.
-
-Step 2: Byte code to source code using a Fine-tuned LLM Model
-
-ByteCodeLLM's model is trained on a vast dataset of Python projects and fine-tuned to provide accurate decompilation.
-
-Using Ollama, users can host the LLM both locally and remotely. By calling the Ollama API, the partially decompiled Python files and their byte code are sent for processing
-
-and generated into complete, accurate, and well-formatted source files.
-
-ByteCodeLLM currently targets Python EXEs but can potentially be extended as a future framework for decompiling other byte code / virtual machine based programming languages and provides an easy-to-use command-line interface.
+Github: https://github.com/payatu/BugBazaar
 </details>
 
 <details>
   <summary>Cloud Offensive Breach and Risk Assessment (COBRA)</summary>
   Cloud Offensive Breach and Risk Assessment (COBRA) is an open-source tool designed to empower users to simulate attacks within multi-cloud environments, offering a comprehensive evaluation of security controls. By automating the testing of various threat vectors including external and insider threats, lateral movement, and data exfiltration, COBRA enables organizations to gain insights into their security posture vulnerabilities. COBRA is designed to conduct simulated attacks to assess an organization's ability to detect and respond to security threats effectively.
+
+  Github: https://github.com/PaloAltoNetworks/cobra-tool
 </details>
 
 <details>
@@ -622,6 +639,8 @@ This method allows for pinpointing the exact location where a security fix is ne
 
 
 This is my main project and I will love to present my work to audience at BlackHat.
+
+Website: https://www.akto.io/
 </details>
 
 <details>
@@ -629,6 +648,8 @@ This is my main project and I will love to present my work to audience at BlackH
   Collection of javascript tools and apps for password generation, hashcracking etc. Right. From. Your. Browser. 
 
 This collection includes various snippets combined together in a standalone static web app that can be used with any browser. With it, users can generate a password list based on certain criteria and hashcat rules, subdomains for OSINT, or crack a range of hashes, including but not limited to NetNTLMv2, MD5Crypt, JWT and more.
+
+Github: https://github.com/zzzteph/weakpass
 </details>
 
 <details>
@@ -638,6 +659,8 @@ This collection includes various snippets combined together in a standalone stat
 
 
 Damn Vulnerable Browser Extension (DVBE) is an open-source vulnerable browser extension, designed to shed light on the importance of writing secure browser extensions and to educate the developers and security professionals about the vulnerabilities and misconfigurations that are found in the browser extensions, how they are found &amp; how they impact business. This built-to-be vulnerable extension can be used to learn, train &amp; exploit browser extension related vulnerabilities.
+
+Github: https://github.com/infosecak/DVBE
 </details>
 
 <details>
@@ -647,6 +670,8 @@ Damn Vulnerable Browser Extension (DVBE) is an open-source vulnerable browser ex
 
 
 distribRuted provides the necessary infrastructure and orchestration for distributed attacks. This framework allows developers to easily create and execute specific distributed attacks using standard application modules. Users can develop their attack modules or utilize pre-existing ones from the community. With distribRuted, automating, managing, and tracking a distributed attack across hundreds of nodes becomes straightforward, thereby enhancing efficiency, reducing time and costs, and eliminating a Single Point of Failure (SPoF) in penetration testing.
+
+Github: https://github.com/distribRuted
 </details>
 
 <details>
@@ -655,13 +680,8 @@ distribRuted provides the necessary infrastructure and orchestration for distrib
 
 Our approach uses our deep experience as vulnerability researchers and applies zero-day research strategies to Generative AI. We've developed a systematic method to break into all the most updated LLM models and are excited to share our new open-source fuzzing infrastructure. This tool doesn't just jailbreak LLMs efficiently�it also helps us create detection-based solid solutions that improve LLM security.
 </p>
-</details>
 
-<details>
-  <summary>GoatPen: Hack, Hone, Harden</summary>
-  GoatPen is a diverse collection of vulnerable applications and infrastructure, affectionately referred to as "goats," designed for learners to practice their skills. Currently, GoatPen includes AWSGoat (AWS Security), GCPGoat (GCP Security), AzureGoat (Azure Security), GearGoat (Automobile Security), and ICSGoat (ICS Security), with more in the development and concept stages. Together, these tools have garnered over 2,700 stars and 1,200 forks on GitHub, reflecting their popularity and utility in the security community. Each member of GoatPen is actively maintained and updated.
-
-Deploying these tools is made simple with GoatPen, requiring only Docker on your local system. GoatPen's built-in deployment helpers ensure a smooth setup of individual components, offering flexibility and ease of use for security professionals and developers. This platform also makes it easy for enthusiasts and learners to discover and keep up with the latest updates and additions to these security tools.
+https://github.com/cyberark/FuzzyAI
 </details>
 
 <details>
@@ -675,22 +695,17 @@ Morion's modular design facilitates the seamless integration of custom symbolic 
 
 
 To highlight some of Morion's capabilities, a detailed write-up (https://github.com/cyber-defence-campus/netgear_r6700v3_circled) has been created that demonstrates how the tool can assist in the process of exploit generation. The targeted vulnerability corresponds to CVE-2022-27646, a known stack buffer overflow affecting NETGEAR R6700v3 routers (in version 10.04.120_10.0.91). Along with demonstrating Morion's main functionalities, the write-up provides a comprehensive explanation - including setup, emulation, tracing, symbolic execution, vulnerability description and exploit generation - allowing the interested reader to follow along.
+
+Just a thanks to the authors for pointing to their githubs. <3
+
+https://github.com/cyber-defence-campus/morion
 </details>
 
 <details>
   <summary>msInvader: Simulating Adversary Techniques in M365 and Azure</summary>
   msInvader is an adversary simulation tool built for blue teams, designed to simulate adversary techniques within M365 and Azure environments. This tool generates attack telemetry, aiding teams in building, testing, and enhancing detection analytics. By implementing multiple authentication mechanisms, including OAuth flows for compromised user scenarios and service principals, msInvader mirrors realistic attack conditions. It interacts with Exchange Online using the Graph API, EWS, and REST API, providing comprehensive simulation capabilities. This session will explore msInvader's technical features, demonstrating its application in improving security defenses through detailed adversary simulations.
-</details>
 
-<details>
-  <summary>MACOBOX - The all-in-one hacking toolbox for hardware penetration testing.</summary>
-  Nowadays, the IoT landscape is fulfilled with a multitude of products, devices and solutions using a pletora of protocols, architectures and designs. 
-
-To bring some order to this chaos, MACOBOX was developed. 
-
-MACOBOX has been designed to simplify and enhance hardware penetration testing by providing a comprehensive toolset for analyzing and extracting firmware from various hardware interfaces. With a custom 3D printed case, dedicated boards, and a user-friendly interface, MACOBOX ensures a seamless and efficient testing experience.
-
-In this presentation we will review all its critical features and present some use cases and demos.
+  Github: https://github.com/mvelazc0/msInvader
 </details>
 
 <details>
@@ -717,6 +732,8 @@ Additionally, the architecture of defender2yara will be explored, with a high-le
 
 
 For Red Teams, the presentation will cover analyzing YARA rules to identify detection gaps and crafting evasive techniques for penetration testing and red teaming exercises.
+
+Github: https://github.com/t-tani/defender2yara
 </details>
 
 <details>
@@ -730,11 +747,15 @@ With its exceptional visibility into Linux kernel system calls, Falco can be sea
 
 
 We will walk you through real-world scenarios based on recent CI/CD threats, demoing how Falco can be used in GitHub Actions pipelines to detect malicious behaviors.
+
+Github: https://github.com/falcosecurity/falco
 </details>
 
 <details>
   <summary>Grappling for Evil in the Cloud</summary>
   Cloudgrapple is a purpose-built tool designed for effortless querying of high-fidelity and single-event detections related to well-known threat actors in popular cloud environments such as AWS and Azure. Leveraging the capabilities of cloudgrep in the background�an established tool developed by Cado Security, explicitly designed to do what its name suggests�the tool is crafted with our Tactics, Techniques, and Procedures (TTPs). This integration enables users to query for and gather the latest threat intelligence, making Cloudgrappler a robust asset for any organization keen on assessing potential security incidents and determining the impact of an attack
+
+  Github: https://github.com/Permiso-io-tools/CloudGrappler
 </details>
 
 <details>
@@ -744,38 +765,8 @@ We will walk you through real-world scenarios based on recent CI/CD threats, dem
 
 
 Leveraging Halberd, security teams can swiftly &amp; easily execute attack techniques to generate telemetry and validate their controls and detection &amp; response capabilities via a simple intuitive web interface. Halberd aims to reduce the friction to perform effective and continuous security testing by providing an easy to deploy and executable library of attack techniques. Halberd also provides additional capabilities to automate testing and testing with attack playbooks making it easier to chain and emulate
-</details>
 
-<details>
-  <summary>Kitsune: One C2 to control them all</summary>
-  One of the most important tools used in Ethical Hacking and Red Team campaigns, are what we call "Command and Control" tools.
-
-
-
-There are currently hundreds of them. Public, private, free or paid. Some are as famous as Cobalt Strike, while others are only known by their own creators.
-
-
-
-The main problem with these tools is the lack of compatibility between them. Despite sharing many common elements, such as communication protocols or deployment and execution methods.
-
-
-
-After working on different tools that aim to unify the chaotic world of shells and webshells, this ambitious project was born from the same need and aims to streamline and improve the work of pentesters, grouping different tools and techniques in a single graphical interface. In addition, Kitsune is capable of incorporating new functions to already known tools. Some of them, never seen before in other C2s.
-
-
-
-If you have ever had too many terminals open, forgotten where a remote shell was or missed a graphical interface for your favourite tool, this talk is for you.
-</details>
-
-<details>
-  <summary>PIZZABITE and BRUSCHETTABOARD: The Hardware Hacking Toolkit</summary>
-  In the last decade we have witnessed the emerging of a new era of connected devices. With this new trend, we also faced a security knowledge gap that in the recent years emerged respect to the (I)IoT landscape. The lack of a properly-defined workflow to approach a security audit of (I)IoT devices and the lack of technical expertise among security personnel in relation to embedded hardware security worsen this gap even further. To bring some clarity and order to this complicated and variegated matter It has been developed PIZZAbite &amp; BRUSCHETTA-board: an all-in-one hardware hacking toolkit that can be considered the swiss-army-knife of any hardware hacker.
-
-BRUSCHETTA-board is the latest device of the so-called WHID's CyberBakery family. It all started in 2019 from a personal need. The idea was to have a board that could gather in one single solution mutliple tools used by hardware hackers to interact with IoT and Embedded targets. It is the natural evolution of the other boards already presented in the past at BlackHat Arsenal: Focaccia-Board, Burtleina-Board and NANDo-Board. It has been designed for any hardware hacker out there that is looking for a fairly-priced all-in-one debugger &amp; programmer that supports: UART, JTAG, I2C &amp; SPI protocols and allows to interact with different targets' voltages (i.e., 1.8, 2.5, 3.3 and 5 Volts!). 
-
-PIZZAbite is a cheaper and open-hardware version of a commercial PCB holder, perfect for probing &amp; holding your PCB while soldering or inspection. The PIZZAbite PCB probes are mounted on flexible metal arm and a powerful magnet in the base for easy positioning. The one of the kind "lift and drop" function takes away the need for annoying and complicated set screws. Thanks to the extreme flexibility of the arms connected to the PIZZAbite PCBs, the compressible needle (a.k.a. PogoPin) maintain constant pressure at the probing point so even if the board is bumped into the probe tip will always stay in position. 
-
-In this presentation, we will review with practical examples how PIZZAbite &amp; BRUSCHETTA-board work against real IoT devices.
+Github: https://github.com/vectra-ai-research/Halberd
 </details>
 
 <details>
@@ -789,6 +780,8 @@ To better understand the malicious smart contracts, EVM decompilers (e.g., Ether
 
 
 We present Mothra, a Ghidra extension designed to address the aforementioned limitations. By integrating with Ghidra, Mothra facilitates the disassembly, CFG visualization, and decompilation of smart contracts. Moreover, Mothra analyzes EVM bytecode to uncover the internals of smart contract such as smart contract metadata, external functions, function signatures, and calling references of internal functions. This empowers Ghidra with enhanced functionality tailored for reverse engineering EVM-based smart contracts.
+
+Github: https://github.com/syjcnss/Mothra
 </details>
 
 <details>
@@ -802,24 +795,15 @@ From an offensive security perspective, while it is possible to operationalize a
 
 
 We reveal pwnobd, a Python-based offensive framework providing researchers with a common toolbox that allows for automation of simple attacks and provides assistance in the development of more complex attacks, deployable through an operator-ready command-line tool. A hardware demonstration platform will be provided on-site on the conference for the interested public to experiment with attacks that can be performed using this tool.
+
+Github: https://github.com/Nnubes256/pwnobd
 </details>
 
 <details>
   <summary>RF Swift: a swifty toolbox for all wireless assessments</summary>
   RF Swift is a multi-platforms tool written in Go designed to streamline the deployment of containers for your preferred RF tools in a box.
-</details>
 
-<details>
-  <summary>Streamlining Suricata Signature Writing: Mastering the Art with Suricata Language Server</summary>
-  Writing signatures for Suricata and other intrusion detection systems (IDS) is considered by many to be a form of art. One of the main reasons is that the rule writer needs to start by examining a network trace to identify patterns that are representative to a threat/behavior without being too broad (to avoid false positives) or too narrow (to avoid being escaped at the first change of a bit in the attack). But the language used to write signatures is the second reason. It is not really expressive and doesn't have advanced constructs. As a result signatures require complex writing to do things that could appear simple. And there are implicit conventions and structures that must be followed to guarantee correct integration in the detection engine.
-
-
-
-The open-source Suricata Language Server (SLS) has been developed to solve these problems. SLS is a Language Server Protocol implementation that allows the user to benefit from built-in Suricata diagnostic capabilities when editing rules. SLS provides advanced diagnostics as well as auto-completion.
-
-
-
-In this talk, you will see how SLS can be used and how to make sense of the error messages. You will also discover what Suricata features are used behind the scene to make this possible.
+  Github: https://github.com/PentHertz/RF-Swift
 </details>
 
 <details>
@@ -833,13 +817,8 @@ In this talk, you will see how SLS can be used and how to make sense of the erro
     3. Once we have the graphs, it calculates the Weisfeiler-Lehman matrix.
 
     4. From the Weisfeiler-Lehman matrix the program calculates the mean and the standard deviation. The mean and the standard deviation are the measures that we use to know how similar the abstract syntax trees are.
-</details>
 
-<details>
-  <summary>WeakpassJS - a collection of tools for generation, bruteforce and hashcracking</summary>
-  Collection of javascript tools and apps for password generation, hashcracking etc. Right. From. Your. Browser. 
-
-This collection includes various snippets combined together in a standalone static web app that can be used with any browser. With it, users can generate a password list based on certain criteria and hashcat rules, subdomains for OSINT, or crack a range of hashes, including but not limited to NetNTLMv2, MD5Crypt, JWT and more.
+    Github: https://github.com/Caralludo/linguado
 </details>
 
 <details>
@@ -853,6 +832,8 @@ Unlike other bug bounty events where the rules of engagement limits you to only 
 
 
 With the success of our bug bounty event, we look to bring this playground to a wider audience at Black Hat Europe, where you can look forward to testing your vulnerability research skills almost freely on a real-world environment.  We may even have some special guests contributing additional platforms to the environment for you to try.
+
+https://aisp.sg/bug_bounty_2024.html
 </details>
 
 <details>
@@ -874,24 +855,15 @@ The presenters will demonstrate the extent of the console logging problem and th
 
 
 Come and learn how the open-source Cloud Console Cartographer framework can provide clarity for threat hunters and detection engineers alike, helping defenders stop slogging through logging while putting the "soul" back in "console."
+
+Github: https://github.com/Permiso-io-tools/CloudConsoleCartographer
 </details>
 
 <details>
   <summary>CVE Half-Day Watcher: Hunting Down Vulnerabilities Before the Patch Drops</summary>
   <p><span>Defenders and attackers often simplify vulnerabilities into '0-day' or '1-day' categories, neglecting the nuanced gray areas where attackers thrive. In this session, we'll explore critical flaws we've uncovered in the open-source vulnerability disclosure process and introduce our tool to detect open-source projects that are at risk from these flaws. We'll reveal how vulnerabilities can be exploited prior to receiving patches and official announcements, posing significant risks for users. Our comprehensive analysis of GitHub (including issues, pull requests, and commit messages) and NVD metadata will illuminate vulnerabilities that don't neatly fit into the conventional '0-day' or '1-day' classifications but instead fall into 'Half-Day' or '0.75-Day' periods � moments when vulnerabilities are known but not yet fully disclosed or patched. Furthermore, we'll spotlight the techniques employed to identify these vulnerabilities, showcasing various scenarios and vulnerabilities discovered through this method. During this session, we'll introduce an open-source tool designed to detect such vulnerabilities and emphasize the window of opportunity for attackers to exploit this information and develop exploits. Our objective is to aid practitioners in identifying and mitigating issues throughout their vulnerability disclosure lifecycle.</span></p>
-</details>
 
-<details>
-  <summary>MaskerLogger</summary>
-  Have you ever been coding late at night, desperately trying to fix a bug before a deadline? In that mad scramble, did you accidentally log some sensitive data like a password or a customer's social security number? We've all been there. But those seemingly harmless logs can be a goldmine for attackers.
-
-The pressure to produce features can lead to what we call "tunnel vision coding." We focus on critical tasks, sometimes neglecting crucial aspects like secure logging. To troubleshoot issues quickly, developers often leave trails of breadcrumbs - log messages. However, the rush to fix problems can lead to accidentally including sensitive data in these logs. Log management systems aren't designed to handle this sensitive information, creating a gaping security hole.
-
-Imagine a hacker finding a log file with a juicy password or access token. It could be the key to a major security breach, costing your company millions in damages and reputational harm.
-
-That's where MaskerLogger comes in as your security shield. It's an open-source logging library that seamlessly integrates with popular frameworks. MaskerLogger acts as a guardian for your sensitive information. It automatically detects and masks any sensitive data a developer might unintentionally log, keeping your logs clean and security-tight.
-
-MaskerLogger isn't just about security. It saves developers valuable time by automating data masking, reducing the risk of human error. No more sifting through logs and redacting sensitive information manually.
+  Github: https://github.com/Aqua-Nautilus/CVE-Half-Day-Watcher
 </details>
 
 <details>
@@ -903,20 +875,8 @@ In this context, the current presentation details on a newly developed red teami
 For a methodological viewpoint, Pandora is based on each PM implementation. Basically, most PMs store their entries/master credentials in plaintext format within the corresponding memory processes. To this end, Pandora comprises different autonomous scripts based on each PM implementation.
 
 After following a CVD process, most vendors responded that such issues are out of their scope, since the attacker needs local access, or the AV/EDR may be able to impede such attacks. Overall, until now, only two vendors have acknowledged the problem and one has already reserved a CVE ID, namely CVE-2023-23349 (Kaspersky).
-</details>
 
-<details>
-  <summary>RF Swift: a swifty toolbox for all wireless assessments</summary>
-  RF Swift is a multi-platforms tool written in Go designed to streamline the deployment of containers for your preferred RF tools in a box.
-</details>
-
-<details>
-  <summary>AI Wargame</summary>
-  Come join a fun and educational attack and defence AI wargame. You will be given an AI chatbot. Your chatbot has a secret that should always remain a secret! Your objective is to secure your chatbot to protect its secret while attacking other players' chatbots and discovering theirs. The winner is the player whose chatbot survives the longest (king of the hill). All skill levels are welcomed, even if this is your first time seeing code, securing a chatbot, or playing in a wargame.
-
-
-
-Right at the start, there will be a briefing to show how to play in the wargame. Knowledge of the OpenAI Python SDK helps but is not a requirement. Each player has access to their chatbot source code repository where they can run, test, debug and push their changes.
+Thanks to the authors for pointing to the github: https://github.com/efchatz/pandora
 </details>
 
 <details>
@@ -934,6 +894,8 @@ The implementation enabled the execution of effective payloads in memory without
 
 
 Subsequently, existing web shell management tools were utilized to encrypt and transmit data, achieving traffic-side concealment. This approach aims to achieve a more comprehensive, covert, and long-term post-exploitation information gathering and deep penetration in real-world attack scenarios.
+
+Github: https://github.com/0linlin0/XPost
 </details>
 
 <details>
@@ -969,27 +931,8 @@ Disables Event Log via killing all threads of svchost.exe, i.e. killing the whol
 
 
 This tool performed a successful Execution of payload and provided Crystal clear Event Log against Sophos XDR enabled Environment.
-</details>
 
-<details>
-  <summary>MPT: Pentest In Action!</summary>
-  Security penetration testing is becoming as necessary and as usual a practice as software testing. Most, if not all, organisations either have their own penetration testing team or they utilise third-party pentesters.
-
-
-
-Imagine any fast-paced organisation developing multiple product lines and planning to release each of them from time to time. It becomes challenging for the organisation's security team to efficiently manage all of these pentest activities running and effectively produce security assessment reports and track them.
-
-
-
-Because of such volume of work, the numbers of pentesters in organisations are increasing to keep up. Each pentester is doing multiple pentests. The next cycle of a previous pentest can get assigned to another pentester. Each pentesting cycle has issues and recurring issues. And above all, managing all these using Excel worksheets is nightmare.
-
-
-
-A pentesting activity knowledge base is kind of must. A single-pane-of-glass view to all pentests running, and the issues identified, is a necessity for everyone involved in the security review cycle.
-
-
-
-To solve these challenges, I have developed a solution called Managing Pentest (MPT): Pentest in Action.
+Github: https://github.com/reveng007/DarkWidow
 </details>
 
 <details>
@@ -1011,6 +954,8 @@ Now, events generated by Tracee can be analyzed interactively using Wireshark's 
 
 
 The combination of Tracee's wide use in the security industry and its advanced system tracing and forensic capabilities, together with Wireshark's universal popularity in the entire IT industry, its maturity and ease of use, opens up a whole new world of capabilities for dynamic malware analysis, forensics, kernel hacking and more.
+
+Github: https://github.com/aquasecurity/traceeshark
 </details>
 
 <details>
@@ -1030,6 +975,8 @@ Currently covers:
 - Lateral Movement and Privilege Escalation
 
 - Persistence
+
+Github: https://github.com/gl4ssesbo1/Nebula
 </details>
 
 <details>
@@ -1047,6 +994,8 @@ The tool boasts a user-friendly interface and an easy-to-use reporting system th
 
 
 Overall, MORF is a Swiss army knife for offensive mobile application security, as it saves a lot of time, increases efficiency, enables a data-driven approach, allows for transparency in the security posture of the application by looking into all previous versions, and minimizes the risk of data breaches related to sensitive information, all this by using heuristics-based techniques.
+
+Github: https://github.com/amrudesh1/MORF
 </details>
 
 <details>
@@ -1064,6 +1013,8 @@ Tool features:
 - Bruteforce panels for vendor-specific and generic/common password lists to look for default creds
 
 - Use pre-defined templates/payloads to look for vulnerabilities
+
+Github: https://github.com/umair9747/Genzai
 </details>
 
 <details>
@@ -1093,5 +1044,7 @@ Enterprises are moving / have moved to Cloud Model or Hybrid Model and since sec
 
 
 Inside each CSP, there are three sub-categories i.e, Enumeration, Exploitation, and Post Exploitation. OS categorises tools &amp; our custom scripts as per the above mentioned sub-categories.
+
+Github: https://github.com/RedTeamOperations/RedCloud-OS
 </details>
 
