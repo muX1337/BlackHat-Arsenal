@@ -9,6 +9,8 @@ DevOps platforms like GitHub can easily grow in repos, actions, tokens, users, o
 
 
 GitArmor is a policy as code tool, that helps companies,teams and open-source creators, evaluate and enforce their GitHub (only for now) security posture at repository or organization level. Using policies defined using yml, GitArmor can run as CLI, GitHub action or GitHub App, to unify visibility into DevOps security posture and strengthen resource configurations as part of the development cycle.
+
+Github: https://github.com/dcodx/gitarmor
 </details>
 
 <details>
@@ -18,21 +20,30 @@ GitArmor is a policy as code tool, that helps companies,teams and open-source cr
 
 
 To solve these challenges, we propose a patch-based approach to identify real vulnerable kernel versions and a graph-based approach to identify necessary configs for activating a specific vulnerability. We implement these approaches in a tool, KernJC, automating the generation of vulnerable environments for kernel vulnerabilities. To evaluate the efficacy of KernJC, we build a dataset containing 66 representative real-world vulnerabilities with PoCs from kernel vulnerability research in the past five years. The evaluation shows that KernJC builds vulnerable environments for all these vulnerabilities, 32 (48.5%) of which require non-default configs, and 4 have incorrect version claims in the National Vulnerability Database (NVD). Furthermore, we conduct large-scale spurious version detection on kernel vulnerabilities and identify 128 vulnerabilities that have spurious version claims in NVD. To foster future research, we release KernJC with the dataset in the community.
+
+Github: https://github.com/NUS-Curiosity/KernJC
 </details>
 
 <details>
   <summary>RedRays ABAP Code Scanner &amp; SAP Threat Modeling Builder</summary>
   RedRays is excited to present two open-source tools at BlackHat Asia, each designed to bolster security within SAP environments. The ABAP Code Scanner offers robust analysis of ABAP code, identifying security vulnerabilities, code quality issues, and best practice violations. During BlackHat Asia, we will introduce an open-source dataflow analysis feature to enhance the tool's ability to detect complex vulnerabilities by tracing data propagation through the code. Additionally, the SAP Threat Modeling Builder helps visualize interconnections across SAP landscapes, and we are pleased to announce upcoming support for SAP Java systems, which will be presented at the event. This extension will enable identification of security risks across both ABAP and Java-based SAP environments.
+
+  Github: https://github.com/redrays-io/ABAP-Code-Scanner
+  https://github.com/redrays-io/SAP-Threat-Modeling
 </details>
 
 <details>
   <summary>SCAGoat - Exploiting Damn Vulnerable and Compromised SCA Application</summary>
   SCAGoat is a deliberately insecure web application built to support hands-on learning and testing of Software Composition Analysis (SCA) tools. It allows users to explore vulnerabilities in Node.js and Java Springboot applications, featuring actively exploitable CVEs like CVE-2023-42282 and CVE-2021-44228 (log4j), and includes the compromised xz-java library. Designed for assessing various SCA and container security tools, SCAGoat's README includes reports from tools such as Semgrep, Snyk, and Endor Labs. Future research will incorporate additional compromised packages, enhancing its utility for testing SCA tools against supply chain attack scenarios.
+
+  Github: https://github.com/toharzand/SCAgoat
 </details>
 
 <details>
   <summary>AI Wargame</summary>
   Come join a fun and educational attack and defence AI wargame. You will be given an AI chatbot. Your chatbot has a secret that should always remain a secret! Your objective is to secure your chatbot to protect its secret while attacking other players' chatbots and discovering theirs. The winner is the player whose chatbot survives the longest (king of the hill). All skill levels are welcomed, even if this is your first time seeing code, securing a chatbot, or playing in a wargame.
+
+  Github not found
 </details>
 
 <details>
@@ -42,6 +53,8 @@ To solve these challenges, we propose a patch-based approach to identify real vu
 
 
 Over the past ten years, Dradis has been battle-tested by thousands of infosec professionals, this community-driven effort has resulted in innovations like dynamic scanning tool mappings, a custom CSV importer, and new tool integrations. Learn how our most recent updates—which include in-app quality assurance workflows, easier deployment with Docker, and AI-driven enhancements—allow for the creation of reports faster and with greater quality. Come and learn how Dradis Framework works and how can it make your life a lot easier.
+
+Github: https://github.com/dradis
 </details>
 
 <details>
@@ -51,6 +64,8 @@ Over the past ten years, Dradis has been battle-tested by thousands of infosec p
 Realising these facts; cyberattacks targeting CI/CD pipelines has been gaining momentum, and attackers increasingly understand that build pipelines are highly-privileged targets with a substantial attack surface. 
 
 We will share some of our observation through showing different flavours of attack on possible development pipelines, and introduce our tool to detect them.
+
+Github: https://github.com/kondukto-io/kntrl
 </details>
 
 <details>
@@ -60,16 +75,22 @@ We will share some of our observation through showing different flavours of atta
 
 
 It comes with dangerous benefits for offensive security experts, and with new complex challenges for defenders &amp; malware analysts. We'll cover that all, and Kong Loader will be published right after, so you can start experimenting with it yourself.
+
+Github: https://github.com/tijme/kong-loader
 </details>
 
 <details>
   <summary>MobXplore</summary>
   MobXplore is a, frida based, open-source tool designed to assist security researchers, developers, and pentesters in performing comprehensive mobile application security assessments. Currently built for iOS devices, MobXplore will expand its capabilities to support Android devices, offering a versatile toolkit for mobile pentesting across multiple platforms. Presently it provides a comprehensive platform for performing iOS security testing. Built for pentesters and developers alike, it simplifies various stages of mobile application security testing, including device information retrieval, app management, IPA file handling, and dynamic analysis using Frida. MobXplore offers an intuitive yet powerful interface to explore, analyze, and secure mobile applications. It utilises Firda for most of its functionality, and it also intigrate other tools for some it's functionality. It streamlines the process of mobile application penetration testing by offering a powerful yet user-friendly interface packed with essential features. Whether you're assessing the security of your applications or probing for potential vulnerabilities, MobXplore brings everything you need under one cohesive interface.
+
+  Github: https://github.com/enciphers-team/mobXplore
 </details>
 
 <details>
   <summary>R0fuzz: A Collaborative Fuzzer</summary>
   Industrial control systems (ICS) are critical to national infrastructure, demanding robust security measures. "R0fuzz" is a collaborative fuzzing tool tailored for ICS environments, integrating diverse strategies to uncover vulnerabilities within key industrial protocols such as Modbus, Profinet, DNP3, OPC, BACnet, etc. This innovative approach enhances ICS resilience against emerging threats, providing a comprehensive testing framework beyond traditional fuzzing methods.
+
+  Github: https://github.com/AshwAthi8/R0fuzz
 </details>
 
 <details>
@@ -87,16 +108,22 @@ BRun is applicable in scenarios such as tracing, debugging, fuzzing, and crash l
 
 
 This presentation will introduce some existing binary library emulators before detailing their implementation and elucidating their current challenges. Following this, we will introduce the architecture of BRun, along with the challenges faced in designing and implementing it. The audience will gain insight into the advantages of our emulator and its robust applications.
+
+Github not found
 </details>
 
 <details>
   <summary>JARY - A Modular Data Correlation Engine</summary>
   JARY is a runtime for creating .jary rules to search and correlate log data from external sources. It allows users to define structured rules that filter, match, and analyze log entries to support data analysis and automation.
+
+  Github: https://github.com/CTRLRLTY/JARY
 </details>
 
 <details>
   <summary>Mantis - Asset Discovery at Scale</summary>
   Mantis is an asset inventory framework that has the capability to distribute a single scan across multiple machines, provides easy customization, dashboard support, and advanced alerting capabilities. We have not reinvented the wheel. Rather, we have tried to design an architecture that provides the essential features for a framework that involves the complexity of integrating multiple tools that are outside our control.
+
+  Github. https://github.com/PhonePe/mantis
 </details>
 
 <details>
@@ -112,6 +139,8 @@ Key features:
 - Real-time protection against HTML smuggling across all websites.
 - User-friendly interface to manage whitelisted URLs and export logs for auditing.
 - Runs in the background, monitoring content from page load to document completion.</p>
+
+Github: https://github.com/RootUp/SmuggleShield
 </details>
 
 <details>
@@ -141,11 +170,15 @@ Key Features of Varunastra:
 
 
 In a world where security threats are constantly evolving, Varunastra stands as a guardian, ensuring that your Docker environments remain fortified against leaked secrets, vulnerabilities, and dependency threats.
+
+Github: https://github.com/redhuntlabs/Varunastra
 </details>
 
 <details>
   <summary>Circuit Breaker CTF</summary>
   "Circuit Breaker CTF" is a testbench for power industry security research. Our project is an end-to-end toolkit – introducing vulnerability research and security techniques for power devices, from the Energy Generation, to Transmission Lines, to Consumer &amp; Homes.
+
+  Github not found
 </details>
 
 <details>
@@ -163,6 +196,8 @@ The framework boasts a user-friendly interface and an easy-to-use dashboard whic
 
 
 Overall, KubeSF is a swiss army knife for container security as it saves a lot of precious time, increases efficiency, enables a broad-scope driven approach allowing transparency into pod and namespace level security posture which helps in minimizing the risk of exploitation.
+
+Github(previously known as KubePWN): https://github.com/deep1792/KubePwn
 </details>
 
 <details>
@@ -176,6 +211,8 @@ In 2024, NimPlant received a major update which included the addition of a Rust 
 
 
 At Black Hat Asia Arsenal 2025, the design and architecture of NimPlant and the new Rust implant will be discussed. Offensive specialists will be provided with guidance and "pro tips" from the author on how to use the tool in offensive operations, while defensive specialists will be provided with guidance on how to identify and block this tool (and similar) in their network.
+
+Github: https://github.com/chvancooten/NimPlant
 </details>
 
 <details>
@@ -184,6 +221,8 @@ At Black Hat Asia Arsenal 2025, the design and architecture of NimPlant and the 
 Designed as a self-hosted tool, SadGuard provides proactive defense by embedding itself into the CI/CD process. It intelligently identifies vulnerabilities, flags obfuscation, and monitors suspicious runtime behavior. The modular architecture allows for future expansion, including support for additional LLMs and scoring systems for prioritized response.
 SadGuard supports integration with GitHub via webhooks and offers seamless local deployment for complete data control. It combines intelligent detection with runtime observation to secure software pipelines while maintaining operational privacy. Built with a focus on detecting and preventing supply chain compromises, it helps harden software repositories against modern threats.
 </div>
+
+Github: https://github.com/DakshRocks21/SadGuard
 </details>
 
 <details>
@@ -197,6 +236,8 @@ sql-data-guard is particularly useful when constructing SQL queries with Large L
 By verifying and modifying queries before they are executed, sql-data-guard helps prevent unauthorized data access and accidental data exposure. Adding sql-data-guard to your application can prevent or minimize data breaches and sql-injection attacks impact, ensuring that only permitted data is accessed. 
 
 Connecting LLMs to SQL databases without strict controls can risk accidental data exposure, as models may generate SQL queries that access sensitive information. OWASP highlights cases of poor sandboxing leading to unauthorized disclosures, emphasizing the need for clear access controls and prompt validation. Businesses should adopt rigorous access restrictions, regular audits, and robust API security, especially to comply with privacy laws and regulations like GDPR and CCPA, which penalize unauthorized data exposure.</p>
+
+Github: https://github.com/ThalesGroup/sql-data-guard
 </details>
 
 <details>
@@ -210,6 +251,8 @@ The current framework version is predominantly designed for the AWS environment.
 
 
 Built with scalability in mind, SupplyShield is capable of generating an SBOM and performing SCA in a CI/CD environment where thousands of builds take place daily. SupplyShield enables the rapid detection of zero-day vulnerabilities, such as the log4j exploit, even for organizations with over 100 micro-services, significantly reducing the Mean Time To Detect (MTTD) to mere minutes. This significantly simplifies the tasks of both security engineers and developers in identifying and managing patches for events like the log4j vulnerability. The framework also offers a dashboard for developers and security engineers, presenting relevant metrics and actionable insights.
+
+Github: https://github.com/supplyshield/supplyshield
 </details>
 
 <details>
@@ -247,11 +290,15 @@ Highlights of Blackdagger
 * Suitable for DevOps and DevSecOps
 
 * Suitable for MLOps and MLSecOps
+
+Github: https://github.com/ErdemOzgen/blackdagger
 </details>
 
 <details>
   <summary>From Mapping to Mitigation: OSS-Driven Attack Resistance</summary>
   <p><span>We'll cover the full lifecycle—from mapping using a range of discovery tools (subfinder, dnsx, etc.) and enriching with tools like httpx and katana, to scanning and triaging with Nuclei. Plus, we'll touch on integrated ticketing in nuclei, regression handling, and our community-led inventory of actionable, exploitable vulnerability checks, misconfigurations, DAST, auditing, and more.</span></p>
+
+  Github not found
 </details>
 
 <details>
@@ -259,11 +306,8 @@ Highlights of Blackdagger
   <p>Containers are everywhere, and Kubernetes has become the de facto standard for deploying, managing, and scaling containerized workloads. Yet security issues continue to emerge in the wild daily, ranging from simple misconfigurations to sophisticated attacks. In this session, I'll introduce Kubernetes Goat, an interactive security playground designed to help you master the skills needed to hack and secure your Kubernetes clusters and container workloads.
 
 Kubernetes Goat is an open-source platform featuring intentionally vulnerable scenarios within a Kubernetes cluster. From common vulnerabilities to notorious real-world attack patterns, each scenario is crafted to reflect actual security challenges - not theoretical simulations. Join me, the creator of Kubernetes Goat, as we dive deep into cluster vulnerabilities and emerge with practical defense strategies. Get ready to hack, learn, and shield your clusters!</p>
-</details>
 
-<details>
-  <summary>Mantis - Asset Discovery at Scale</summary>
-  <div>Mantis is an asset inventory framework that has the capability to distribute a single scan across multiple machines, provides easy customization, dashboard support, and advanced alerting capabilities. We have not reinvented the wheel. Rather, we have tried to design an architecture that provides the essential features for a framework that involves the complexity of integrating multiple tools that are outside our control.</div><div><br data-mce-bogus="1"></div>
+Github: https://github.com/madhuakula/kubernetes-goat
 </details>
 
 <details>
@@ -277,16 +321,22 @@ Endpoint detection of embedded systems involves specialized techniques and tools
 
 
 In response to the growing need for robust embedded systems end-point detection and response, we introduce MicroSleuth: a proof-of-concept Raspberry Pi Pico-based hardware tool engineered for forensic scrutiny of embedded systems. MicroSleuth is designed for interfacing with the SWD debug outputs of an embedded system, enabling it to acquire and scrutinize flash memory for malicious code patterns. It goes a step further by cross-referencing the expected debug outputs with the actual operational behavior of the system, ensuring its proper function and security.
+
+Github not found
 </details>
 
 <details>
   <summary>CompatrIoT</summary>
   CompartIoT is an open-source hardware security training platform that serves as a dedicated target for learning real-world hardware security techniques. Built around dual microcontrollers (STM32 and ESP32) design, this training board enables security researchers, hobbyists, and students to practice protocol analysis, firmware exploitation, and hardware security assessment through comprehensive hands-on labs.
+
+  Github: https://github.com/traboda/CompatrIoT
 </details>
 
 <details>
   <summary>AI Goat: Learning to Exploit Vulnerabilities in AI Systems</summary>
   AI Goat is an intentionally vulnerable, open-source AI infrastructure designed to educate security enthusiasts and penetration testers about AI-specific vulnerabilities, aligning with the OWASP ML Top 10. This session will introduce AI Goat, demonstrate deployment methods, and expose participants to various vulnerabilities they will learn to exploit. By engaging directly with AI Goat, attendees will gain hands-on experience in recognizing and mitigating risks in AI systems, enhancing their understanding of the AI threat landscape.
+
+  Github: https://github.com/dhammon/ai-goat
 </details>
 
 <details>
@@ -297,6 +347,8 @@ Leveraging our extensive experience in vulnerability research, we apply zero-day
 
 Our research goes deeper, examining how manipulating different neuron layers affects alignment. By dissecting these layers, we uncover the mechanics of LLM behavior and find ways to adjust their alignments for greater security.
 </p>
+
+Github: https://github.com/cyberark/FuzzyAI
 </details>
 
 <details>
@@ -308,11 +360,15 @@ Our research goes deeper, examining how manipulating different neuron layers aff
 Traditional mobile security scanners primarily rely on static code analysis, searching for known vulnerability patterns or signatures. While effective to an extent, these tools often generate high false positives and may miss context-dependent vulnerabilities that don't align with predefined rules. In contrast, our tool leverages LLMs to intelligently reduce false positives, honing in on genuine security issues with greater accuracy and depth.
 
 With a web dashboard, this tool provides a seamless, user-friendly interface that enhances efficiency, enabling teams to swiftly detect and address critical vulnerabilities. This powerful combination ensures a smarter, more proactive approach to mobile application security.
+
+Developed at https://adeosecurity.com/
 </details>
 
 <details>
   <summary>MissionEvasion</summary>
   MissionEvasion is a proof-of-concept tool designed for malware evasion on Windows systems. It leverages advanced techniques like process hollowing and injection to bypass detection mechanisms by executing malicious binaries from the Windows registry. The tool stores the malicious payload in the Windows registry as bytecode, retrieving it directly into memory, and executes it within the context of a legitimate process. This stealthy method is aimed at evading signature-based detection systems and can be used to study potential evasion techniques for red teaming exercises.
+
+  Github not found
 </details>
 
 <details>
@@ -372,6 +428,8 @@ It supports the SARIF format, which is the output format for static analysis. Th
    github ref : https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes
 
    github ref : https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes
+
+   Github above <3 to them.
 </details>
 
 <details>
@@ -385,16 +443,10 @@ Falco-action leverages Falco, an open-source runtime security tool from CNCF, to
 
 
 We'll guide you through real-world scenarios, demonstrating how falco-action can be used in GitHub Actions pipelines to detect and address malicious behavior effectively.
+
+Github: https://github.com/falcosecurity/falco-actions
 </details>
 
-<details>
-  <summary>FZAI Fuzzer - Behind AI Lines: Disrupting LLM Alignment to Build Bombs, Leading to Enhanced Security</summary>
-  <p>Who would have thought that prompting LLMs with questions about building bombs could actually strengthen their security? As these models become foundational to our digital tools—much like a new operating system—they still lack many essential security features. That's where our approach steps in: by understanding and disrupting their core alignments.
-
-Leveraging our extensive experience in vulnerability research, we apply zero-day discovery techniques to generative AI. We've developed a systematic method to breach the defenses of the latest LLM models, accompanied by a new open-source fuzzing infrastructure that makes jailbreaking not only efficient but also integral to crafting detection-based solutions that enhance LLM security.
-
-Our research goes deeper, examining how manipulating different neuron layers affects alignment. By dissecting these layers, we uncover the mechanics of LLM behavior and find ways to adjust their alignments for greater security.</p>
-</details>
 
 <details>
   <summary>KubeAPI-Inspector:discover the secrets hidden in apis</summary>
@@ -403,19 +455,9 @@ Our research goes deeper, examining how manipulating different neuron layers aff
 With Kubernetes being centered around a declarative API, we have designed a tool specifically for this scenario. This tool aims to efficiently and automatically discover hidden vulnerable APIs within the cluster.
 
 Additionally, we will publish a vulnerability pattern for the first time,which occurs when the golang struct embedding and promoted methods are used improperly, and demonstrate this problem through a workshop, this problem which could potentially lead to API endpoint authentication failures, thereby jeopardizing the entire cluster.
-</details>
 
-<details>
-  <summary>sql-data-guard: Safety Layer for LLM Database Interactions</summary>
-  <p>SQL is the go-to language for performing queries on databases and for a good reason - it's well known, easy to use and pretty simple. However, it seems that it's as easy to use as it is to exploit and SQL injection is still one of the most targeted vulnerabilities especially nowadays with the proliferation of "natural language queries" harnessing LLM power to generate and run SQL queries.
+Github not found
 
-To help solve this problem, we developed sql-data-guard, an open-source project designed to verify that SQL queries access only the data they are allowed to. It takes a query and a restriction configuration, and returns whether the query is allowed to run or not. Additionally, it can modify the query to ensure it complies with the restrictions. sql-data-guard has also a built-in module for detection of malicious payloads, which it can report on and remove malicious expressions before query execution.
-
-sql-data-guard is particularly useful when constructing SQL queries with Large Language Models (LLMs), as such queries can't run as prepared statements. Prepared statements secure a query's structure, but LLM-generated queries are dynamic and lack this fixed form, increasing SQL injection risk. sql-data-guard mitigates this by inspecting and validating the query content.
-
-By verifying and modifying queries before they are executed, sql-data-guard helps prevent unauthorized data access and accidental data exposure. Adding sql-data-guard to your application can prevent or minimize data breaches and sql-injection attacks impact, ensuring that only permitted data is accessed. 
-
-Connecting LLMs to SQL databases without strict controls can risk accidental data exposure, as models may generate SQL queries that access sensitive information. OWASP highlights cases of poor sandboxing leading to unauthorized disclosures, emphasizing the need for clear access controls and prompt validation. Businesses should adopt rigorous access restrictions, regular audits, and robust API security, especially to comply with privacy laws and regulations like GDPR and CCPA, which penalize unauthorized data exposure.</p>
 </details>
 
 <details>
@@ -423,6 +465,8 @@ Connecting LLMs to SQL databases without strict controls can risk accidental dat
   In recent years, research on automating penetration testing and software testing using LLMs has been actively conducted. For example, the paper "PentestGPT: An LLM-empowered Automatic Penetration Testing Tool" attempts to automate penetration testing primarily in the network domain and has successfully performed complete penetration testing on servers with Easy and Medium difficulty levels on Hack The Box. Additionally, the paper "LLM Agents can Autonomously Hack Websites" examines whether a black-box LLM such as GPT-4 can exploit common vulnerabilities like SQL injection in actual websites. This research demonstrates that models like GPT-4 can identify vulnerabilities in real-world websites and exploit complex vulnerabilities without prior vulnerability information.
 
 Inspired by these approaches, we have developed a tool called BugNet, which is designed to detect vulnerabilities unique to web applications by leveraging an LLM. Currently, tools like Zap and BurpSuite can detect common vulnerabilities such as XSS and SQL injection through their scanning capabilities. However, these tools struggle to detect web application-specific vulnerabilities, such as privilege escalation, tampering with purchase information, and user impersonation. Our tool focuses on detecting these specific web application vulnerabilities, which are challenging to identify with existing scanning tools, rather than focusing on general vulnerabilities like SQL injection and XSS, by utilizing an LLM agent.
+
+Pentest-GPT paper: https://arxiv.org/abs/2308.06782
 </details>
 
 <details>
@@ -442,6 +486,8 @@ Tool Abstract
 
 
 Network_Scan_hub  is an open-source graphical user interface (GUI) designed to bring together multiple command-line network scanning tools, such as Naabu, Nmap, RustScan, and others, into a cohesive platform. This tool enhances the user experience by offering a simple, streamlined interface for managing and executing network scans, automating repetitive tasks, and presenting results in a user-friendly format. By consolidating several key scanning functionalities into one platform, Network_Scan_hub makes it easier for security professionals to carry out comprehensive network assessments while minimizing their interaction with the command line. This tool supports a wide range of network scanning features, including vulnerability checks, scan scheduling, proxy chaining, and agent-based scanning. It is designed to simplify complex workflows, improve productivity, and make network security assessments more accessible to both experienced professionals and newcomers alike.
+
+Github???: https://github.com/Insider-HackZ/Network-Scanner-GUI
 </details>
 
 <details>
@@ -455,12 +501,10 @@ BOAZ supports both x86/x64 binary (PE) or raw payload as input and output EXE or
 
 
 BOAZ is written in C++ and C and uses Python3 as the main linker to integrate all modules.  There have been significant improvements implemented since its inception. The new features of the BOAZ evasion tool, set to be released at BH Asia 2025, include two novel process injection primitives, along with newly implemented loaders and behavioural evasion techniques.
+
+Github: https://github.com/thomasxm/BOAZ
 </details>
 
-<details>
-  <summary>Circuit Breaker CTF</summary>
-  "Circuit Breaker CTF" is a testbench for power industry security research. Our project is an end-to-end toolkit – introducing vulnerability research and security techniques for power devices, from the Energy Generation, to Transmission Lines, to Consumer &amp; Homes.
-</details>
 
 <details>
   <summary>MachOpen: A High-Performance Lightweight Reverse Analysis Tool for iOS Applications</summary>
@@ -471,6 +515,8 @@ We proposed MachOpen, a portable and efficient lightweight reverse tool for iOS 
 MachOpen applies a novel hierarchical structure for stack and heap during simulation. This multi-level design enables memory sharing when performing large instruction-level calculations. Compared to Unicorn, MachOpen greatly reduces the memory usage and pressure of garbage collection. Furthermore, based on high concurrent coroutine, it achieves more efficient analysis during complex data flow or control flow analysis.
 
 MachOpen has a built-in web frontend to support display and debugging requirements. At the same time, it also provides clear and flexible CLI commands usage for advanced users, allowing decoupling the running process and implementing specific analysis without redundancy.</p>
+
+Github not found
 </details>
 
 <details>
@@ -482,6 +528,8 @@ MachOpen has a built-in web frontend to support display and debugging requiremen
 <span>The tool boasts a user-friendly interface and an easy-to-use reporting system that makes it simple for hackers and security professionals to review and address any identified issues. With MORF, you can know that your mobile application's security is in good hands.</span>
 
 <span>Overall, MORF is a Swiss army knife for offensive mobile application security, as it saves a lot of time, increases efficiency, enables a data-driven approach, allows for transparency in the security posture of the application by looking into all previous versions, and minimizes the risk of data breaches related to sensitive information, all this by using heuristics-based techniques.</span></p>
+
+Github: https://github.com/amrudesh1/MORF
 </details>
 
 <details>
@@ -495,14 +543,10 @@ Most existing tools only focus on detecting obfuscated PowerShell rather than fu
 
 
 Beyond deobfuscation, Plaguards enhances the overall response workflow by providing templated PDF reports, documenting each deobfuscated line and cross-referencing IOCs with threat intelligence. This capability not only aids in real-time threat assessment but also supports IR teams by delivering comprehensive, actionable insights in a clear and organized format.
+
+Github: https://github.com/baycysec/plaguards
 </details>
 
-<details>
-  <summary>SadGuard: LLM-Assisted DevSecOps</summary>
-  <p>SadGuard was inspired by the rising threat of supply chain attacks, leveraging advanced AI to secure software pipelines against malicious contributions in pull requests. It uses intelligent code diff analysis, sandboxed executable behaviour monitoring, and entropy scanning of binaries to detect and mitigate malicious patterns before deployment.
-Designed as a self-hosted tool, SadGuard provides proactive defense by embedding itself into the CI/CD process. It intelligently identifies vulnerabilities, flags obfuscation, and monitors suspicious runtime behavior. The modular architecture allows for future expansion, including support for additional LLMs and scoring systems for prioritized response.
-SadGuard supports integration with GitHub via webhooks and offers seamless local deployment for complete data control. It combines intelligent detection with runtime observation to secure software pipelines while maintaining operational privacy. Built with a focus on detecting and preventing supply chain compromises, it helps harden software repositories against modern threats.</p>
-</details>
 
 <details>
   <summary>Decoy Mutex</summary>
@@ -511,6 +555,8 @@ SadGuard supports integration with GitHub via webhooks and offers seamless local
 
 
 A Windows tool for creating decoy mutexes (Fake Infection Markers) associated with ransomware simulations. Ransomware checks for the presence of its related mutex to determine whether the system is already infected. It doesn't infect the system if it locates the mutex.
+
+Github: https://github.com/ScarredMonk/Decoy-Mutex
 </details>
 
 <details>
@@ -528,6 +574,8 @@ Technologies supported - GitHub, GitHub Action, Jenkins, JFrog, Spinnaker, Drone
 
 
 CICD platforms are an integral part of the overall software supply chain and it processes a lot of sensitive data, compromise of which can affect the entire organization. Security IN CICD is a well discussed topic, security OF CICD deserves the same attention. One of the challenges with security OF CICD, like most areas of security, is the lack of visibility of what actually makes a CICD ecosystem. Security starts with being aware of what needs to be secure.
+
+Github: https://github.com/varchashva/CICDGuard
 </details>
 
 <details>
@@ -569,6 +617,8 @@ Double Free
 
 
 This tool is being developed by students from T.John Engineering College Bangalore. Divya M, Archana BS, Allen Sam and Sujitha Palanadan
+
+Github: https://github.com/Rnalter/KernelGoat
 </details>
 
 <details>
@@ -590,6 +640,8 @@ This tool is being developed by students from T.John Engineering College Bangalo
 
 
 Dilute your time to setup Red Team Infrastructure in 5 minutes with RedInfraCraft
+
+Github: https://github.com/RedTeamOperations/Red-Infra-Craft
 </details>
 
 <details>
@@ -603,20 +655,8 @@ While Entra ID protects the private key if generated internally, as it cannot be
 
 
 The tool requires the signing certificate to use, the username that is target for impersonation, and some basic federation information about the target application that can be derived from a few different methods.
-</details>
 
-<details>
-  <summary>CompatrIoT</summary>
-  CompartIoT is an open-source hardware security training platform that serves as a dedicated target for learning real-world hardware security techniques. Built around dual microcontrollers (STM32 and ESP32) design, this training board enables security researchers, hobbyists, and students to practice protocol analysis, firmware exploitation, and hardware security assessment through comprehensive hands-on labs.
-</details>
-
-<details>
-  <summary>BOAZ: Development of a Multilayered Evasion Tool and Methodology</summary>
-  <p>BOAZ (Bypass, Obfuscate, Adapt, Zero-Trust) evasion was inspired by the concept of multi-layered approach which is the evasive version of defence-in-depth first proposed by at BH USA14 [1]. BOAZ was developed to provide greater control over combinations of evasion methods, enabling more granular evaluations against antivirus and EDR. It is designed to bypass both before and during execution detections that span signature, heuristic and behavioural detection techniques [2]. 
-
-BOAZ supports both x86/x64 binary (PE) or raw payload as input and output EXE or DLL. It has been tested on separated Window-11 Enterprise VMs (version: 22H2, 22621.1992) with 14 Desktop AVs installed include Windows Defender, Norton, BitDefender and ESET. The design of BOAZ evasion is modular, so users can add their own toolset or techniques to the framework. One advantage of this approach is that if a specific technique's signature become known to antivirus, researchers can easily adjust the technique to verify it and either improve or swap a new technique to that detection. This process is described as a query-modify-query attack process, where the attacker can improve based on feedback from black-box engines until their sample is fully undetectable (FUD) [3]. 
-
-BOAZ is written in C++ and C and uses Python3 as the main linker to integrate all modules. There have been significant improvements implemented since its inception. The new features of the BOAZ evasion tool, set to be released at BH Asia 2025, include two novel process injection primitives, along with newly implemented loaders and behavioural evasion techniques.</p>
+Github: https://github.com/Semperis/SilverSamlForger
 </details>
 
 <details>
@@ -630,11 +670,15 @@ Casino Heist tackles this challenge by offering a platform where developers and 
 
 
 With the combination of learning the fundamentals of vulnerabilities, gaining hands-on experience in exploiting them, and understanding their mitigations, our mission is to cultivate developers with a strong grasp of security—whether you aim to become a smart contract auditor or simply want to add smart contract security to your skillset. If that sounds like you, this is the perfect place to start your journey!
+
+Github: https://github.com/Kiinzu/Casino-Heist
 </details>
 
 <details>
   <summary>FireTail - inline open-source API security</summary>
   FireTail enables you to solve all the most critical problems facing APIs today with full blocking capabilities to solve the root causes of API data breaches - flaws at the application and business logic layer in authentication, authorization and data handling.
+
+  Github: https://github.com/firetail-io
 </details>
 
 <details>
@@ -644,11 +688,15 @@ With the combination of learning the fundamentals of vulnerabilities, gaining ha
 
 
 Created to democratize cloud security testing, Halberd eliminates the complexity of setting up and running advanced attack techniques. No more context switching between tools or wrestling with complicated setups - just pick a technique (or an advanced playbook) and execute.
+
+Github: https://github.com/vectra-ai-research/Halberd
 </details>
 
 <details>
   <summary>SHIVA Spampot: Actionable Spam and Phishing Intelligence</summary>
   Spam and phishing emails remain among the most common vectors used by threat actors for delivering malicious URLs and attachments. A spam email honeypot (spampot) offers an excellent opportunity to observe and gather intelligence about these attack vectors. We are releasing an open-source honeypot, SHIVA (Spam Honeypot with Intelligent Virtual Analyzer), designed specifically for capturing and analyzing spam interactions at cloud scale. The honeypot presents itself as a fully functional and open SMTP server. By deploying this honeypot, researchers and organizations can analyze and gather real-time threat intelligence on spam. Analysis of captured data can provide information on phishing attacks, scamming campaigns, malware campaigns, and spam botnets. This will enable the organizations to identify emerging threats and improve their defensive strategies. We detail the architecture and implementation of the honeypot, along with case studies showcasing its effectiveness in enriching threat intelligence.
+
+  Github: https://github.com/shiva-spampot/shiva
 </details>
 
 <details>
@@ -656,50 +704,17 @@ Created to democratize cloud security testing, Halberd eliminates the complexity
   <p><span>Foundpy is a Foundry-like interface for interacting with the Ethereum application as a single Python module. It's designed to be easy to use, just like Foundry's commands, but no installation of Foundry is required. This provides a streamlined experience for developers and security researchers.</span>
 
 <span>Beyond basic Foundry replication, Foundpy incorporates specialized features designed for Capture The Flag (CTF) challenges. Which is inspired by the popular pwntools library, the combination of Foundry's friendly interface and the ease of use of CTF framework like pwntools is what makes it the best tool for beginners to learn blockchain security.</span></p>
-</details>
 
-<details>
-  <summary>Kubernetes Goat: A Hands-on Interactive Kubernetes Security Playground</summary>
-  <p>Containers are everywhere, and Kubernetes has become the de facto standard for deploying, managing, and scaling containerized workloads. Yet security issues continue to emerge in the wild daily, ranging from simple misconfigurations to sophisticated attacks. In this session, I'll introduce Kubernetes Goat, an interactive security playground designed to help you master the skills needed to hack and secure your Kubernetes clusters and container workloads.
-
-Kubernetes Goat is an open-source platform featuring intentionally vulnerable scenarios within a Kubernetes cluster. From common vulnerabilities to notorious real-world attack patterns, each scenario is crafted to reflect actual security challenges - not theoretical simulations. Join me, the creator of Kubernetes Goat, as we dive deep into cluster vulnerabilities and emerge with practical defense strategies. Get ready to hack, learn, and shield your clusters!</p>
-</details>
-
-<details>
-  <summary>MORF - Mobile Reconnaissance Framework</summary>
-  <p>MORF - Mobile Reconnaissance Framework is a powerful, lightweight, and platform-independent offensive mobile security tool designed to help hackers and developers identify and address sensitive information within mobile applications. It is like a Swiss army knife for mobile application security, as it uses heuristics-based techniques to search through the codebase, creating a comprehensive repository of sensitive information it finds. This makes it easy to identify and address any potentially sensitive data leak.
-
-One of the prominent features of MORF is its ability to automatically detect and extract sensitive information from various sources, including source code, resource files, and native libraries. It also collects a large amount of metadata from the application, which can be used to create data science models that can predict and detect potential security threats. MORF also looks into all previous versions of the application, bringing transparency to the security posture of the application.
-
-The tool boasts a user-friendly interface and an easy-to-use reporting system that makes it simple for hackers and security professionals to review and address any identified issues. With MORF, you can know that your mobile application's security is in good hands.
-
-Overall, MORF is a Swiss army knife for offensive mobile application security, as it saves a lot of time, increases efficiency, enables a data-driven approach, allows for transparency in the security posture of the application by looking into all previous versions, and minimizes the risk of data breaches related to sensitive information, all this by using heuristics-based techniques.</p>
-</details>
-
-<details>
-  <summary>SmuggleShield 2.0 - Basic Protection Against HTML Smuggling</summary>
-  <p><span>SmuggleShield (Protection against HTML smuggling attempts.)</span>
-
-<span>SmuggleShield is a Chrome/Edge browser extension that provides protection against HTML smuggling attacks by detecting suspicious patterns in web content. It combines traditional pattern matching with machine learning capabilities to identify potential threats, featuring a customizable whitelist system to reduce false positives. The tool monitors webpage elements in real-time and can block malicious content while maintaining detailed logs of detected threats, making it particularly useful for security professionals during red/purple team exercises.</span>
-
-<span>Reference - https://github.com/RootUp/SmuggleShield</span>
-
-Key features:
-
-- Real-time protection against HTML smuggling across all websites.
-- User-friendly interface to manage whitelisted URLs and export logs for auditing.
-- Runs in the background, monitoring content from page load to document completion.</p>
+Github: https://github.com/Wrth1/foundpy
 </details>
 
 <details>
   <summary>Stowaway: Multi-hop Proxy Tool for pentesters</summary>
   Stowaway is a multi-level proxy tool written in the go language and designed for penetration testers and security researchers. Attackers can use Stowaway to construct their own tree network in a highly restricted intranet environment so that the attacker's external traffic can reach the core network through the layers of proxies of multiple Stowaway nodes. While breaking through network access restrictions, Stowaway can also help attackers hide their own traffic and better lurk in the intranet. In addition, attackers can also use the terminal interface and various auxiliary functions provided by Stowaway to more easily manage the entire tree network and improve the efficiency of penetration testing.
+
+  Github: https://github.com/ph4ntonn/Stowaway
 </details>
 
-<details>
-  <summary>AI Wargame</summary>
-  Come join a fun and educational attack and defence AI wargame. You will be given an AI chatbot. Your chatbot has a secret that should always remain a secret! Your objective is to secure your chatbot to protect its secret while attacking other players' chatbots and discovering theirs. The winner is the player whose chatbot survives the longest (king of the hill). All skill levels are welcomed, even if this is your first time seeing code, securing a chatbot, or playing in a wargame.
-</details>
 
 <details>
   <summary>Agneyastra - Firebase Misconfiguration Detection Toolkit V2</summary>
@@ -720,5 +735,7 @@ Key Features:
 2. Intelligent Correlation Engine.
 
 3. POC and Report Creation.
+
+Github: https://github.com/JA3G3R/agneyastra
 </details>
 
