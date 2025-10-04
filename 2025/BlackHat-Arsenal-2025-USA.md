@@ -14,7 +14,7 @@ EvilDoggie is the offensive firmware variant of Doggie with a set of techniques 
 
 The project emphasizes modularity, allowing users to select from various hardware configurations using different microcontrollers and CAN transceivers, making it accessible and cost-effective.
 
-Github not found
+Github: https://github.com/infobyte/doggie
 </details>
 
 <details>
