@@ -10,4 +10,13 @@ Here is already a good list https://github.com/toolswatch/blackhat-arsenal-tools
 
 Quickly written crawler to fetch description and summaries.
 
-INFO: chromedriver must be in the path to work
+Updated using playwright and selenium as fallback
+```
+# in your venv
+python -m pip install -r requirements.txt
+
+# then install Playwright browser binaries
+python -m playwright install chromium
+```
+
+Otherwise chromedriver must be in the path to work
