@@ -11,11 +11,14 @@ schedule title for the same year/region. Uses a rendered fetch:
 
 MEA is skipped automatically (historical page differences / 404s).
 
+NEW: Skips MD files that haven't changed since last run (using mtime cache).
+
 Usage:
   python merge_arsenal_md_with_categories.py --root . --outdir Categories --unmatched-log unmatched.csv
   python merge_arsenal_md_with_categories.py --root . --outdir Categories --dry-run
+  python merge_arsenal_md_with_categories.py --root . --outdir Categories --force  # ignore cache
 """
-import argparse, os, re, sys, csv, time
+import argparse, os, re, sys, csv, time, json, hashlib
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 import requests
@@ -25,6 +28,7 @@ from tqdm import tqdm
 UA = "blackhat-arsenal-merger/3.0 (+github.com/muX1337/BlackHat-Arsenal)"
 REGION_MAP = {"USA":"us","EU":"eu","ASIA":"asia","MEA":"mea"}
 SKIP_REGIONS = {"MEA"}  # skip MEA as requested
+CACHE_FILE = ".arsenal_merge_cache.json"
 
 @dataclass
 class ToolItem:
@@ -33,6 +37,43 @@ class ToolItem:
     github: str
     year: str
     region: str
+
+# -------------------- Cache management --------------------
+def load_cache(cache_path: str) -> Dict[str, float]:
+    """Load cache of {md_file_path: last_mtime}"""
+    if not os.path.exists(cache_path):
+        return {}
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def save_cache(cache_path: str, cache: Dict[str, float]) -> None:
+    """Save cache to disk"""
+    try:
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2)
+    except Exception as e:
+        print(f"[warn] Could not save cache: {e}", file=sys.stderr)
+
+def file_has_changed(md_path: str, cache: Dict[str, float]) -> bool:
+    """Check if file has been modified since last run"""
+    try:
+        current_mtime = os.path.getmtime(md_path)
+        cached_mtime = cache.get(md_path)
+        if cached_mtime is None:
+            return True  # new file
+        return current_mtime > cached_mtime
+    except Exception:
+        return True  # if we can't check, process it
+
+def update_cache_entry(cache: Dict[str, float], md_path: str) -> None:
+    """Update cache with current file mtime"""
+    try:
+        cache[md_path] = os.path.getmtime(md_path)
+    except Exception:
+        pass
 
 # -------------------- utils --------------------
 def read_text(path: str) -> str:
@@ -56,7 +97,7 @@ def norm_key(s: str) -> str:
     """Normalization for exact title key: lowercase, collapse spaces, normalize quotes."""
     s = s or ""
     s = s.strip().lower()
-    s = s.replace("’", "'").replace("“","\"").replace("”","\"")
+    s = s.replace("'", "'").replace(""","\"").replace(""","\"")
     s = re.sub(r"\s+", " ", s)
     return s
 
@@ -64,7 +105,7 @@ def norm_key_relaxed(s: str) -> str:
     """Relaxed normalization: drop most punctuation, keep alnum & spaces only."""
     s = s or ""
     s = s.lower()
-    s = s.replace("’", "'").replace("“","\"").replace("”","\"")
+    s = s.replace("'", "'").replace(""","\"").replace(""","\"")
     s = re.sub(r"[^a-z0-9]+", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
@@ -72,7 +113,7 @@ def norm_key_relaxed(s: str) -> str:
 def to_anchor_slug(s: str) -> str:
     """Approximate schedule anchor slug to use as a backup key."""
     s = s.lower()
-    s = s.replace("’", "'")
+    s = s.replace("'", "'")
     s = re.sub(r"[^a-z0-9\s\-]", "-", s)   # punctuation -> dashes
     s = re.sub(r"[\s_/]+", "-", s)         # spaces/slashes -> dash
     s = re.sub(r"-{2,}", "-", s)
@@ -388,18 +429,40 @@ def main():
     ap.add_argument("--outdir", default="Categories", help="Output base folder (will create subfolders)")
     ap.add_argument("--unmatched-log", help="Optional CSV file to log titles that had no match")
     ap.add_argument("--dry-run", action="store_true", help="Do not write files; just print planned actions")
+    ap.add_argument("--force", action="store_true", help="Force processing all files, ignoring cache")
+    ap.add_argument("--cache-file", default=CACHE_FILE, help="Path to cache file for tracking processed files")
     args = ap.parse_args()
+
+    # Load cache
+    cache_path = os.path.join(args.root, args.cache_file)
+    cache = {} if args.force else load_cache(cache_path)
 
     md_files = find_md_files(args.root)
     if not md_files:
         print("No BlackHat MD files found (2022–2025).", file=sys.stderr)
         sys.exit(1)
 
+    # Filter files based on cache
+    files_to_process = []
+    skipped_count = 0
+    for md_path in md_files:
+        if file_has_changed(md_path, cache):
+            files_to_process.append(md_path)
+        else:
+            skipped_count += 1
+
+    if skipped_count > 0:
+        print(f"Skipping {skipped_count} unchanged file(s)")
+    
+    if not files_to_process:
+        print("No files to process (all up to date)")
+        return
+
     schedule_index_cache: Dict[Tuple[str, str], Dict[str, List[str]]] = {}
     planned = []
     unmatched_rows = []
 
-    for md_path in tqdm(md_files, desc="MD files"):
+    for md_path in tqdm(files_to_process, desc="Processing MD files"):
         pr = parse_year_region_from_filename(md_path)
         if not pr:
             continue
@@ -459,12 +522,20 @@ def main():
             else:
                 write_text(out_path, md_out)
 
+        # Update cache entry for this file after successful processing
+        if not args.dry_run:
+            update_cache_entry(cache, md_path)
+
+    # Save cache
+    if not args.dry_run:
+        save_cache(cache_path, cache)
+
     if args.dry_run:
         print("Planned writes:")
         for p in planned:
             print(" -", p)
     else:
-        print("Done. Wrote categorized Markdown files to:", args.outdir)
+        print(f"Done. Processed {len(files_to_process)} file(s). Wrote categorized Markdown files to:", args.outdir)
 
     if args.unmatched_log:
         fieldnames = ["md_path", "title", "region", "year"]
