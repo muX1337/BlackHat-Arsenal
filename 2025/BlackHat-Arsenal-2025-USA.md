@@ -1854,6 +1854,8 @@ SAMLSmith can be used in several response forging scenarios where the private ke
 
 
 Using SAMLSmith requires a certain level of knowledge about the target environment, much of which can be gained with other commonly known and used tools that perform reconnaissance against the targeted identity provider.
+
+Github: https://github.com/Semperis/SAMLSmith
 </details>
 
 <details>
